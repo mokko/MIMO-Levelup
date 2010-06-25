@@ -2,16 +2,16 @@ MPX-Levelup
 -------------
 
 What is levelup?
-Levelup is a set of tools to export data from MuseumPlus database to XML and to convert it some other XML format. It's work and progress. Levelup is called after the first tool written in this tool-set which transforms some simple intermediary format to a higher level. It's not a particular good name, but it is a name.
+Levelup is a set of tools to export data from the MuseumPlus database to XML and to convert it some other XML format. It's work in progress. Levelup, the tool set, is called after the first tool written in this tool-set, levelup.pl, which transforms some simple intermediary format to a higher level. It's not a particular good name, but it is a name.
 
 Status
-This is work in progress and it not likely that this tool-set will ever be well documented or usable out of the box.
+This is work in progress and it not likely that this tool-set will ever be well documented or easily usable out of the box.
 
 Github
 I make this tool-set available online to facilitate collaboration together with the people in Berlin, not because I expect that many people will be interested in it.
 
 Current tools
-1) levelup.pl: Takes rtf files produced by MuseumPlus as input and outputs XML in a format called MPX (or more precisely MPX-LVL2) which is structured and named in the same way that MuseumPlus thinks.
+1) levelup.pl: Takes rtf files produced by MuseumPlus as input and outputs XML in a format called MPX (or more precisely MPX-LVL2) which is structured and named in the same way that MuseumPlus thinks. Some more thoughts on this topic on mauricemengel.de.
 
 Environment/Requirements
 levelup expects to run on cygwin. I will try to expand this section to list all requirements.
