@@ -1,0 +1,52 @@
+my $saxon = 'C:\cygwin\home\Mengel\usr\levelup\lib\saxon9he.jar';
+
+%config =(
+	1 => {
+		dir => '1-RTF',
+		#use basename for input and output
+	},
+
+	2 => {
+		dir => '2-lvl1-single',
+		log_fn => 'rtf2xml.log',
+		rtf2xml   => "/home/Mengel/usr/levelup/bin/rtftable2xml.pl",
+		#use basename for input and output
+	},
+	3 => {
+		dir => '3-lvl1-join',
+		join_xsl    => 'C:\cygwin3\home\Mengel\usr\levelup\lib\newJoin.xsl',
+		leer_xml  => "/home/Mengel/usr/levelup/lib/leer.mpx",
+		output => "join.lvl1.mpx",    #only file name, no dir
+		temp_cyg => '/home/Mengel/usr/levelup/lib/temp',
+		#Use cygpath to determine win path for temp_cyg
+	},
+
+	4 => {
+		dir => '4-lvl2',
+		#use config{3}{output} for input
+		levelup_xsl => 'C:\cygwin3\home\Mengel\usr\levelup\lib\lupmpx.4thGen.xsl',
+		log_fn =>'lvl1to2.log',
+		output => "join.lvl2.mpx",    #only file name, no dir
+	},
+
+	5 => {
+		dir => '5-fix',
+		#use previous' output for input
+		fix_xsl     => 'C:\cygwin3\home\Mengel\usr\levelup\lib\mpx-fix.xsl',
+		log_fn			=> 'fix.log',
+		mpxsort_xsl =>'C:\cygwin3\home\Mengel\usr\levelup\lib\mpx-sort.xsl',
+		output_1   => "fix.lvl2.mpx",     #only file name, no dir
+		output_2   => "fix_sort.lvl2.mpx",     #only file name, no dir
+
+	},
+	#general stuff
+
+	basenames    => [
+		'mume','eaBasic', 'eaDatierungExtras', 'eaExt',
+		'oov',     'perkor',            'perkorExt',
+	],
+	log_fn => "levelup.log",
+	saxon_cmd  => "java -Xmx512m -jar '$saxon'",
+	validator => "dotnetValidator", #TODO:should be done in perl!
+);
+

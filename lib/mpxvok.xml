@@ -1,0 +1,5394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mpxvok
+	xmlns="http://www.mpx.org/mpxvok"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mpx.org/mpxvok File://C:/Perl/site/lib/XSD/mpxvok.xsd">
+
+	<!-- synonyme sind hier normalerweise Schreibfehler -->
+	<context name="titel@art">
+		<concept id="370">
+			<pref lang="de">Titel A</pref>
+			<synonym>Titel A:</synonym>
+		</concept>
+		<concept id="371">
+			<pref lang="de">Titel B</pref>
+			<synonym>Titel B:</synonym>
+			<synonym>Teil B:</synonym>
+			<synonym>Teil B</synonym>
+		</concept>
+	</context>
+
+	<context name="artKörpersch">
+		<annotation>Für alle Verantwortlichkeiten.</annotation>
+		<concept id="266">
+			<pref lang="de">Ensemble</pref>
+			<synonym>Ensamble</synonym>
+			<synonym>Ensemble / Tanzgruppe</synonym>
+			<synonym>Musikgruppe</synonym>
+			<synonym>Tanzgruppe</synonym>
+		</concept>
+		<concept id="267">
+			<pref lang="de">Label</pref>
+			<synonym>Plattenlabel</synonym>
+			<synonym>Plattenfirma</synonym>
+			<synonym>Plattenproduktionsfirma</synonym>
+		</concept>
+		<concept id="268">
+			<pref lang="de">Musiker</pref>
+			<synonym>Musikerin</synonym>
+		</concept>
+		<concept id="324">
+			<pref lang="de">Archiv</pref>
+		</concept>
+		<concept id="331">
+			<pref lang="de">Kunsthandel</pref>
+			<synonym>Kunsthandel OHG</synonym>
+		</concept>
+		<concept id="332">
+			<pref lang="de">Kunstschule</pref>
+		</concept>
+		<concept id="333">
+			<pref lang="de">Produktionsfirma</pref>
+			<synonym>Produktionsfirma Ltd.</synonym>
+			<synonym>Produktionsges. MbH</synonym>
+		</concept>
+		<concept id="334">
+			<pref lang="de">GmbH</pref>
+		</concept>
+		<concept id="336">
+			<pref lang="de">Universität</pref>
+			<pref lang="en">University</pref>
+			<synonym>Universität/University</synonym>
+		</concept>
+		<concept id="337">
+			<pref lang="de">Verlag</pref>
+		</concept>
+		<concept id="338">
+			<pref lang="de">Firma</pref>
+			<pref lang="en">company</pref>
+			<synonym>Ltd.</synonym>
+			<synonym>S.A.</synonym>
+		</concept>
+		<concept id="356">
+			<pref lang="de">Geschäft</pref>
+		</concept>
+		<concept id="341">
+			<pref lang="de">Gesellschaft</pref>
+			<synonym>Society</synonym>
+		</concept>
+		<concept id="343">
+			<pref lang="de">Institut</pref>
+		</concept>
+		<concept id="340">
+			<pref lang="de">Museum</pref>
+			<synonym>Museum / Abteilung</synonym>
+		</concept>
+		<concept id="352">
+			<pref lang="de">Ministerium</pref>
+		</concept>
+		<concept id="357">
+			<pref lang="de">Postamt</pref>
+		</concept>
+		<concept id="339">
+			<pref lang="de">Stiftung</pref>
+			<synonym>Fundaţia Culturala</synonym>
+			<synonym>Fundatia Culturala</synonym>
+		</concept>
+		<concept id="354">
+			<pref lang="de">Vereinigung</pref>
+		</concept>
+		<concept id="355">
+			<pref lang="de">Verein</pref>
+			<synonym>Verein / Gesellschaft</synonym>
+		</concept>
+		<concept id="353">
+			<pref lang="de">Verwaltung</pref>
+		</concept>
+	</context>
+
+	<context name="dmBasicGeography">
+		<annotation> Die Liste ist gedacht um, die gegenwärtig existierenden Länder dieser Welt zu
+			kontrollieren, d.h. alle möglichen Länder-Bezeichnungen auf die gegenwärtig gültigen zu
+			reduzieren. Historische Einheiten sollen nur als prefTerm eingebunden werden, wenn sie
+			nicht eindeutig in einen aktuell existierende Einheit überführt werden können (Fall 1)!
+			Für den anderen Fall, bei ein eindeutiger Nachfolger gefunden werden kann, soll der
+			historische Ausdruck als Synonym mit dem Typ "historial" beschrieben werden. Beispiel:
+			Wo "DDR" steht kann man auch Deutschland sagen; ist nicht falsch, nur weniger präzise
+			(Fall 2). Wo "Sovietunion" steht, kann man nicht Russland sagen, weil der Ort u.U.
+			außerhalb des heutigen Russlands liegt (Fall 1). Diese Liste basiert auf
+			dmBasicGeography v.15. </annotation>
+
+		<concept id="275" lastmodified="2008-03-26">
+			<pref lang="de">Welt</pref>
+			<pref lang="en">world</pref>
+			<status>accepted</status>
+		</concept>
+
+		<concept id="269" lastmodified="2008-03-26">
+			<pref lang="de">Kontinent</pref>
+			<pref lang="en">continent</pref>
+			<relation type="hasBroaderTerm" relId="275"/>
+			<status>accepted</status>
+		</concept>
+
+		<concept id="273" lastmodified="2008-03-26">
+			<definition> Eine Region, die mehr Territorium umfasst als ein Staat. </definition>
+			<pref lang="de">Großregion</pref>
+			<pref lang="en">macroregion</pref>
+			<relation type="hasBroaderTerm" relId="269"/>
+			<relation type="hasBroaderTerm" relId="272"/>
+			<scope>z.B. Westeuropa</scope>
+			<status>accepted</status>
+		</concept>
+
+
+		<concept id="270" lastmodified="2008-03-26">
+			<definition> Alle Staaten sind Länder, aber nicht alle Länder sind Staaten. </definition>
+			<pref lang="de">Land</pref>
+			<pref lang="en">country</pref>
+			<relation type="hasBroaderTerm" relId="273"/>
+			<status>accepted</status>
+		</concept>
+
+		<concept id="272" lastmodified="2008-03-26">
+			<definition> Eine Region kann entweder größer oder kleiner als ein Staat sein. </definition>
+			<pref lang="de">Region</pref>
+			<pref lang="en">region</pref>
+			<relation type="hasBroaderTerm" relId="271"/>
+			<status>accepted</status>
+		</concept>
+
+		<concept id="271" lastmodified="2008-03-26">
+			<definition> Ein Gebiet ist ein Territorium, das kleiner als ein Land ist oder dessen
+				Status als Land umstritten ist. </definition>
+			<pref lang="de">Gebiet</pref>
+			<pref lang="en">area</pref>
+			<relation type="hasBroaderTerm" relId="270"/>
+			<status>accepted</status>
+		</concept>
+
+
+		<!-- local terms -->
+
+		<concept id="1" lastmodified="2008-03-24">
+			<pref lang="en">Africa</pref>
+			<pref lang="de">Afrika</pref>
+			<relation type="isA" relId="269"/>
+			<status>accepted</status>
+			<synonym>Afrika</synonym>
+		</concept>
+		<concept id="2" lastmodified="2008-03-24">
+			<pref lang="en">North America</pref>
+			<pref lang="de">Nordamerika</pref>
+			<relation type="isA" relId="269"/>
+			<scope>changed name (from North and Central America)</scope>
+			<status>accepted</status>
+			<synonym>Nordamerika</synonym>
+		</concept>
+		<concept id="3" lastmodified="2008-03-24">
+			<pref lang="en">Europe</pref>
+			<pref lang="de">Europa</pref>
+			<relation type="isA" relId="269"/>
+			<status>accepted</status>
+			<synonym>Europa</synonym>
+		</concept>
+		<concept id="4" lastmodified="2008-03-24">
+			<pref lang="en">Asia</pref>
+			<pref lang="de">Asien</pref>
+			<relation type="isA" relId="269"/>
+			<status>accepted</status>
+			<synonym>Asien</synonym>
+		</concept>
+		<concept id="5" lastmodified="2008-03-24">
+			<pref lang="en">Oceania</pref>
+			<pref lang="de">Ozeanien</pref>
+			<relation type="isA" relId="269"/>
+			<status>accepted</status>
+			<synonym>Ozeanien</synonym>
+		</concept>
+		<concept id="6" lastmodified="2008-03-24">
+			<pref lang="en">South America</pref>
+			<pref lang="de">Südamerika</pref>
+			<relation type="isA" relId="269"/>
+			<status>accepted</status>
+			<synonym>Südamerika</synonym>
+		</concept>
+		<concept id="7" lastmodified="2008-03-24">
+			<pref lang="en">Afghanistan</pref>
+			<pref lang="de">Afganistan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="249"/>
+			<status>accepted</status>
+			<synonym>AF</synonym>
+			<synonym>Afeganistão</synonym>
+			<synonym>AFG</synonym>
+			<synonym>Afganistán</synonym>
+			<synonym>Afghan</synonym>
+			<synonym>Afghānestān</synonym>
+			<synonym>Bactria</synonym>
+			<synonym>Bactriana</synonym>
+			<synonym>Bakhtrish</synonym>
+			<synonym>Da Afghānestān Jamhawrīyat</synonym>
+			<synonym>De Afghanistan Jamhuriat</synonym>
+			<synonym>Democratic Republic of Afghanistan</synonym>
+			<synonym>État islamique d'Afghanistan</synonym>
+			<synonym>Islamic State of Afghanistan</synonym>
+			<synonym>ISO004</synonym>
+			<synonym>Jomhūrī-ye Afghānestān</synonym>
+			<synonym>Republic of Afghanistan</synonym>
+			<synonym>République démocratique d'Afghanistan</synonym>
+			<synonym>Ta-hsia</synonym>
+			<synonym>Afganistan</synonym>
+		</concept>
+		<concept id="8" lastmodified="2008-03-24">
+			<pref lang="en">Albania</pref>
+			<pref lang="de">Albanien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>AL</synonym>
+			<synonym>ALB</synonym>
+			<synonym>Albânia</synonym>
+			<synonym>Albanian</synonym>
+			<synonym>Albanie</synonym>
+			<synonym>Albanië</synonym>
+			<synonym>Albanien</synonym>
+			<synonym>ISO008</synonym>
+			<synonym>People's Socialist Republic of Albania</synonym>
+			<synonym>Republic of Albania</synonym>
+			<synonym>Republika e Shqipërisë</synonym>
+			<synonym> Republika Popullore Socialiste e Shqipërisë </synonym>
+			<synonym>République d'Albanie</synonym>
+			<synonym>Shqiperi</synonym>
+			<synonym>Shqipëri</synonym>
+			<synonym>Shqipëria</synonym>
+			<synonym>Shqipni</synonym>
+			<synonym>Shqipri</synonym>
+		</concept>
+		<concept id="9" lastmodified="2008-03-24">
+			<pref lang="en">Algeria</pref>
+			<pref lang="de">Algerien</pref>
+			<pref lang="sv">Algeriet</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="245"/>
+			<status>accepted</status>
+			<synonym>Al Jaza'ir</synonym>
+			<synonym>Algerian</synonym>
+			<synonym>Algerië</synonym>
+			<synonym>Algérie</synonym>
+			<synonym>Algerien</synonym>
+			<synonym>Algeriet</synonym>
+			<synonym>Algerium</synonym>
+			<synonym>Al-Jazā'ir</synonym>
+			<synonym> al-Jumhūrīyah al-Jazā'irīyah ad-Dīmuqrātīyah ash-Shabīyah </synonym>
+			<synonym>Argelia</synonym>
+			<synonym>Argélia</synonym>
+			<synonym>Argerium</synonym>
+			<synonym> Democratic and Popular Republic of Algeria </synonym>
+			<synonym>Djazaïr</synonym>
+			<synonym>DZ</synonym>
+			<synonym>DZA</synonym>
+			<synonym>ISO012</synonym>
+			<synonym>L'Algérie</synonym>
+			<synonym>Numidia</synonym>
+			<synonym>Numidie</synonym>
+			<synonym>People's Democratic Republic of Algeria</synonym>
+			<synonym> République algérienne démocratique et populaire </synonym>
+		</concept>
+		<concept id="10" lastmodified="2008-03-24">
+			<pref lang="en">American Samoa</pref>
+			<pref lang="de">Amerikanisch-Samoa</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="261"/>
+			<status>accepted</status>
+			<synonym>Amerika Samoa</synonym>
+			<synonym>Amerikaans Samoa</synonym>
+			<synonym>Amerikanisch-Samoa</synonym>
+			<synonym>AS</synonym>
+			<synonym>ASM</synonym>
+			<synonym>Eastern Samoa</synonym>
+			<synonym>ISO016</synonym>
+			<synonym>Samoa</synonym>
+			<synonym>Samoa américaines</synonym>
+			<synonym>Samoa Americana</synonym>
+		</concept>
+		<concept id="11" lastmodified="2008-03-24">
+			<pref lang="en">Andorra</pref>
+			<pref lang="de">Andorra</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>Andorra</synonym>
+			<synonym>AD</synonym>
+			<synonym>AND</synonym>
+			<synonym>Andorran</synonym>
+			<synonym>Andorre</synonym>
+			<synonym>Co-Principat d'Andorra</synonym>
+			<synonym>Co-Senyoriu d'Andorra</synonym>
+			<synonym>ISO020</synonym>
+			<synonym>Principado de Andorra</synonym>
+			<synonym>Principality of Andorra</synonym>
+			<synonym>Principat d'Andorra</synonym>
+			<synonym>Principauté d'Andorre</synonym>
+			<synonym>Senyoriu d'Andorra</synonym>
+			<synonym>Vallée d'Andorre</synonym>
+			<synonym>Valleys of Andorra</synonym>
+			<synonym>Valls d'Andorra</synonym>
+		</concept>
+		<concept id="12" lastmodified="2008-03-24">
+			<pref lang="en">Angola</pref>
+			<pref lang="de">Angola</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="241"/>
+			<status>accepted</status>
+			<synonym>Angola</synonym>
+			<synonym>AGO</synonym>
+			<synonym>Angolan</synonym>
+			<synonym>AO</synonym>
+			<synonym>ISO024</synonym>
+			<synonym>People's Republic of Angola</synonym>
+			<synonym>Portuguese West Africa</synonym>
+			<synonym>Republic of Angola</synonym>
+			<synonym>República de Angola</synonym>
+			<synonym>República Popular de Angola</synonym>
+			<synonym>République d'Angola</synonym>
+			<synonym>République populaire d'Angola</synonym>
+		</concept>
+		<concept id="13" lastmodified="2008-03-24">
+			<pref lang="en">Anguilla</pref>
+			<pref lang="de">Anguilla</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Anguilla</synonym>
+			<synonym>AI</synonym>
+			<synonym>AIA</synonym>
+			<synonym>ISO660</synonym>
+		</concept>
+		<concept id="14" lastmodified="2008-03-24">
+			<pref lang="en">Antigua and Barbuda</pref>
+			<pref lang="de">Antigua und Barbuda</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>AG</synonym>
+			<synonym>Antigua e Barbuda</synonym>
+			<synonym>Antigua und Barbuda</synonym>
+			<synonym>Antigua y Barbuda</synonym>
+			<synonym>Antigua-et-Barbuda</synonym>
+			<synonym>Antiguan Barbudan</synonym>
+			<synonym>ATG</synonym>
+			<synonym>ISO028</synonym>
+		</concept>
+		<concept id="15" lastmodified="2008-03-24">
+			<pref lang="en">Argentina</pref>
+			<pref lang="de">Argentinien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>AR</synonym>
+			<synonym>ARG</synonym>
+			<synonym>Argentine</synonym>
+			<synonym>Argentine Republic</synonym>
+			<synonym>Argentinian</synonym>
+			<synonym>Argentinië</synonym>
+			<synonym>Argentinien</synonym>
+			<synonym>Argentino</synonym>
+			<synonym>ISO032</synonym>
+			<synonym>República Argentina</synonym>
+			<synonym>République argentine</synonym>
+			<synonym>Rio de la Plata</synonym>
+		</concept>
+		<concept id="16" lastmodified="2008-03-24">
+			<pref lang="en">Armenia</pref>
+			<pref lang="de">Armenien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>AM</synonym>
+			<synonym>ARM</synonym>
+			<synonym> Arm'anskaja Sovetskaja Socialističeskaja Respublika </synonym>
+			<synonym>Armênia</synonym>
+			<synonym>Armenian</synonym>
+			<synonym>Armenian Soviet Socialist Republic</synonym>
+			<synonym>Armenian SSR</synonym>
+			<synonym>Arménie</synonym>
+			<synonym>Armenien</synonym>
+			<synonym>Armenija</synonym>
+			<synonym>Armeniya SSR</synonym>
+			<synonym>Armianskaïa</synonym>
+			<synonym>Armyanskaya</synonym>
+			<synonym>Hayastan</synonym>
+			<synonym>Hayastani Hanrapetut'yun</synonym>
+			<synonym>Huyasdan</synonym>
+			<synonym>ISO051</synonym>
+			<synonym>Republic of Armenia</synonym>
+			<synonym>République d'Arménie</synonym>
+			<synonym>Russian Armenia</synonym>
+			<synonym>Soviet Armenia</synonym>
+			<synonym>Sovyetakan Hayastan</synonym>
+		</concept>
+		<concept id="17" lastmodified="2008-03-24">
+			<pref lang="en">Aruba</pref>
+			<pref lang="de">Aruba</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Aruba</synonym>
+			<synonym>ABW</synonym>
+			<synonym>AW</synonym>
+			<synonym>ISO533</synonym>
+			<synonym>Oruba</synonym>
+		</concept>
+		<concept id="18" lastmodified="2008-03-24">
+			<pref lang="en">Australia</pref>
+			<pref lang="de">Australien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="258"/>
+			<status>accepted</status>
+			<synonym>AU</synonym>
+			<synonym>AUS</synonym>
+			<synonym>Austrália</synonym>
+			<synonym>Australian</synonym>
+			<synonym>Australie</synonym>
+			<synonym>Australië</synonym>
+			<synonym>Australien</synonym>
+			<synonym>Commonwealth of Australia</synonym>
+			<synonym>ISO036</synonym>
+			<synonym>New Holland</synonym>
+			<synonym>New South Wales</synonym>
+		</concept>
+		<concept id="19" lastmodified="2008-03-24">
+			<pref lang="en">Austria</pref>
+			<pref lang="de">Österreich</pref>
+			<pref lang="sv">Österrike</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="253"/>
+			<status>accepted</status>
+			<synonym>Asturia</synonym>
+			<synonym>AT</synonym>
+			<synonym>Auster</synonym>
+			<synonym>Austrasia</synonym>
+			<synonym>Austrasiacus</synonym>
+			<synonym>Austrasii</synonym>
+			<synonym>Austrian</synonym>
+			<synonym>AUT</synonym>
+			<synonym>Autriche</synonym>
+			<synonym>Haustria</synonym>
+			<synonym>ISO040</synonym>
+			<synonym>Luitbaldi marchionis marchia</synonym>
+			<synonym>Marchia orientalis</synonym>
+			<synonym>Oesterreich</synonym>
+			<synonym>Oostenrijk</synonym>
+			<synonym>Oriens</synonym>
+			<synonym>Orientale regnum</synonym>
+			<synonym>Orientalis pagus</synonym>
+			<synonym>Ostericha</synonym>
+			<synonym>Ostrogothia</synonym>
+			<synonym>Republic of Austria</synonym>
+			<synonym>Republik Österreich</synonym>
+			<synonym>République d'Autriche</synonym>
+			<synonym>Österreich</synonym>
+			<synonym>Österrike</synonym>
+		</concept>
+		<concept id="20" lastmodified="2008-03-24">
+			<pref lang="en">Azerbaijan</pref>
+			<pref lang="de">Aserbaidschan</pref>
+			<pref lang="sv">Azerbajdzjan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Aserbaidschan</synonym>
+			<synonym>AZ</synonym>
+			<synonym>AZE</synonym>
+			<synonym>Azerbaidján</synonym>
+			<synonym>Azerbaïdjan</synonym>
+			<synonym>Azerbaidzhan</synonym>
+			<synonym>Azerbaijan SSR</synonym>
+			<synonym>Azerbaijani</synonym>
+			<synonym>Azerbaijani Republic</synonym>
+			<synonym>Azerbaijão</synonym>
+			<synonym>Azerbaiyán</synonym>
+			<synonym>Azerbajdžan</synonym>
+			<synonym> Azerbajdžanskaja Sovetskaja Socialističeskaja </synonym>
+			<synonym>Azerbajdzjan</synonym>
+			<synonym>Azerbaydzhanskaya</synonym>
+			<synonym>Azerbaydzhanskaya SSR</synonym>
+			<synonym>Azärbayjan Respublikasi</synonym>
+			<synonym>ISO031</synonym>
+			<synonym>République azerbaïdjanaise</synonym>
+		</concept>
+		<concept id="21" lastmodified="2008-03-24">
+			<pref lang="en">Bahamas</pref>
+			<pref lang="de">Bahamas</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Bahama Islands</synonym>
+			<synonym>Bahamas, The</synonym>
+			<synonym>Bahamian</synonym>
+			<synonym>BHS</synonym>
+			<synonym>BS</synonym>
+			<synonym>Commonwealth of the Bahamas</synonym>
+			<synonym>ISO044</synonym>
+			<synonym>The Commonwealth of the Bahamas</synonym>
+			<synonym>Bahamas</synonym>
+		</concept>
+		<concept id="22" lastmodified="2008-03-24">
+			<pref lang="en">Bahrain</pref>
+			<pref lang="de">Bahrein</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Al Bahrayn</synonym>
+			<synonym>Al-Bahrayn</synonym>
+			<synonym>Aval</synonym>
+			<synonym>Awal</synonym>
+			<synonym>Bahraini</synonym>
+			<synonym>Bahrein</synonym>
+			<synonym>Bahreïn</synonym>
+			<synonym>BH</synonym>
+			<synonym>BHR</synonym>
+			<synonym>Dawlat al-Bahrayn</synonym>
+			<synonym>Dilmun</synonym>
+			<synonym>État de Bahreïn</synonym>
+			<synonym>ISO048</synonym>
+			<synonym>State of Bahrain</synonym>
+			<synonym>Tilmun</synonym>
+			<synonym>Tylos</synonym>
+			<synonym>Tyros</synonym>
+		</concept>
+		<concept id="23" lastmodified="2008-03-24">
+			<pref lang="en">Bangladesh</pref>
+			<pref lang="de">Bangladesch</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="249"/>
+			<status>accepted</status>
+			<synonym>Bangla Desj</synonym>
+			<synonym>Bangladesch</synonym>
+			<synonym>Bangladeshi</synonym>
+			<synonym>BD</synonym>
+			<synonym>BGD</synonym>
+			<synonym>East Bengal</synonym>
+			<synonym>East Pakistan</synonym>
+			<synonym>Gana Prajatantri Bangladesh</synonym>
+			<synonym>Gana Prajātantrī Bangladesh</synonym>
+			<synonym>ISO050</synonym>
+			<synonym>People's Republic of Bangladesh</synonym>
+			<synonym>République populaire du Bangladesh</synonym>
+		</concept>
+		<concept id="24" lastmodified="2008-03-24">
+			<pref lang="en">Barbados</pref>
+			<pref lang="de">Barbados</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Barbados</synonym>
+			<synonym>Barbade</synonym>
+			<synonym>Barbadian</synonym>
+			<synonym>BB</synonym>
+			<synonym>BRB</synonym>
+			<synonym>ISO052</synonym>
+			<synonym>Los Barbados</synonym>
+		</concept>
+		<concept id="25" lastmodified="2008-03-24">
+			<pref lang="en">Belgium</pref>
+			<pref lang="de">Belgien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="253"/>
+			<status>accepted</status>
+			<synonym>Austrian Netherlands</synonym>
+			<synonym>BE</synonym>
+			<synonym>BEL</synonym>
+			<synonym>Belgian</synonym>
+			<synonym>Belgica</synonym>
+			<synonym>Bélgica</synonym>
+			<synonym>België</synonym>
+			<synonym>Belgien</synonym>
+			<synonym>Belgio</synonym>
+			<synonym>Belgique</synonym>
+			<synonym>ISO056</synonym>
+			<synonym>Kingdom of Belgium</synonym>
+			<synonym>Koninkrijk Belgïe</synonym>
+			<synonym>Royaume de Belgique</synonym>
+			<synonym>Southern Netherlands</synonym>
+			<synonym>Spanish Netherlands</synonym>
+		</concept>
+		<concept id="26" lastmodified="2008-03-24">
+			<pref lang="en">Belize</pref>
+			<pref lang="de">Belize</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="256"/>
+			<status>accepted</status>
+			<synonym>Belize</synonym>
+			<synonym>Belice</synonym>
+			<synonym>Belizean</synonym>
+			<synonym>BLZ</synonym>
+			<synonym>British Honduras</synonym>
+			<synonym>BZ</synonym>
+			<synonym>Colony of Belize</synonym>
+			<synonym>ISO084</synonym>
+			<synonym>Superintendency of Belize</synonym>
+		</concept>
+		<concept id="27" lastmodified="2008-03-24">
+			<pref lang="en">Belorussia</pref>
+			<pref lang="de">Weißrussland</pref>
+			<pref lang="sv">Vitryssland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="251"/>
+			<status>accepted</status>
+			<synonym>Weißrussland</synonym>
+			<synonym>Belarus</synonym>
+			<synonym>Bélarus</synonym>
+			<synonym>Belarusian</synonym>
+			<synonym>Belorussian</synonym>
+			<synonym>Belorussian SSR</synonym>
+			<synonym>Belorussija</synonym>
+			<synonym>Belorussiya SSR</synonym>
+			<synonym> Belorusskaja Sovetskaja Socialističeskaja Respublika </synonym>
+			<synonym>Belorusskaya</synonym>
+			<synonym>Belorussland</synonym>
+			<synonym>Bielorrusia</synonym>
+			<synonym>Bielorrússia</synonym>
+			<synonym>Biélorussie</synonym>
+			<synonym>BLR</synonym>
+			<synonym>BY</synonym>
+			<synonym>Byelorussia</synonym>
+			<synonym>Byelorussian SSR</synonym>
+			<synonym>ISO112</synonym>
+			<synonym>Republic of Belarus</synonym>
+			<synonym>République du Bélarus</synonym>
+			<synonym>Respublika Belarus</synonym>
+			<synonym>White Russia</synonym>
+			<synonym>White Russian SSR</synonym>
+			<synonym>Vitryssland</synonym>
+		</concept>
+		<concept id="28" lastmodified="2008-03-24">
+			<pref lang="en">Benin</pref>
+			<pref lang="de">Benin</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Benin</synonym>
+			<synonym>BEN</synonym>
+			<synonym>Bénin</synonym>
+			<synonym>Beninese</synonym>
+			<synonym>BJ</synonym>
+			<synonym>ISO204</synonym>
+			<synonym>People's Republic of Benin</synonym>
+			<synonym>Republic of Benin</synonym>
+			<synonym>République populaire du Bénin</synonym>
+		</concept>
+		<concept id="29" lastmodified="2008-03-24">
+			<pref lang="en">Bermuda</pref>
+			<pref lang="de">Bermuda-Inseln</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="257"/>
+			<status>accepted</status>
+			<synonym>Bermuda-Inseln</synonym>
+			<synonym>Bermuda Islands</synonym>
+			<synonym>Bermudas</synonym>
+			<synonym>Bermudes</synonym>
+			<synonym>BM</synonym>
+			<synonym>BMU</synonym>
+			<synonym>Colony of Bermuda</synonym>
+			<synonym>ISO060</synonym>
+			<synonym>Somers Islands</synonym>
+		</concept>
+		<concept id="30" lastmodified="2008-03-24">
+			<pref lang="en">Bhutan</pref>
+			<pref lang="de">Bhutan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="249"/>
+			<status>accepted</status>
+			<synonym>Bhutan</synonym>
+			<synonym>Bhoutan</synonym>
+			<synonym>Bhutān</synonym>
+			<synonym>Bhutanese</synonym>
+			<synonym>BT</synonym>
+			<synonym>BTN</synonym>
+			<synonym>Butã</synonym>
+			<synonym>Druk-Yul</synonym>
+			<synonym>Druk-yul</synonym>
+			<synonym>ISO064</synonym>
+			<synonym>Kingdom of Bhutan</synonym>
+			<synonym>Kingdom of Bhutān</synonym>
+			<synonym>Royaume du Bhoutan</synonym>
+		</concept>
+		<concept id="31" lastmodified="2008-03-24">
+			<pref lang="en">Bolivia</pref>
+			<pref lang="de">Bolivien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>BO</synonym>
+			<synonym>BOL</synonym>
+			<synonym>Bolívia</synonym>
+			<synonym>Bolivian</synonym>
+			<synonym>Bolivie</synonym>
+			<synonym>Bolivien</synonym>
+			<synonym>ISO068</synonym>
+			<synonym>Republic of Bolivia</synonym>
+			<synonym>República de Bolivia</synonym>
+			<synonym>République de Bolivie</synonym>
+		</concept>
+		<concept id="32" lastmodified="2008-03-24">
+			<pref lang="en">Bosnia and Hercegovina</pref>
+			<pref lang="sv">Bosnien och Hercegovina</pref>
+			<pref lang="de">Bosnien und Herzegowina</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>BA</synonym>
+			<synonym>BIH</synonym>
+			<synonym>Bosna i Hercegovina</synonym>
+			<synonym>Bosnia and Herzegovina</synonym>
+			<synonym>Bósnia e Herzegovina</synonym>
+			<synonym>Bosnia y Herzegovina</synonym>
+			<synonym>Bosnia-Herzegovina</synonym>
+			<synonym>Bosnian Herzegovinian</synonym>
+			<synonym>Bosnie-Herzégovine</synonym>
+			<synonym>Bosnien och Hercegovina</synonym>
+			<synonym>Bosnien und Herzegowina</synonym>
+			<synonym>ISO070</synonym>
+			<synonym>Republic of Bosnia and Herzegovina</synonym>
+			<synonym>Republika Bosna i Hercegovina</synonym>
+			<synonym>République de Bosnie-Herzégovine</synonym>
+		</concept>
+		<concept id="33" lastmodified="2008-03-24">
+			<pref lang="en">Botswana</pref>
+			<pref lang="de">Botswana</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="243"/>
+			<status>accepted</status>
+			<synonym>Botswana</synonym>
+			<synonym>Batswana</synonym>
+			<synonym>Bechuanaland</synonym>
+			<synonym>Bechuanaland Protectorate</synonym>
+			<synonym>Botsuana</synonym>
+			<synonym>Botswanais</synonym>
+			<synonym>BW</synonym>
+			<synonym>BWA</synonym>
+			<synonym>ISO072</synonym>
+			<synonym>Motswana</synonym>
+			<synonym>Republic of Botswana</synonym>
+			<synonym>République du Botswana</synonym>
+		</concept>
+		<concept id="34" lastmodified="2008-03-24">
+			<pref lang="en">Brazil</pref>
+			<pref lang="de">Brasilien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>BR</synonym>
+			<synonym>BRA</synonym>
+			<synonym>Brasil</synonym>
+			<synonym>Brasile</synonym>
+			<synonym>Brasilien</synonym>
+			<synonym>Brazilian</synonym>
+			<synonym>Brazilië</synonym>
+			<synonym>Brésil</synonym>
+			<synonym>Estados Unidos do Brasil</synonym>
+			<synonym>Federative Republic of Brazil</synonym>
+			<synonym>ISO076</synonym>
+			<synonym>República Federativa do Brasil</synonym>
+			<synonym>République fédérative du Brésil</synonym>
+			<synonym>United States of Brazil</synonym>
+		</concept>
+		<concept id="35" lastmodified="2008-03-24">
+			<pref lang="en">British Virgin Islands</pref>
+			<pref lang="de">Britischen Junferninseln</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Britischen Junferninseln</synonym>
+			<synonym>Colony of the Virgin Islands</synonym>
+			<synonym>Îles Vierges britanniques</synonym>
+			<synonym>Islas Vírgenes Británicas</synonym>
+			<synonym>ISO092</synonym>
+			<synonym>VG</synonym>
+			<synonym>VGB</synonym>
+			<synonym>Virgens Britânicas, Ilhas</synonym>
+			<synonym>Virgin Islands, British</synonym>
+		</concept>
+		<concept id="36" lastmodified="2008-03-24">
+			<pref lang="en">Brunei</pref>
+			<pref lang="de">Brunei</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Brunei</synonym>
+			<synonym>BN</synonym>
+			<synonym>Borneo</synonym>
+			<synonym>BRN</synonym>
+			<synonym>Brunéi</synonym>
+			<synonym>Brunei Darussalam</synonym>
+			<synonym>Brunéi Darussalam</synonym>
+			<synonym>Bruneian</synonym>
+			<synonym>Islamic Sultanate of Brunei</synonym>
+			<synonym>ISO096</synonym>
+			<synonym>Negara Brunei Darussalam</synonym>
+			<synonym>State of Brunei Darussalam</synonym>
+			<synonym>State of Brunei, Abode of Peace</synonym>
+		</concept>
+		<concept id="37" lastmodified="2008-03-24">
+			<pref lang="en">Bulgaria</pref>
+			<pref lang="de">Bulgarien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="251"/>
+			<status>accepted</status>
+			<synonym>Bâlgarija</synonym>
+			<synonym>BG</synonym>
+			<synonym>BGR</synonym>
+			<synonym>Blgariya</synonym>
+			<synonym>Bulgária</synonym>
+			<synonym>Bŭlgaria</synonym>
+			<synonym>Bulgarian</synonym>
+			<synonym>Bulgarie</synonym>
+			<synonym>Bulgarien</synonym>
+			<synonym>Bulgariya</synonym>
+			<synonym>ISO100</synonym>
+			<synonym>Narodna Republika Bulgariya</synonym>
+			<synonym>People's Republic of Bulgaria</synonym>
+			<synonym>Republic of Bulgaria</synonym>
+			<synonym>Republika Bŭlgaria</synonym>
+			<synonym>République de Bulgarie</synonym>
+		</concept>
+		<concept id="38" lastmodified="2008-03-24">
+			<pref lang="en">Burkina Faso</pref>
+			<pref lang="de">Burkina Faso</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Burkina Faso</synonym>
+			<synonym>BF</synonym>
+			<synonym>BFA</synonym>
+			<synonym>Burkina</synonym>
+			<synonym>Burkina Fasso</synonym>
+			<synonym>Burkinabe</synonym>
+			<synonym>Haute-Volta</synonym>
+			<synonym>ISO854</synonym>
+			<synonym>République de Haute-Volta</synonym>
+			<synonym>Upper Volta</synonym>
+			<synonym>Voltaic Republic</synonym>
+		</concept>
+		<concept id="39" lastmodified="2008-03-24">
+			<pref lang="en">Burundi</pref>
+			<pref lang="de">Burundi</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Burundi</synonym>
+			<synonym>BDI</synonym>
+			<synonym>BI</synonym>
+			<synonym>Boeroendi</synonym>
+			<synonym>Burundian</synonym>
+			<synonym>ISO108</synonym>
+			<synonym>Republic of Burundi</synonym>
+			<synonym>Republika y'u Burundi</synonym>
+			<synonym>République du Burundi</synonym>
+			<synonym>Urundi</synonym>
+		</concept>
+		<concept id="40" lastmodified="2008-03-24">
+			<pref lang="en">Cambodia</pref>
+			<pref lang="de">Kambodscha</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Cambodge</synonym>
+			<synonym>Cambodian</synonym>
+			<synonym>Cambodja</synonym>
+			<synonym>Camboja</synonym>
+			<synonym>Camboya</synonym>
+			<synonym>Democratic Kampuchea</synonym>
+			<synonym>ISO116</synonym>
+			<synonym>Kambodscha</synonym>
+			<synonym>Kampuchea</synonym>
+			<synonym>Kâmpŭchéa</synonym>
+			<synonym>Kampuchea démocratique</synonym>
+			<synonym>Kâmpŭchea Prĉheathipâtéyy</synonym>
+			<synonym>Kampuchea, Democratic</synonym>
+			<synonym>KH</synonym>
+			<synonym>KHM</synonym>
+			<synonym>Khmer</synonym>
+			<synonym>Khmer Republic</synonym>
+			<synonym>Kingdom of Cambodia</synonym>
+			<synonym>People's Democratic Republic of Kampuchea</synonym>
+			<synonym>People's Republic of Kampuchea</synonym>
+			<synonym>Preah Reach Ana Pak Kampuchea</synonym>
+			<synonym> République démocratique populaire du Kampuchea </synonym>
+			<synonym>Roat Kampuchea</synonym>
+			<synonym>Royaume du Cambodge</synonym>
+			<synonym>Sathearanakrath Pracheachon Kampuchea</synonym>
+			<synonym>State of Cambodia</synonym>
+			<synonym>State of Kampuchea</synonym>
+		</concept>
+		<concept id="41" lastmodified="2008-03-24">
+			<pref lang="en">Cameroon</pref>
+			<pref lang="de">Kamerun</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="241"/>
+			<status>accepted</status>
+			<synonym>Camarão</synonym>
+			<synonym>Cameroon, United Republic of</synonym>
+			<synonym>Cameroonian</synonym>
+			<synonym>Cameroun</synonym>
+			<synonym>Camerún</synonym>
+			<synonym>CM</synonym>
+			<synonym>CMR</synonym>
+			<synonym>ISO120</synonym>
+			<synonym>Kameroen</synonym>
+			<synonym>Kamerun</synonym>
+			<synonym>Republic of Cameroon</synonym>
+			<synonym>République du Cameroun</synonym>
+			<synonym>République unie du Cameroun</synonym>
+			<synonym>United Republic of Cameroon</synonym>
+		</concept>
+		<concept id="42" lastmodified="2008-03-24">
+			<pref lang="en">Canada</pref>
+			<pref lang="de">Kanada</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="257"/>
+			<status>accepted</status>
+			<synonym>British North America</synonym>
+			<synonym>CA</synonym>
+			<synonym>CAN</synonym>
+			<synonym>Canadá</synonym>
+			<synonym>Canada, Dominion of</synonym>
+			<synonym>Canadian</synonym>
+			<synonym>Dominion of Canada</synonym>
+			<synonym>ISO124</synonym>
+			<synonym>Kanada</synonym>
+		</concept>
+		<concept id="43" lastmodified="2008-03-24">
+			<pref lang="en">Cape Verde</pref>
+			<pref lang="de">Kap Verde</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Kap Verde</synonym>
+			<synonym>Arquipélago de Cabo Verde</synonym>
+			<synonym>Cabo Verde</synonym>
+			<synonym>Cape Verde Islands</synonym>
+			<synonym>Cape Verdean</synonym>
+			<synonym>Cap-Vert</synonym>
+			<synonym>Cap-Vert, îles du</synonym>
+			<synonym>CPV</synonym>
+			<synonym>CV</synonym>
+			<synonym>Iles du Cap-Vert</synonym>
+			<synonym>Ilhas do Cabo Verde</synonym>
+			<synonym>ISO132</synonym>
+			<synonym>Kaapverdische Eilanden</synonym>
+			<synonym>Kap Verde</synonym>
+			<synonym>Republic of Cape Verde</synonym>
+			<synonym>República de Cabo Verde</synonym>
+			<synonym>République du Cap-Vert</synonym>
+		</concept>
+		<concept id="44" lastmodified="2008-03-24">
+			<pref lang="en">Cayman Islands</pref>
+			<pref lang="de">Kaimaninseln</pref>
+			<pref lang="sv">Caymanöarna</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Kaimaninseln</synonym>
+			<synonym>Caïmanes</synonym>
+			<synonym>Caiman-Inseln</synonym>
+			<synonym>CAY</synonym>
+			<synonym>Cayman, Ilhas</synonym>
+			<synonym>Caymaneilanden</synonym>
+			<synonym>Caymans</synonym>
+			<synonym>Caymanöarna</synonym>
+			<synonym>CYM</synonym>
+			<synonym>Îles Caïman</synonym>
+			<synonym>Islas Caimán</synonym>
+			<synonym>ISO136</synonym>
+			<synonym>KY</synonym>
+			<synonym>Las Tortugas</synonym>
+		</concept>
+		<concept id="45" lastmodified="2008-03-24">
+			<pref lang="en">Central African Republic</pref>
+			<pref lang="sv">Centralafrikanska republiken</pref>
+			<pref lang="de">Zentralafrikanische Republik</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="241"/>
+			<status>accepted</status>
+			<synonym>CAF</synonym>
+			<synonym>Centrafricaine, République</synonym>
+			<synonym>Central African</synonym>
+			<synonym>Central African Empire</synonym>
+			<synonym>Centralafrikanska republiken</synonym>
+			<synonym>CF</synonym>
+			<synonym>ISO140</synonym>
+			<synonym>Oubangui-Chari</synonym>
+			<synonym>República Centroafricana</synonym>
+			<synonym>República Centro-Africana</synonym>
+			<synonym>Republiek Midden-Afrika</synonym>
+			<synonym>République centrafricaine</synonym>
+			<synonym>Ubangi Shari</synonym>
+			<synonym>Ubangi-Shari</synonym>
+			<synonym>Zentralafrikanische Republik</synonym>
+		</concept>
+		<concept id="46" lastmodified="2008-03-24">
+			<pref lang="en">Chad</pref>
+			<pref lang="de">Tschad</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="241"/>
+			<status>accepted</status>
+			<synonym>Chadian</synonym>
+			<synonym>ISO148</synonym>
+			<synonym>Jumhūrīyah Tshad</synonym>
+			<synonym>Republic of Chad</synonym>
+			<synonym>République du Tchad</synonym>
+			<synonym>TCD</synonym>
+			<synonym>Tchad</synonym>
+			<synonym>TD</synonym>
+			<synonym>Tschad</synonym>
+			<synonym>Tshad</synonym>
+			<synonym>Tsjaad</synonym>
+		</concept>
+		<concept id="47" lastmodified="2008-03-24">
+			<pref lang="en">Chile</pref>
+			<pref lang="de">Chile</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>Chile</synonym>
+			<synonym>Chilean</synonym>
+			<synonym>Chili</synonym>
+			<synonym>CHL</synonym>
+			<synonym>CL</synonym>
+			<synonym>ISO152</synonym>
+			<synonym>Republic of Chile</synonym>
+			<synonym>República de Chile</synonym>
+			<synonym>République du Chili</synonym>
+		</concept>
+		<concept id="48" lastmodified="2008-03-24">
+			<pref lang="en">China</pref>
+			<pref lang="de">China</pref>
+			<pref lang="sv">Kina</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="247"/>
+			<status>accepted</status>
+			<synonym>China</synonym>
+			<synonym>Chine</synonym>
+			<synonym>Chinese</synonym>
+			<synonym>Chinese Republic</synonym>
+			<synonym>CHN</synonym>
+			<synonym>Chung-hua</synonym>
+			<synonym>Chung-hua Jen-min Kung-ho-kuo</synonym>
+			<synonym>Cina</synonym>
+			<synonym>CN</synonym>
+			<synonym>ISO156</synonym>
+			<synonym>Kina</synonym>
+			<synonym>People's Republic of China</synonym>
+			<synonym>République populaire de Chine</synonym>
+			<synonym>Zhong Guo</synonym>
+			<synonym>Zhongguo</synonym>
+			<synonym>Zhonghua</synonym>
+			<synonym>Zhonghua Renmin Gonghe Guo</synonym>
+			<synonym>Zhonghua Renmin Gongheguo</synonym>
+		</concept>
+		<concept id="49" lastmodified="2008-03-24">
+			<pref lang="en">Colombia</pref>
+			<pref lang="de">Kolumbien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>CO</synonym>
+			<synonym>COL</synonym>
+			<synonym>Colômbia</synonym>
+			<synonym>Colombian</synonym>
+			<synonym>Colombie</synonym>
+			<synonym>ISO170</synonym>
+			<synonym>Kolumbien</synonym>
+			<synonym>New Granada</synonym>
+			<synonym>Republic of Colombia</synonym>
+			<synonym>República de Colombia</synonym>
+			<synonym>République de Colombie</synonym>
+		</concept>
+		<concept id="50" lastmodified="2008-03-24">
+			<pref lang="en">Comoro Islands</pref>
+			<pref lang="sv">Comorerna</pref>
+			<pref lang="de">Komoren</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Al-Qumur</synonym>
+			<synonym>COM</synonym>
+			<synonym>Comoras</synonym>
+			<synonym>Comorerna</synonym>
+			<synonym>Comores</synonym>
+			<synonym>Comorian</synonym>
+			<synonym>Comoros</synonym>
+			<synonym>Îles Comores</synonym>
+			<synonym>Islamic Federal Republic of the Comoros</synonym>
+			<synonym>ISO174</synonym>
+			<synonym> Jumhurīyat al-Qumur al-Ittihādīyah al-Islāmīyah </synonym>
+			<synonym>KM</synonym>
+			<synonym>Komoren</synonym>
+			<synonym>République fédérale islamique des Comores</synonym>
+			<synonym>Territoire des Comores</synonym>
+		</concept>
+		<concept id="51" lastmodified="2008-03-24">
+			<pref lang="en">Congo, Democratic Republic of the</pref>
+			<pref lang="de">Demokratische Republik Kongo</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="241"/>
+			<scope>(renamed, this is the TGN preferred name)</scope>
+			<status>accepted</status>
+			<synonym>Demokratische Republik Kongo</synonym>
+			<synonym>Belgian Congo</synonym>
+			<synonym>Belgisch Congo</synonym>
+			<synonym>CD</synonym>
+			<synonym>CG</synonym>
+			<synonym>COD</synonym>
+			<synonym>Congo</synonym>
+			<synonym>Congo Belge</synonym>
+			<synonym>Congo Free State</synonym>
+			<synonym>Congo Kinshasa</synonym>
+			<synonym>Congo, république démocratique du</synonym>
+			<synonym>Congolese</synonym>
+			<synonym>Democratic Republic of Congo</synonym>
+			<synonym>Democratic Republic of the Congo</synonym>
+			<synonym>Indendent State of the Congo</synonym>
+			<synonym>ISO180</synonym>
+			<synonym>Kongo, Republik</synonym>
+			<synonym>Republic of the Congo</synonym>
+			<synonym>Republic of Zaire</synonym>
+			<synonym>République démocratique du Congo</synonym>
+			<synonym>République du Congo</synonym>
+			<synonym>République du Zaïre</synonym>
+			<synonym>Zaire</synonym>
+			<synonym>Zaïre</synonym>
+			<synonym>ZAR</synonym>
+			<synonym>ZR</synonym>
+		</concept>
+		<concept id="52" lastmodified="2008-03-24">
+			<pref lang="en">Congo, Republic of the</pref>
+			<pref lang="de">Republik Kongo</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="241"/>
+			<scope>(missing)</scope>
+			<status>accepted</status>
+			<synonym>Republik Kongo</synonym>
+			<synonym>CF</synonym>
+			<synonym>CG</synonym>
+			<synonym>COG</synonym>
+			<synonym>Congo</synonym>
+			<synonym>Congo Brazzaville</synonym>
+			<synonym>Congo Republic</synonym>
+			<synonym>Congo, République du</synonym>
+			<synonym>Congolese</synonym>
+			<synonym>French Congo</synonym>
+			<synonym>ISO178</synonym>
+			<synonym>Kongo</synonym>
+			<synonym>Middle Congo</synonym>
+			<synonym>People's Republic of the Congo</synonym>
+			<synonym>Republic of the Congo</synonym>
+			<synonym>République du Congo</synonym>
+			<synonym>République populaire du Congo</synonym>
+		</concept>
+		<concept id="53" lastmodified="2008-03-24">
+			<pref lang="en">Cook Islands</pref>
+			<pref lang="de">Cook-Inseln</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="261"/>
+			<status>accepted</status>
+			<synonym>CK</synonym>
+			<synonym>COK</synonym>
+			<synonym>Cook Islander</synonym>
+			<synonym>Cook, Îles</synonym>
+			<synonym>Cook, Ilhas</synonym>
+			<synonym>Cook-Inseln</synonym>
+			<synonym>Cooks Islands</synonym>
+			<synonym>Hervey Islands</synonym>
+			<synonym>Islas Cook</synonym>
+			<synonym>ISO184</synonym>
+		</concept>
+		<concept id="54" lastmodified="2008-03-24">
+			<pref lang="en">Costa Rica</pref>
+			<pref lang="de">Costa Rica</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="256"/>
+			<status>accepted</status>
+			<synonym>Costa Rica</synonym>
+			<synonym>Costa Rican</synonym>
+			<synonym>CR</synonym>
+			<synonym>CRI</synonym>
+			<synonym>ISO188</synonym>
+			<synonym>Nueva Cartago</synonym>
+			<synonym>Republic of Costa Rica</synonym>
+			<synonym>República de Costa Rica</synonym>
+		</concept>
+		<concept id="55" lastmodified="2008-03-24">
+			<pref lang="en">Côte d'Ivoire</pref>
+			<pref lang="de">Côte d'Ivoire</pref>
+			<pref lang="sv">Elfenbenskusten</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Côte d'Ivoire</synonym>
+			<synonym>CI</synonym>
+			<synonym>CIV</synonym>
+			<synonym>Costa del Marfil</synonym>
+			<synonym>Costa do Marfim</synonym>
+			<synonym>Elfenbeinküste</synonym>
+			<synonym>Elfenbenskusten</synonym>
+			<synonym>ISO384</synonym>
+			<synonym>Ivoorkust</synonym>
+			<synonym>Ivorian</synonym>
+			<synonym>Ivory Coast</synonym>
+			<synonym>Republic of Côte d'Ivoire</synonym>
+			<synonym>Republic of the Ivory Coast</synonym>
+			<synonym>République de Côte d'Ivoire</synonym>
+		</concept>
+		<concept id="56" lastmodified="2008-03-24">
+			<pref lang="en">Croatia</pref>
+			<pref lang="de">Kroatien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>Croacia</synonym>
+			<synonym>Croácia</synonym>
+			<synonym>Croat</synonym>
+			<synonym>Croatian</synonym>
+			<synonym>Croatie</synonym>
+			<synonym>HR</synonym>
+			<synonym>HRV</synonym>
+			<synonym>Hrvatska</synonym>
+			<synonym>ISO191</synonym>
+			<synonym>Kroatië</synonym>
+			<synonym>Kroatien</synonym>
+			<synonym>Republic of Croatia</synonym>
+			<synonym>Republika Hrvatska</synonym>
+			<synonym>République de Croatie</synonym>
+		</concept>
+		<concept id="57" lastmodified="2008-03-24">
+			<pref lang="en">Cuba</pref>
+			<pref lang="de">Kuba</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>CU</synonym>
+			<synonym>CUB</synonym>
+			<synonym>Cuban</synonym>
+			<synonym>ISO192</synonym>
+			<synonym>Kuba</synonym>
+			<synonym>Republic of Cuba</synonym>
+			<synonym>República de Cuba</synonym>
+		</concept>
+		<concept id="58" lastmodified="2008-03-24">
+			<pref lang="en">Cyprus</pref>
+			<pref lang="sv">Cypern</pref>
+			<pref lang="de">Zypern</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Chipre</synonym>
+			<synonym>Chypre</synonym>
+			<synonym>Cipro</synonym>
+			<synonym>CY</synonym>
+			<synonym>CYP</synonym>
+			<synonym>Cypern</synonym>
+			<synonym>Cypriot</synonym>
+			<synonym>ISO196</synonym>
+			<synonym>Kibris</synonym>
+			<synonym>Kıbrıs</synonym>
+			<synonym>Kibris Cumhuriyeti</synonym>
+			<synonym>Kıbrıs Cumhuriyeti</synonym>
+			<synonym>Kipriakí Dimokratía</synonym>
+			<synonym>Kípros</synonym>
+			<synonym>Kypriaki Dimokratia</synonym>
+			<synonym>Kypros</synonym>
+			<synonym>Republic of Cypress</synonym>
+			<synonym>République de Chypre</synonym>
+			<synonym>Zypern</synonym>
+		</concept>
+		<concept id="59" lastmodified="2008-03-24">
+			<pref lang="en">Czech Republic</pref>
+			<pref lang="de">Tschechische Republik</pref>
+			<pref lang="sv">Tjeckien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="251"/>
+			<status>accepted</status>
+			<synonym>Tschechische Republik</synonym>
+			<synonym>Česká Republika</synonym>
+			<synonym>Česká Socialistická Republika</synonym>
+			<synonym>České Zemé</synonym>
+			<synonym>CZ</synonym>
+			<synonym>CZE</synonym>
+			<synonym>Czech</synonym>
+			<synonym>Czech Socialist Republic</synonym>
+			<synonym>Czechia</synonym>
+			<synonym>Czechian</synonym>
+			<synonym>Czechic</synonym>
+			<synonym>Czechish</synonym>
+			<synonym>Czechoslovakian</synonym>
+			<synonym>Czekh</synonym>
+			<synonym>ISO203</synonym>
+			<synonym>República Checa</synonym>
+			<synonym>République tchèque</synonym>
+			<synonym>Tchèque, République</synonym>
+			<synonym>Tjeckien</synonym>
+			<synonym>Tshekh</synonym>
+		</concept>
+		<concept id="60" lastmodified="2008-03-24">
+			<pref lang="en">Denmark</pref>
+			<pref lang="de">Dänemark</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>Danemark</synonym>
+			<synonym>Danimarca</synonym>
+			<synonym>Danish</synonym>
+			<synonym>Danmark</synonym>
+			<synonym>Denemarken</synonym>
+			<synonym>Dinamarca</synonym>
+			<synonym>DK</synonym>
+			<synonym>DNK</synonym>
+			<synonym>Dänemark</synonym>
+			<synonym>ISO208</synonym>
+			<synonym>Kingdom of Denmark</synonym>
+			<synonym>Kongeriget Danmark</synonym>
+			<synonym>Royaume du Danemark</synonym>
+		</concept>
+		<concept id="61" lastmodified="2008-03-24">
+			<pref lang="en">Djibouti</pref>
+			<pref lang="de">Dschibuti</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Dschibuti</synonym>
+			<synonym>Afars and Issas</synonym>
+			<synonym>Côte française des Somalis</synonym>
+			<synonym>Dijibouti</synonym>
+			<synonym>DJ</synonym>
+			<synonym>DJI</synonym>
+			<synonym>Djiboutian</synonym>
+			<synonym>French Somaliland</synonym>
+			<synonym>French Territory of the Afars and Issas</synonym>
+			<synonym>ISO262</synonym>
+			<synonym>Jibuti</synonym>
+			<synonym>Jumhouriya Djibouti</synonym>
+			<synonym>Jumhūrīyah Jībūtī</synonym>
+			<synonym>Obock</synonym>
+			<synonym>Republic of Djibouti</synonym>
+			<synonym>République de Djibouti</synonym>
+			<synonym> Territoire français des Afars et des Issas </synonym>
+		</concept>
+		<concept id="62" lastmodified="2008-03-24">
+			<pref lang="en">Dominica</pref>
+			<pref lang="de">Dominica</pref>
+			<pref lang="">ISO212</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Dominica</synonym>
+			<synonym>Commonwealth de la Dominique</synonym>
+			<synonym>Commonwealth of Dominica</synonym>
+			<synonym>DM</synonym>
+			<synonym>DMA</synonym>
+			<synonym>Dominican</synonym>
+			<synonym>Dominique</synonym>
+			<synonym>ISO212</synonym>
+		</concept>
+		<concept id="63" lastmodified="2008-03-24">
+			<pref lang="en">Dominican Republic</pref>
+			<pref lang="de">Dominikanische Republik</pref>
+			<pref lang="sv">Dominikanska republiken</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<scope>(missing)</scope>
+			<status>accepted</status>
+			<synonym>DM</synonym>
+			<synonym>DOM</synonym>
+			<synonym>Dominican</synonym>
+			<synonym>Dominikanische Republik</synonym>
+			<synonym>Dominikanska republiken</synonym>
+			<synonym>ISO626</synonym>
+			<synonym>República Dominicana</synonym>
+			<synonym>République dominicaine</synonym>
+			<synonym>Santo Domingo</synonym>
+		</concept>
+		<concept id="64" lastmodified="2008-03-24">
+			<pref lang="en">East Timor</pref>
+			<pref lang="de">Demokratische Republik Timor-Leste</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Demokratische Republik Timor-Leste</synonym>
+			<synonym>Osttimor</synonym>
+			<synonym>ISO626</synonym>
+			<synonym>Loro Sae</synonym>
+			<synonym>Portuguese Timor</synonym>
+			<synonym>Timor Timur</synonym>
+			<synonym>Timor Timur, Propinsi</synonym>
+			<synonym>Timor, Portuguese</synonym>
+			<synonym>Timor-Leste</synonym>
+			<synonym>TMP</synonym>
+			<synonym>TP</synonym>
+		</concept>
+		<concept id="65" lastmodified="2008-03-24">
+			<pref lang="en">Ecuador</pref>
+			<pref lang="de">Ecuador</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>Ecuador</synonym>
+			<synonym>EC</synonym>
+			<synonym>ECU</synonym>
+			<synonym>Equadorian</synonym>
+			<synonym>Équateur</synonym>
+			<synonym>ISO218</synonym>
+			<synonym>Quito</synonym>
+			<synonym>Republic of Ecuador</synonym>
+			<synonym>República del Ecuador</synonym>
+			<synonym>République de l'Équateur</synonym>
+		</concept>
+		<concept id="66" lastmodified="2008-03-24">
+			<pref lang="en">Egypt</pref>
+			<pref lang="sv">Egypten</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="245"/>
+			<status>accepted</status>
+			<synonym>Arab Republic of Egypt</synonym>
+			<synonym>EG</synonym>
+			<synonym>Egipto</synonym>
+			<synonym>Egito</synonym>
+			<synonym>Egitto</synonym>
+			<synonym>EGY</synonym>
+			<synonym>Egypte</synonym>
+			<synonym>Égypte</synonym>
+			<synonym>Egypten</synonym>
+			<synonym>Egyptian</synonym>
+			<synonym>ISO818</synonym>
+			<synonym>Jumhūrīyah Misr al-Arabīyah</synonym>
+			<synonym>Jumhuriyat Misr Al-Arabiya</synonym>
+			<synonym>Misr</synonym>
+			<synonym>République arabe d'Égypte</synonym>
+			<synonym>United Arab Republic</synonym>
+			<synonym>Ägypten</synonym>
+		</concept>
+		<concept id="67" lastmodified="2008-03-24">
+			<pref lang="en">El Salvador</pref>
+			<pref lang="de">El Salvador</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="256"/>
+			<status>accepted</status>
+			<synonym>El Salvador</synonym>
+			<synonym>ISO222</synonym>
+			<synonym>Republic of El Salvador</synonym>
+			<synonym>República de El Salvador</synonym>
+			<synonym>République d'El Salvador</synonym>
+			<synonym>Salvador, El</synonym>
+			<synonym>Salvadoran</synonym>
+			<synonym>Salvadorean</synonym>
+			<synonym>Salvadorian</synonym>
+			<synonym>SLV</synonym>
+			<synonym>SV</synonym>
+		</concept>
+		<concept id="68" lastmodified="2008-03-24">
+			<pref lang="en">Equatorial Guinea</pref>
+			<pref lang="de">Äquatorialguinea</pref>
+			<pref lang="sv">Ekvatorialguinea</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="241"/>
+			<status>accepted</status>
+			<synonym>Äquatorialguinea</synonym>
+			<synonym>Ekvatorialguinea</synonym>
+			<synonym>Equatoguinean</synonym>
+			<synonym>Equatoriaal Guinea</synonym>
+			<synonym>Equatorial Guinean</synonym>
+			<synonym>GNQ</synonym>
+			<synonym>GQ</synonym>
+			<synonym>Guiné Equatorial</synonym>
+			<synonym>Guinea Ecuatorial</synonym>
+			<synonym>Guinée équitoriale</synonym>
+			<synonym>ISO226</synonym>
+			<synonym>Republic of Equatorial Guinea</synonym>
+			<synonym>Repùblica de Guinea Ecuatorial</synonym>
+			<synonym>République de Guinée équatoriale</synonym>
+			<synonym>Rio Muni</synonym>
+			<synonym>Spanish Guinea</synonym>
+			<synonym>Territorios Españoles del Golfo de Guinea</synonym>
+			<synonym>Äquatorial-guinea</synonym>
+		</concept>
+		<concept id="69" lastmodified="2008-03-24">
+			<pref lang="en">Eritrea</pref>
+			<pref lang="de">Eritrea</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Eritrea</synonym>
+			<synonym>ER</synonym>
+			<synonym>ERI</synonym>
+			<synonym>Eritrean</synonym>
+			<synonym>Ertra</synonym>
+			<synonym>Ērtra</synonym>
+			<synonym>Érythrée</synonym>
+			<synonym>ISO232</synonym>
+		</concept>
+		<concept id="70" lastmodified="2008-03-24">
+			<pref lang="en">Estonia</pref>
+			<pref lang="de">Estland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>EE</synonym>
+			<synonym>Eesti</synonym>
+			<synonym>Eesti Vabariik</synonym>
+			<synonym>Eestimaa</synonym>
+			<synonym>EST</synonym>
+			<synonym>Esthonia</synonym>
+			<synonym>Estland</synonym>
+			<synonym>Estônia</synonym>
+			<synonym>Estonian</synonym>
+			<synonym>Estonian SSR</synonym>
+			<synonym>Estonie</synonym>
+			<synonym>Estonija</synonym>
+			<synonym>Estoniya SSR</synonym>
+			<synonym> Estonskaja Sovetskaja Socialističeskaja Respublika </synonym>
+			<synonym>Estonskaya</synonym>
+			<synonym>ISO233</synonym>
+			<synonym>Republic of Estonia</synonym>
+			<synonym>République d'Estonie</synonym>
+		</concept>
+		<concept id="71" lastmodified="2008-03-24">
+			<pref lang="en">Ethiopia</pref>
+			<pref lang="sv">Etiopien</pref>
+			<pref lang="de">Äthiopien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Abissinia</synonym>
+			<synonym>Abyssinia</synonym>
+			<synonym>ET</synonym>
+			<synonym>ETH</synonym>
+			<synonym>Ethiopian</synonym>
+			<synonym>Ethiopië</synonym>
+			<synonym>Éthiopie</synonym>
+			<synonym>Etiopia</synonym>
+			<synonym>Etiopía</synonym>
+			<synonym>Etiópia</synonym>
+			<synonym>Etiopien</synonym>
+			<synonym>Hebretesebawit Ityopia</synonym>
+			<synonym>ISO231</synonym>
+			<synonym>Ityopiya</synonym>
+			<synonym>Ītyop'iya</synonym>
+			<synonym>People's Democratic Republic of Ethiopia</synonym>
+			<synonym>Transitional Government of Ethiopia</synonym>
+			<synonym>Yaitopya</synonym>
+			<synonym> YeĒityop'iya Hezbawi Dimokrasīyawā Republēk </synonym>
+			<synonym>YeĒtiyop'iya</synonym>
+			<synonym>Äthiopien</synonym>
+		</concept>
+		<concept id="72" lastmodified="2008-03-24">
+			<pref lang="en">Faeroe Islands</pref>
+			<pref lang="sv">Färöarna</pref>
+			<pref lang="de">Färöer</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>Faereyiar</synonym>
+			<synonym>Faeroe, Ilhas</synonym>
+			<synonym>Faeroes</synonym>
+			<synonym>Færøerne</synonym>
+			<synonym>Faerøerne</synonym>
+			<synonym>Faroe Islands</synonym>
+			<synonym>Féroé</synonym>
+			<synonym>FO</synonym>
+			<synonym>FRO</synonym>
+			<synonym>Färöarna</synonym>
+			<synonym>Färöer</synonym>
+			<synonym>Føroyar</synonym>
+			<synonym>Îles Féroé</synonym>
+			<synonym>Islas Feroé</synonym>
+			<synonym>ISO234</synonym>
+		</concept>
+		<concept id="73" lastmodified="2008-03-24">
+			<pref lang="en">Falkland Islands</pref>
+			<pref lang="de">Falklandinseln</pref>
+			<pref lang="sv">Falklandsöarna</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>Falklandinseln</synonym>
+			<synonym> Colony of the Falkland Islands and Dependencies </synonym>
+			<synonym>Falklands</synonym>
+			<synonym>Falklandsöarna</synonym>
+			<synonym>FK</synonym>
+			<synonym>FLK</synonym>
+			<synonym>Islas Malvinas</synonym>
+			<synonym>ISO238</synonym>
+			<synonym>Malvinas</synonym>
+			<synonym>Malvinas Islands</synonym>
+		</concept>
+		<concept id="74" lastmodified="2008-03-24">
+			<pref lang="en">Fiji</pref>
+			<pref lang="de">Fidschi</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="259"/>
+			<status>accepted</status>
+			<synonym>Dominion of Fiji</synonym>
+			<synonym>Fidji</synonym>
+			<synonym>Fidji-eilanden</synonym>
+			<synonym>Fidschi</synonym>
+			<synonym>Fiji Islands</synonym>
+			<synonym>Fijian</synonym>
+			<synonym>FJ</synonym>
+			<synonym>FJI</synonym>
+			<synonym>ISO242</synonym>
+			<synonym>Republic of Fiji</synonym>
+			<synonym>République des Fidji</synonym>
+			<synonym>Sovereign Democratic Republic of Fiji</synonym>
+			<synonym>Viti</synonym>
+		</concept>
+		<concept id="75" lastmodified="2008-03-24">
+			<pref lang="en">Finland</pref>
+			<pref lang="de">Finnland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>FI</synonym>
+			<synonym>FIN</synonym>
+			<synonym>Finland, Republic of</synonym>
+			<synonym>Finlande</synonym>
+			<synonym>Finlandia</synonym>
+			<synonym>Finlândia</synonym>
+			<synonym>Finnish</synonym>
+			<synonym>Finnland</synonym>
+			<synonym>ISO246</synonym>
+			<synonym>Republic of Finland</synonym>
+			<synonym>Republiken Finland</synonym>
+			<synonym>République de Finlande</synonym>
+			<synonym>Suomen Tasavalta</synonym>
+			<synonym>Suomi</synonym>
+		</concept>
+		<concept id="76" lastmodified="2008-03-24">
+			<pref lang="en">France</pref>
+			<pref lang="de">Frankreich</pref>
+			<pref lang="sv">Frankrike</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="253"/>
+			<status>accepted</status>
+			<synonym>FR</synonym>
+			<synonym>FRA</synonym>
+			<synonym>França</synonym>
+			<synonym>Francia</synonym>
+			<synonym>Frankreich</synonym>
+			<synonym>Frankrijk</synonym>
+			<synonym>Frankrike</synonym>
+			<synonym>French</synonym>
+			<synonym>French Republic</synonym>
+			<synonym>Gallia</synonym>
+			<synonym>Gaul</synonym>
+			<synonym>Gaule</synonym>
+			<synonym>ISO250</synonym>
+			<synonym>République français</synonym>
+			<synonym>République Française</synonym>
+		</concept>
+		<concept id="77" lastmodified="2008-03-24">
+			<pref lang="en">French Guiana</pref>
+			<pref lang="sv">Franska Guyana</pref>
+			<pref lang="de">Französisch-Guyana</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>Département de la Guyane</synonym>
+			<synonym>Département de la Guyane française</synonym>
+			<synonym>Department of Guiana</synonym>
+			<synonym>Frans Guyana</synonym>
+			<synonym>Franska Guyana</synonym>
+			<synonym>Französisch-Guyana</synonym>
+			<synonym>French Guianese</synonym>
+			<synonym>GF</synonym>
+			<synonym>GUF</synonym>
+			<synonym>Guiana Francesca</synonym>
+			<synonym>Guyane française</synonym>
+			<synonym>ISO254</synonym>
+			<synonym>La Guyane française</synonym>
+		</concept>
+		<concept id="78" lastmodified="2008-03-24">
+			<pref lang="en">French Polynesia</pref>
+			<pref lang="sv">Franska Polynesien</pref>
+			<pref lang="de">Französisch-Polynesien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="261"/>
+			<status>accepted</status>
+			<synonym>Établissements français de l'Océanie</synonym>
+			<synonym>Frans Polynesië</synonym>
+			<synonym>Franska Polynesien</synonym>
+			<synonym>Französisch-Polynesien</synonym>
+			<synonym>ISO258</synonym>
+			<synonym>PF</synonym>
+			<synonym>Polinesia Francesa</synonym>
+			<synonym>Polinésia Francesa</synonym>
+			<synonym>Polynésie française</synonym>
+			<synonym>PYF</synonym>
+			<synonym>Territoire de la Polynésia Française</synonym>
+			<synonym>Territory of French Polynesia</synonym>
+		</concept>
+		<concept id="79" lastmodified="2008-03-24">
+			<pref lang="en">Gabon</pref>
+			<pref lang="de">Gabun</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="241"/>
+			<status>accepted</status>
+			<synonym>GA</synonym>
+			<synonym>GAB</synonym>
+			<synonym>Gabão</synonym>
+			<synonym>Gabón</synonym>
+			<synonym>Gabon Republic</synonym>
+			<synonym>Gabonese</synonym>
+			<synonym>Gabonese Republic</synonym>
+			<synonym>Gaboon</synonym>
+			<synonym>Gabun</synonym>
+			<synonym>ISO266</synonym>
+			<synonym>République gabonaise</synonym>
+			<synonym>République Gabonaise</synonym>
+		</concept>
+		<concept id="80" lastmodified="2008-03-24">
+			<pref lang="en">Gambia</pref>
+			<pref lang="de">Gambia</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Gambia</synonym>
+			<synonym>Gâmbia</synonym>
+			<synonym>Gambia, The</synonym>
+			<synonym>Gambian</synonym>
+			<synonym>Gambie</synonym>
+			<synonym>GM</synonym>
+			<synonym>GMB</synonym>
+			<synonym>ISO270</synonym>
+			<synonym>Republic of The Gambia</synonym>
+			<synonym>Republic of the Gambia</synonym>
+			<synonym>République de Gambie</synonym>
+			<synonym>The Gambia</synonym>
+			<synonym>The Republic of the Gambia</synonym>
+		</concept>
+		<concept id="81" lastmodified="2008-03-24">
+			<pref lang="en">Georgia</pref>
+			<pref lang="de">Georgien</pref>
+			<pref lang="sv">Georgien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Georgien</synonym>
+			<synonym>GE</synonym>
+			<synonym>GEO</synonym>
+			<synonym>Georgian</synonym>
+			<synonym>Georgian SSR</synonym>
+			<synonym>Géorgie</synonym>
+			<synonym>Georgien</synonym>
+			<synonym>Gruzija</synonym>
+			<synonym>Gruzinskaya</synonym>
+			<synonym> Gruzinskaya Sovetskaja Socialističeskaja Respublika </synonym>
+			<synonym>Gruzinskaya SSR</synonym>
+			<synonym>Iberia</synonym>
+			<synonym>ISO268</synonym>
+			<synonym>Republic of Georgia</synonym>
+			<synonym>République de Géorgie</synonym>
+			<synonym>Sakartvelo</synonym>
+			<synonym>Sakartvelos Respublikis</synonym>
+		</concept>
+		<concept id="82" lastmodified="2008-03-24">
+			<pref lang="en">Germany</pref>
+			<pref lang="de">Deutschland</pref>
+			<pref lang="sv">Tyskland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="253"/>
+			<status>accepted</status>
+			<synonym>Alemanha</synonym>
+			<synonym>Alemania</synonym>
+			<synonym>Allemagne</synonym>
+			<synonym>BRD</synonym>
+			<synonym>Bundesrepublik Deutschland</synonym>
+			<synonym>DE</synonym>
+			<synonym>DEU</synonym>
+			<synonym>Deutsches Reich</synonym>
+			<synonym>Deutschland</synonym>
+			<synonym>Duitsland</synonym>
+			<synonym>Federal Republic of Germany</synonym>
+			<synonym>German</synonym>
+			<synonym>Germania</synonym>
+			<synonym>ISO276</synonym>
+			<synonym>ISO280</synonym>
+			<synonym>República Federal de Alemania</synonym>
+			<synonym>République fédérale d'Allemagne</synonym>
+			<synonym>Tyskland</synonym>
+		</concept>
+		<concept id="83" lastmodified="2008-03-24">
+			<pref lang="en">Ghana</pref>
+			<pref lang="de">Ghana</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Ghana</synonym>
+			<synonym>Gana</synonym>
+			<synonym>GH</synonym>
+			<synonym>GHA</synonym>
+			<synonym>Ghanaian</synonym>
+			<synonym>Ghanan</synonym>
+			<synonym>Ghananian</synonym>
+			<synonym>Gold Coast</synonym>
+			<synonym>ISO288</synonym>
+			<synonym>Republic of Ghana</synonym>
+			<synonym>République du Ghana</synonym>
+		</concept>
+		<concept id="84" lastmodified="2008-03-24">
+			<pref lang="en">Gibraltar</pref>
+			<pref lang="de">Gibraltar</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>Gibraltar</synonym>
+			<synonym>Gebel-al-Tarik</synonym>
+			<synonym>GI</synonym>
+			<synonym>GIB</synonym>
+			<synonym>Gibilterra</synonym>
+			<synonym>Gibraltar dependent state</synonym>
+			<synonym>ISO292</synonym>
+			<synonym>Jabal Tariq</synonym>
+			<synonym>Jabal-al-Tarik</synonym>
+			<synonym>Jebel Tariq</synonym>
+		</concept>
+		<concept id="85" lastmodified="2008-03-24">
+			<pref lang="en">Greece</pref>
+			<pref lang="sv">Grekland</pref>
+			<pref lang="de">Griechenland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>Ellas</synonym>
+			<synonym>Ellás</synonym>
+			<synonym>Elliniki Dhimokratia</synonym>
+			<synonym>Elliniki Dimokratia</synonym>
+			<synonym>Ellinikí Dimokratía</synonym>
+			<synonym>GR</synonym>
+			<synonym>GRC</synonym>
+			<synonym>Grèce</synonym>
+			<synonym>Grecia</synonym>
+			<synonym>Grécia</synonym>
+			<synonym>Greek</synonym>
+			<synonym>Grekland</synonym>
+			<synonym>Griechenland</synonym>
+			<synonym>Griekenland</synonym>
+			<synonym>Hellas</synonym>
+			<synonym>Hellenic</synonym>
+			<synonym>Hellenic Republic</synonym>
+			<synonym>ISO300</synonym>
+			<synonym>Kingdom of Greece</synonym>
+			<synonym>République hellénique</synonym>
+		</concept>
+		<concept id="86" lastmodified="2008-03-24">
+			<pref lang="en">Greenland</pref>
+			<pref lang="de">Grönland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="257"/>
+			<status>accepted</status>
+			<synonym>Christianshaab</synonym>
+			<synonym>Christianshåb</synonym>
+			<synonym>GL</synonym>
+			<synonym>GRL</synonym>
+			<synonym>Groenland</synonym>
+			<synonym>Groenlandia</synonym>
+			<synonym>Groenlândia</synonym>
+			<synonym>Grönland</synonym>
+			<synonym>Grønland</synonym>
+			<synonym>ISO304</synonym>
+			<synonym>Kalaallit Nunaat</synonym>
+			<synonym>Kalâdlit-Nunât</synonym>
+			<synonym>Qasigiannguit</synonym>
+		</concept>
+		<concept id="87" lastmodified="2008-03-24">
+			<pref lang="en">Grenada</pref>
+			<pref lang="de">Grenada</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Grenada</synonym>
+			<synonym>GD</synonym>
+			<synonym>Granada</synonym>
+			<synonym>Granadian</synonym>
+			<synonym>GRD</synonym>
+			<synonym>Grenade</synonym>
+			<synonym>Isle of Spice</synonym>
+			<synonym>ISO308</synonym>
+		</concept>
+		<concept id="88" lastmodified="2008-03-24">
+			<pref lang="en">Guadeloupe</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Département de la Guadeloupe</synonym>
+			<synonym>Department of Guadeloupe</synonym>
+			<synonym>GLP</synonym>
+			<synonym>GP</synonym>
+			<synonym>Guadalupe</synonym>
+			<synonym>ISO312</synonym>
+		</concept>
+		<concept id="89" lastmodified="2008-03-24">
+			<pref lang="en">Guam</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="260"/>
+			<status>accepted</status>
+			<synonym>GU</synonym>
+			<synonym>Guahan</synonym>
+			<synonym>GUM</synonym>
+			<synonym>ISO316</synonym>
+		</concept>
+		<concept id="90" lastmodified="2008-03-24">
+			<pref lang="en">Guatemala</pref>
+			<pref lang="de">Guatemala</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="256"/>
+			<status>accepted</status>
+			<synonym>Guatemala</synonym>
+			<synonym>GT</synonym>
+			<synonym>GTM</synonym>
+			<synonym>Guatemalan</synonym>
+			<synonym>ISO320</synonym>
+			<synonym>Republic of Guatemala</synonym>
+			<synonym>República de Guatemala</synonym>
+			<synonym>République de Guatemala</synonym>
+		</concept>
+		<concept id="91" lastmodified="2008-03-24">
+			<pref lang="en">Guernsey</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>Bailiwick of Guernsey</synonym>
+		</concept>
+		<concept id="92" lastmodified="2008-03-24">
+			<pref lang="en">Guinea</pref>
+			<pref lang="de">Französisch-Guyana</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Französisch-Guyana</synonym>
+			<synonym>French Guinea</synonym>
+			<synonym>Ghinea</synonym>
+			<synonym>GIN</synonym>
+			<synonym>GN</synonym>
+			<synonym>Guiné</synonym>
+			<synonym>Guinean</synonym>
+			<synonym>Guinee</synonym>
+			<synonym>Guinée</synonym>
+			<synonym>Guinée française</synonym>
+			<synonym>ISO324</synonym>
+			<synonym>People's Revolutionary Republic of Guinea</synonym>
+			<synonym>Republic of Guinea</synonym>
+			<synonym>République de Guinée</synonym>
+		</concept>
+		<concept id="93" lastmodified="2008-03-24">
+			<pref lang="en">Guinea-Bissau</pref>
+			<pref lang="de">Guinea-Bissau</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Guinea-Bissau</synonym>
+			<synonym>GNB</synonym>
+			<synonym>Guiné</synonym>
+			<synonym>Guinean</synonym>
+			<synonym>Guiné-Bissau</synonym>
+			<synonym>Guinée-Bissau</synonym>
+			<synonym>GW</synonym>
+			<synonym>ISO624</synonym>
+			<synonym>Portuguese Guinea</synonym>
+			<synonym>Republic of Guinea-Bissau</synonym>
+			<synonym>Républica da Guiné-Bissau</synonym>
+			<synonym>République de Guinée-Bissau</synonym>
+		</concept>
+		<concept id="94" lastmodified="2008-03-24">
+			<pref lang="en">Guyana</pref>
+			<pref lang="">Guyana</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>Guyana</synonym>
+			<synonym>British Guiana</synonym>
+			<synonym>Cooperative Republic of Guyana</synonym>
+			<synonym>Co-operative Republic of Guyana</synonym>
+			<synonym>Guiana</synonym>
+			<synonym>GUY</synonym>
+			<synonym>Guyane</synonym>
+			<synonym>Guyanese</synonym>
+			<synonym>GY</synonym>
+			<synonym>ISO328</synonym>
+			<synonym>République du Guyana</synonym>
+		</concept>
+		<concept id="95" lastmodified="2008-03-24">
+			<pref lang="en">Haiti</pref>
+			<pref lang="de">Haiti</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Haiti</synonym>
+			<synonym>Haití</synonym>
+			<synonym>Haïti</synonym>
+			<synonym>Haitian</synonym>
+			<synonym>HT</synonym>
+			<synonym>HTI</synonym>
+			<synonym>ISO332</synonym>
+			<synonym>Repiblik Dayti</synonym>
+			<synonym>Republic of Haiti</synonym>
+			<synonym>République d'Haïti</synonym>
+			<synonym>Saint-Domingue</synonym>
+			<synonym>Saint-Dominique</synonym>
+		</concept>
+		<concept id="96" lastmodified="2008-03-24">
+			<pref lang="en">Vatican City</pref>
+			<pref lang="de">Vatikanstadt</pref>
+			<pref lang="sv">Vatikanstaten</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<scope>preferred term according to en.wiki</scope>
+			<synonym>Vatikanstadt</synonym>
+			<synonym>Holy See</synonym>
+			<synonym>Cité du Vatican</synonym>
+			<synonym>Città del Vaticano</synonym>
+			<synonym>Ciudad del Vatican</synonym>
+			<synonym>ISO336</synonym>
+			<synonym>Saint-Siège</synonym>
+			<synonym>Santa Sede</synonym>
+			<synonym>State of the Vatican City</synonym>
+			<synonym>State of Vatican City</synonym>
+			<synonym>Stato della Città del Vaticano</synonym>
+			<synonym>VA</synonym>
+			<synonym>VAT</synonym>
+			<synonym>Vaticaanstad</synonym>
+			<synonym>Vatican</synonym>
+			<synonym>Vatican City</synonym>
+			<synonym>Vatican City State</synonym>
+			<synonym>Vatican, État de la Cité du</synonym>
+			<synonym>Vatikan</synonym>
+			<synonym>Vatikanstaten</synonym>
+		</concept>
+		<concept id="97" lastmodified="2008-03-24">
+			<pref lang="en">Honduras</pref>
+			<pref lang="de">Honduras</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="256"/>
+			<status>accepted</status>
+			<synonym>Honduras</synonym>
+			<synonym>HN</synonym>
+			<synonym>HND</synonym>
+			<synonym>Honduran</synonym>
+			<synonym>ISO340</synonym>
+			<synonym>Republic of Honduras</synonym>
+			<synonym>República de Honduras</synonym>
+			<synonym>République du Honduras</synonym>
+		</concept>
+		<concept id="98" lastmodified="2008-03-24">
+			<pref lang="en">Hong Kong</pref>
+			<relation type="isA" relId="274"/>
+			<relation type="isPartOf" relId="247"/>
+			<scope>semi-independent political entity</scope>
+			<status>accepted</status>
+			<synonym>HK</synonym>
+			<synonym>HKG</synonym>
+			<synonym>Hong Kong Special Administrative Region</synonym>
+			<synonym> Hong Kong Special Administrative Region of the People's Republic of China </synonym>
+			<synonym>Hong Kong, Colony of</synonym>
+			<synonym>Hongkong</synonym>
+			<synonym>Hong-Kong</synonym>
+			<synonym>Hsiang Kang</synonym>
+			<synonym>Hsiang-chiang</synonym>
+			<synonym>Hsiang-Kang</synonym>
+			<synonym>ISO344</synonym>
+			<synonym>Tebie xingzhengqu</synonym>
+			<synonym>T'e-pieh hsing-cheng-ch'ü</synonym>
+			<synonym>Xianggang</synonym>
+			<synonym>Xianggang Tebie Xingzhengqu</synonym>
+		</concept>
+		<concept id="99" lastmodified="2008-03-24">
+			<pref lang="en">Hungary</pref>
+			<pref lang="de">Ungarn</pref>
+			<pref lang="sv">Ungern</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="251"/>
+			<status>accepted</status>
+			<synonym>Hongarije</synonym>
+			<synonym>Hongrie</synonym>
+			<synonym>HU</synonym>
+			<synonym>HUN</synonym>
+			<synonym>Hungarian</synonym>
+			<synonym>Hungarian People's Republic</synonym>
+			<synonym>Hungria</synonym>
+			<synonym>Hungría</synonym>
+			<synonym>ISO348</synonym>
+			<synonym>Magyar Köztársaság</synonym>
+			<synonym>Magyar Népköztársaság</synonym>
+			<synonym>Magyarország</synonym>
+			<synonym>Republic of Hungary</synonym>
+			<synonym>Ungarn</synonym>
+			<synonym>Ungern</synonym>
+			<synonym>Ungheria</synonym>
+		</concept>
+		<concept id="100" lastmodified="2008-03-24">
+			<pref lang="en">Iceland</pref>
+			<pref lang="de">Island</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>Icelandic</synonym>
+			<synonym>IJsland</synonym>
+			<synonym>IS</synonym>
+			<synonym>ISL</synonym>
+			<synonym>Island</synonym>
+			<synonym>Ísland</synonym>
+			<synonym>Islanda</synonym>
+			<synonym>Islande</synonym>
+			<synonym>Islandia</synonym>
+			<synonym>Islândia</synonym>
+			<synonym>ISO352</synonym>
+			<synonym>Lýdhveldidh Ísland</synonym>
+			<synonym>Lýđveldiđ Ísland</synonym>
+			<synonym>Republic of Iceland</synonym>
+			<synonym>République d'Islande</synonym>
+		</concept>
+		<concept id="101" lastmodified="2008-03-24">
+			<pref lang="en">India</pref>
+			<pref lang="de">Indien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="249"/>
+			<status>accepted</status>
+			<synonym>Bharat</synonym>
+			<synonym>Bhārat</synonym>
+			<synonym>IN</synonym>
+			<synonym>IND</synonym>
+			<synonym>Inde</synonym>
+			<synonym>Índia</synonym>
+			<synonym>Indian</synonym>
+			<synonym>Indian Union</synonym>
+			<synonym>Indien</synonym>
+			<synonym>ISO356</synonym>
+			<synonym>Republic of India</synonym>
+			<synonym>République de l'Inde</synonym>
+			<synonym>Union of India</synonym>
+		</concept>
+		<concept id="102" lastmodified="2008-03-24">
+			<pref lang="en">Indonesia</pref>
+			<pref lang="de">Indonesien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Dutch East Indies</synonym>
+			<synonym>East Indies</synonym>
+			<synonym>ID</synonym>
+			<synonym>IDN</synonym>
+			<synonym>Indonésia</synonym>
+			<synonym>Indonesian</synonym>
+			<synonym>Indonesië</synonym>
+			<synonym>Indonésie</synonym>
+			<synonym>Indonesien</synonym>
+			<synonym>ISO360</synonym>
+			<synonym>Nederlandsch-Indië</synonym>
+			<synonym>Netherlands East Indies</synonym>
+			<synonym>Netherlands Indies</synonym>
+			<synonym>Republic of Indonesia</synonym>
+			<synonym>Republik Indonesia</synonym>
+			<synonym>République d'Indonésie</synonym>
+			<synonym>United States of Indonesia</synonym>
+		</concept>
+		<concept id="103" lastmodified="2008-03-24">
+			<pref lang="en">Iran</pref>
+			<pref lang="de">Iran</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="249"/>
+			<status>accepted</status>
+			<synonym>Iran</synonym>
+			<synonym>IR</synonym>
+			<synonym>Irã</synonym>
+			<synonym>Irán</synonym>
+			<synonym>Îrān</synonym>
+			<synonym>Iranian</synonym>
+			<synonym>IRN</synonym>
+			<synonym>Islamic Republic of Iran</synonym>
+			<synonym>ISO364</synonym>
+			<synonym>Jomhori-e-Islami-e-Irân</synonym>
+			<synonym>Jomhuri-ye Eslami-ye Iran</synonym>
+			<synonym>Jomhūri-ye Eslamī-ye Irān</synonym>
+			<synonym>Perse</synonym>
+			<synonym>Persia</synonym>
+			<synonym>République islamique d'Iran</synonym>
+		</concept>
+		<concept id="104" lastmodified="2008-03-24">
+			<pref lang="en">Iraq</pref>
+			<pref lang="de">Irak</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Al Iraq</synonym>
+			<synonym>Al Jumhouriya al 'Iraquia</synonym>
+			<synonym>Al-Irāq</synonym>
+			<synonym>al-Jumhūrīyah al-Irāqīyah</synonym>
+			<synonym>IQ</synonym>
+			<synonym>Irak</synonym>
+			<synonym>Iraq</synonym>
+			<synonym>Iraqi</synonym>
+			<synonym>Iraque</synonym>
+			<synonym>IRQ</synonym>
+			<synonym>ISO368</synonym>
+			<synonym>Mesopotamia</synonym>
+			<synonym>Republic of Iraq</synonym>
+			<synonym>République d'Iraq</synonym>
+		</concept>
+		<concept id="105" lastmodified="2008-03-24">
+			<pref lang="en">Ireland</pref>
+			<pref lang="de">Irland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>Éire</synonym>
+			<synonym>Eirinn</synonym>
+			<synonym>IE</synonym>
+			<synonym>Ierland</synonym>
+			<synonym>Irish</synonym>
+			<synonym>Irish Free State</synonym>
+			<synonym>Irish Republic</synonym>
+			<synonym>IRL</synonym>
+			<synonym>Irland</synonym>
+			<synonym>Irlanda</synonym>
+			<synonym>Irlande</synonym>
+			<synonym>ISO372</synonym>
+			<synonym>Republic of Ireland</synonym>
+			<synonym>Saorstat Eireann</synonym>
+			<synonym>Saorstát Éireann</synonym>
+		</concept>
+		<concept id="106" lastmodified="2008-03-24">
+			<pref lang="en">Isle of Man</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>I of M</synonym>
+			<synonym>Île de Man</synonym>
+			<synonym>Insel Man</synonym>
+			<synonym>IoM</synonym>
+			<synonym>IOM</synonym>
+			<synonym>Man, Isle of</synonym>
+			<synonym>Mona</synonym>
+			<synonym>Monapia</synonym>
+		</concept>
+		<concept id="107" lastmodified="2008-03-24">
+			<pref lang="en">Israel</pref>
+			<pref lang="de">Israel</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Israel</synonym>
+			<synonym>Dawlat Isrá'īl</synonym>
+			<synonym>Êtat d'Israël</synonym>
+			<synonym>IL</synonym>
+			<synonym>ISO376</synonym>
+			<synonym>ISR</synonym>
+			<synonym>Israël</synonym>
+			<synonym>Israeli</synonym>
+			<synonym>Isrā'īl</synonym>
+			<synonym>Medinat Israel</synonym>
+			<synonym>Medinat Yisra'el</synonym>
+			<synonym>State of Israel</synonym>
+			<synonym>Yisrael</synonym>
+			<synonym>Yisra'el</synonym>
+		</concept>
+		<concept id="108" lastmodified="2008-03-24">
+			<pref lang="en">Italy</pref>
+			<pref lang="de">Italien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>Esperia</synonym>
+			<synonym>ISO380</synonym>
+			<synonym>IT</synonym>
+			<synonym>ITA</synonym>
+			<synonym>Italia</synonym>
+			<synonym>Itália</synonym>
+			<synonym>Italian</synonym>
+			<synonym>Italian Republic</synonym>
+			<synonym>Italie</synonym>
+			<synonym>Italië</synonym>
+			<synonym>Italien</synonym>
+			<synonym>Repubblica italiana</synonym>
+			<synonym>Repubblica Italiana</synonym>
+			<synonym>République italienne</synonym>
+		</concept>
+		<concept id="109" lastmodified="2008-03-24">
+			<pref lang="en">Jamaica</pref>
+			<pref lang="de">Jamaika</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Giamaica</synonym>
+			<synonym>ISO388</synonym>
+			<synonym>JAM</synonym>
+			<synonym>Jamaican</synonym>
+			<synonym>Jamaika</synonym>
+			<synonym>Jamaïque</synonym>
+			<synonym>JM</synonym>
+			<synonym>Xaimaca</synonym>
+		</concept>
+		<concept id="110" lastmodified="2008-03-24">
+			<pref lang="en">Jan Mayen</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>Hudson's Tutches</synonym>
+			<synonym>Jan Mayen Island</synonym>
+		</concept>
+		<concept id="111" lastmodified="2008-03-24">
+			<pref lang="en">Japan</pref>
+			<pref lang="de">Japan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="247"/>
+			<status>accepted</status>
+			<synonym>Japan</synonym>
+			<synonym>Giappone</synonym>
+			<synonym>ISO392</synonym>
+			<synonym>Japanese</synonym>
+			<synonym>Japão</synonym>
+			<synonym>Japon</synonym>
+			<synonym>Japón</synonym>
+			<synonym>JP</synonym>
+			<synonym>JPN</synonym>
+			<synonym>Nihon</synonym>
+			<synonym>Niphon</synonym>
+			<synonym>Nippon</synonym>
+		</concept>
+		<concept id="112" lastmodified="2008-03-24">
+			<pref lang="en">Jersey</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>Bailiwick of Jersey</synonym>
+		</concept>
+		<concept id="113" lastmodified="2008-03-24">
+			<pref lang="en">Jordan</pref>
+			<pref lang="de">Jordanien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Al Mamlaka al Urduniya al Hashemiyah</synonym>
+			<synonym>al-Mamlakah al-Urdunnīyah al-Hāshimīyah</synonym>
+			<synonym>al-Urdun</synonym>
+			<synonym>Al-Urdunn</synonym>
+			<synonym>Giordano</synonym>
+			<synonym>Hashemite Kingdom of Jordan</synonym>
+			<synonym>ISO400</synonym>
+			<synonym>JO</synonym>
+			<synonym>JOR</synonym>
+			<synonym>Jordaan</synonym>
+			<synonym>Jordania</synonym>
+			<synonym>Jordânia</synonym>
+			<synonym>Jordanian</synonym>
+			<synonym>Jordanie</synonym>
+			<synonym>Jordanien</synonym>
+			<synonym>Royaume hachémite de Jordanie</synonym>
+			<synonym>Transjordan</synonym>
+		</concept>
+		<concept id="114" lastmodified="2008-03-24">
+			<pref lang="en">Kazakhstan</pref>
+			<pref lang="de">Kasachstan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="246"/>
+			<status>accepted</status>
+			<synonym>Cazaquistão</synonym>
+			<synonym>ISO398</synonym>
+			<synonym>Kasachstan</synonym>
+			<synonym>Kasack</synonym>
+			<synonym>Kasak</synonym>
+			<synonym>KAZ</synonym>
+			<synonym> Kazachskaja Sovetskaja Socialistčeskaja Respublika </synonym>
+			<synonym>Kazajstán</synonym>
+			<synonym>Kazak</synonym>
+			<synonym>Kazakh</synonym>
+			<synonym>Kazakh SSR</synonym>
+			<synonym>Kazakhskaya</synonym>
+			<synonym>Kazakhskaya SSR</synonym>
+			<synonym>Kazakstan</synonym>
+			<synonym>Khasack</synonym>
+			<synonym>Khasak</synonym>
+			<synonym>Kirghiz</synonym>
+			<synonym>KZ</synonym>
+			<synonym>Qazaq</synonym>
+			<synonym>Qazaqstan</synonym>
+			<synonym>Qazaqstan Respublikasï</synonym>
+			<synonym>Qazaqstan Respūblīkasy</synonym>
+			<synonym>Qirghiz</synonym>
+			<synonym>Republic of Kazakhstan</synonym>
+			<synonym>République du Kazakhstan</synonym>
+		</concept>
+		<concept id="115" lastmodified="2008-03-24">
+			<pref lang="en">Kenya</pref>
+			<pref lang="de">Kenia</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>British East Africa</synonym>
+			<synonym>British East Africa Protectorate</synonym>
+			<synonym>East Africa Protectorate</synonym>
+			<synonym>ISO404</synonym>
+			<synonym>Jamhuri ya Kenya</synonym>
+			<synonym>KE</synonym>
+			<synonym>KEN</synonym>
+			<synonym>Kenia</synonym>
+			<synonym>Kenyan</synonym>
+			<synonym>Quênia</synonym>
+			<synonym>Republic of Kenya</synonym>
+			<synonym>République du Kenya</synonym>
+		</concept>
+		<concept id="116" lastmodified="2008-03-24">
+			<pref lang="en">Kiribati</pref>
+			<pref lang="de">Kiribati</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="260"/>
+			<status>accepted</status>
+			<synonym>Kiribati</synonym>
+			<synonym>Gilbert Islands</synonym>
+			<synonym>I-Kiribati</synonym>
+			<synonym>ISO296</synonym>
+			<synonym>KI</synonym>
+			<synonym>KIR</synonym>
+			<synonym>Republic of Kiribati</synonym>
+		</concept>
+		<concept id="117" lastmodified="2008-03-24">
+			<pref lang="en">Kuwait</pref>
+			<pref lang="de">Kuwait</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Kuwait</synonym>
+			<synonym>Al-Kuwayt</synonym>
+			<synonym>Dawlat al-Kuwayt</synonym>
+			<synonym>Dowlat al Kuwait</synonym>
+			<synonym>État du Koweït</synonym>
+			<synonym>ISO414</synonym>
+			<synonym>Koeweit</synonym>
+			<synonym>Koweit</synonym>
+			<synonym>Koweït</synonym>
+			<synonym>Kuwaiti</synonym>
+			<synonym>Kuwayt</synonym>
+			<synonym>Kuweit</synonym>
+			<synonym>KW</synonym>
+			<synonym>KWT</synonym>
+			<synonym>State of Kuwait</synonym>
+		</concept>
+		<concept id="118" lastmodified="2008-03-24">
+			<pref lang="en">Kyrgyzstan</pref>
+			<pref lang="de">Kirgisistan</pref>
+			<pref lang="sv">Kirgizistan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="246"/>
+			<status>accepted</status>
+			<synonym>ISO417</synonym>
+			<synonym>KG</synonym>
+			<synonym>KGZ</synonym>
+			<synonym>Kirghiz</synonym>
+			<synonym>Kirghiz Soviet Socialist Republic</synonym>
+			<synonym>Kirghiz SSR</synonym>
+			<synonym>Kirghizistan</synonym>
+			<synonym>Kirgisistan</synonym>
+			<synonym>Kirgiz SSR</synonym>
+			<synonym>Kirgizia</synonym>
+			<synonym>Kirgizija</synonym>
+			<synonym>Kirgizistan</synonym>
+			<synonym>Kirgiziya SSR</synonym>
+			<synonym> Kirgizskaja Sovetskaja Socialističeskaja Respublika </synonym>
+			<synonym>Kirgizskaya</synonym>
+			<synonym>Kirguistán</synonym>
+			<synonym>Kirguizia</synonym>
+			<synonym>Kyrgyz</synonym>
+			<synonym>Kyrgyz Republic</synonym>
+			<synonym>Kyrgyzstan Respublikasy</synonym>
+			<synonym>Quirguistão</synonym>
+			<synonym>Republic of Kyrgyzstan</synonym>
+			<synonym>República Kirguisia</synonym>
+			<synonym>République du Kirghizistan</synonym>
+			<synonym>République kirghize</synonym>
+		</concept>
+		<concept id="119" lastmodified="2008-03-24">
+			<pref lang="en">Laos</pref>
+			<pref lang="">Laos</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Laos</synonym>
+			<synonym>ISO418</synonym>
+			<synonym>LA</synonym>
+			<synonym>Lao</synonym>
+			<synonym>LAO</synonym>
+			<synonym>Lao People's Democratic Republic</synonym>
+			<synonym>Lao, République démocratique populaire</synonym>
+			<synonym>Laotian</synonym>
+			<synonym>Sathalanalat Paxathipatai Paxaxôn Lao</synonym>
+		</concept>
+		<concept id="120" lastmodified="2008-03-24">
+			<pref lang="en">Latvia</pref>
+			<pref lang="de">Lettland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>ISO428</synonym>
+			<synonym>Latvian</synonym>
+			<synonym>Latvian SSR</synonym>
+			<synonym>Latvija</synonym>
+			<synonym>Latvijas Republika</synonym>
+			<synonym> Latvijskaja Sovetskaja Socialističeskaya Respublika </synonym>
+			<synonym>Latviskaya</synonym>
+			<synonym>Latviya SSR</synonym>
+			<synonym>Letland</synonym>
+			<synonym>Letonia</synonym>
+			<synonym>Letónia</synonym>
+			<synonym>Lettland</synonym>
+			<synonym>Lettonie</synonym>
+			<synonym>LV</synonym>
+			<synonym>LVA</synonym>
+			<synonym>Republic of Latvia</synonym>
+			<synonym>République de Lettonie</synonym>
+		</concept>
+		<concept id="121" lastmodified="2008-03-24">
+			<pref lang="en">Lebanon</pref>
+			<pref lang="de">Libanon</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Al-Jumhouriya al Lubnaniya</synonym>
+			<synonym>al-Jumhūrīyah al-Lubnānīyah</synonym>
+			<synonym>Al-Lubnan</synonym>
+			<synonym>Al-Lubnān</synonym>
+			<synonym>Grand Liban</synonym>
+			<synonym>Great Lebanon</synonym>
+			<synonym>ISO422</synonym>
+			<synonym>LB</synonym>
+			<synonym>LBN</synonym>
+			<synonym>Lebanese</synonym>
+			<synonym>Lebanese Republic</synonym>
+			<synonym>Levant States</synonym>
+			<synonym>Liban</synonym>
+			<synonym>Libano</synonym>
+			<synonym>Líbano</synonym>
+			<synonym>Libanon</synonym>
+			<synonym>Lubnān</synonym>
+			<synonym>Republic of Lebanon</synonym>
+			<synonym>République libanaise</synonym>
+		</concept>
+		<concept id="122" lastmodified="2008-03-24">
+			<pref lang="en">Lesotho</pref>
+			<pref lang="de">Lesotho</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="243"/>
+			<status>accepted</status>
+			<synonym>Lesotho</synonym>
+			<synonym>Basotho</synonym>
+			<synonym>Basutoland</synonym>
+			<synonym>ISO426</synonym>
+			<synonym>Kingdom of Lesotho</synonym>
+			<synonym>Lesoto</synonym>
+			<synonym>LS</synonym>
+			<synonym>LSO</synonym>
+			<synonym>Royaume du Lesotho</synonym>
+		</concept>
+		<concept id="123" lastmodified="2008-03-24">
+			<pref lang="en">Liberia</pref>
+			<pref lang="de">Liberia</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Liberia</synonym>
+			<synonym>Free and Independent Republic of Liberia</synonym>
+			<synonym>ISO430</synonym>
+			<synonym>LBR</synonym>
+			<synonym>Liberian</synonym>
+			<synonym>LR</synonym>
+			<synonym>Republic of Liberia</synonym>
+			<synonym>République du Libéria</synonym>
+		</concept>
+		<concept id="124" lastmodified="2008-03-24">
+			<pref lang="en">Libya</pref>
+			<pref lang="de">Libyen</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="245"/>
+			<status>accepted</status>
+			<synonym> al-Jamāhīrīyah al-Arabīyah al-Lībīyah ash-Shabīyah al-Ishtirākīyah </synonym>
+			<synonym>ISO434</synonym>
+			<synonym> Jamahiriya arabe libyenne populaire et socialiste </synonym>
+			<synonym>Kingdom of Libya</synonym>
+			<synonym>LBY</synonym>
+			<synonym>Libia</synonym>
+			<synonym>Líbia</synonym>
+			<synonym>Libie</synonym>
+			<synonym>Libië</synonym>
+			<synonym>Lībiyā</synonym>
+			<synonym>Libyan</synonym>
+			<synonym>Libyan Arab Jamahiriya</synonym>
+			<synonym>Libye</synonym>
+			<synonym>Libyen</synonym>
+			<synonym>Libyenne, Jamahiriya Arabe</synonym>
+			<synonym>LY</synonym>
+			<synonym>Socialist People's Libyan Arab Jamahiriya</synonym>
+			<synonym>Socialist Peoples' Libyan Arab Republic</synonym>
+			<synonym> The Great Socialist People's Libyan Arab Jamahiriya </synonym>
+			<synonym>United Kingdom of Libya</synonym>
+		</concept>
+		<concept id="125" lastmodified="2008-03-24">
+			<pref lang="en">Liechtenstein</pref>
+			<pref lang="de">Liechtenstein</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="253"/>
+			<status>accepted</status>
+			<synonym>Liechtenstein</synonym>
+			<synonym>Fürstentum Liechtenstein</synonym>
+			<synonym>ISO438</synonym>
+			<synonym>LI</synonym>
+			<synonym>LIE</synonym>
+			<synonym>Principality of Liechtenstein</synonym>
+		</concept>
+		<concept id="126" lastmodified="2008-03-24">
+			<pref lang="en">Lithuania</pref>
+			<pref lang="de">Litauen</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>ISO440</synonym>
+			<synonym>Lietuva</synonym>
+			<synonym>Lietuvos Respublika</synonym>
+			<synonym>Litauen</synonym>
+			<synonym>Lithuanian</synonym>
+			<synonym>Lithuanian Soviet Socialist Repuplic</synonym>
+			<synonym>Lithuanian SSR</synonym>
+			<synonym>Lithuanie</synonym>
+			<synonym>Litouwen</synonym>
+			<synonym> Litovskaja Sovetskaja Socialističeskaya Respublica </synonym>
+			<synonym>Litovskaya</synonym>
+			<synonym>Lituania</synonym>
+			<synonym>Lituânia</synonym>
+			<synonym>Lituanie</synonym>
+			<synonym>Litva</synonym>
+			<synonym>Litwa</synonym>
+			<synonym>Litva SSR</synonym>
+			<synonym>LT</synonym>
+			<synonym>LTU</synonym>
+			<synonym>Republic of Lithuania</synonym>
+			<synonym>République de Lituanie</synonym>
+		</concept>
+		<concept id="127" lastmodified="2008-03-24">
+			<pref lang="en">Luxembourg</pref>
+			<pref lang="de">Luxemburg</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="253"/>
+			<status>accepted</status>
+			<synonym>Grand Duchy of Luxembourg</synonym>
+			<synonym>Grand-Duché de Luxembourg</synonym>
+			<synonym>Grossherzogtum Luxemburg</synonym>
+			<synonym>Gross-Herzogtum Luxemburg</synonym>
+			<synonym>Grousherzogdem Lëtzebuerg</synonym>
+			<synonym>ISO442</synonym>
+			<synonym>Letzeburg</synonym>
+			<synonym>LU</synonym>
+			<synonym>LUX</synonym>
+			<synonym>Luxembourgeois</synonym>
+			<synonym>Luxemburg</synonym>
+			<synonym>Luxemburgo</synonym>
+			<synonym>Lützelburg</synonym>
+		</concept>
+		<concept id="128" lastmodified="2008-03-24">
+			<pref lang="en">Macau</pref>
+			<relation type="isA" relId="274"/>
+			<relation type="isPartOf" relId="247"/>
+			<scope>semi-independent political entity</scope>
+			<status>accepted</status>
+			<synonym>Aomen</synonym>
+			<synonym>Ao-men</synonym>
+			<synonym>Aomen Tebie Xingzhengqu</synonym>
+			<synonym>ISO46</synonym>
+			<synonym>MAC</synonym>
+			<synonym>Macao</synonym>
+			<synonym>Macao, Province of</synonym>
+			<synonym>Macau Special Administrative Region</synonym>
+			<synonym>Macau, Região Administrativa Especial de</synonym>
+			<synonym>MO</synonym>
+			<synonym>Província de Macau</synonym>
+		</concept>
+		<concept id="129" lastmodified="2008-03-24">
+			<pref lang="en">Macedonia</pref>
+			<pref lang="sv">Makedonien</pref>
+			<pref lang="de">Mazedonien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>Former Yugoslavian Republic of Macedonia</synonym>
+			<synonym>ISO807</synonym>
+			<synonym>Macédoine</synonym>
+			<synonym> Macedonia, the former Yugoslav Republic of </synonym>
+			<synonym>Macedonië</synonym>
+			<synonym>Makedonien</synonym>
+			<synonym>Makedonija</synonym>
+			<synonym>Mazedonien</synonym>
+			<synonym>MK</synonym>
+			<synonym>MKD</synonym>
+			<synonym>Republic of Macedonia</synonym>
+			<synonym>Republika Makedonija</synonym>
+		</concept>
+		<concept id="130" lastmodified="2008-03-24">
+			<pref lang="en">Madagascar</pref>
+			<pref lang="de">Madagaskar</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Democratic Republic of Madagascar</synonym>
+			<synonym>ISO450</synonym>
+			<synonym>Madagasikara</synonym>
+			<synonym>Madagaskar</synonym>
+			<synonym>Malagasy</synonym>
+			<synonym>Malagasy Republic</synonym>
+			<synonym>Malgache Republic</synonym>
+			<synonym>MDG</synonym>
+			<synonym>MG</synonym>
+			<synonym>Repoblika Demokratika Malagasy</synonym>
+			<synonym>Repoblika Demokratika n'i Madagaskar</synonym>
+			<synonym>Repoblika Malagasy</synonym>
+			<synonym>Repoblikan'i Madagasikara</synonym>
+			<synonym>Republic of Madagascar</synonym>
+			<synonym>République de Madagascar</synonym>
+			<synonym>République démocratique de Madagascar</synonym>
+			<synonym>République Malgache</synonym>
+		</concept>
+		<concept id="131" lastmodified="2008-03-24">
+			<pref lang="en">Malawi</pref>
+			<pref lang="de">Malawi</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Malawi</synonym>
+			<synonym>British Central Africa</synonym>
+			<synonym>British Central Africa Protectorate</synonym>
+			<synonym>ISO454</synonym>
+			<synonym>Malaui</synonym>
+			<synonym>Malaŵi</synonym>
+			<synonym>Malawian</synonym>
+			<synonym>MW</synonym>
+			<synonym>MWI</synonym>
+			<synonym>Nyasaland</synonym>
+			<synonym>Republic of Malawi</synonym>
+			<synonym>Republic of Malaŵi</synonym>
+			<synonym>République du Malawi</synonym>
+		</concept>
+		<concept id="132" lastmodified="2008-03-24">
+			<pref lang="en">Malaysia</pref>
+			<pref lang="de">Malaysia</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Malaysia</synonym>
+			<synonym>Federated Malay States</synonym>
+			<synonym>Federation of Malaysia</synonym>
+			<synonym>ISO458</synonym>
+			<synonym>Malaisie</synonym>
+			<synonym>Malasia</synonym>
+			<synonym>Malásia</synonym>
+			<synonym>Malay States</synonym>
+			<synonym>Malaysian</synonym>
+			<synonym>Maleisië</synonym>
+			<synonym>MY</synonym>
+			<synonym>MYS</synonym>
+		</concept>
+		<concept id="133" lastmodified="2008-03-24">
+			<pref lang="en">Maldives</pref>
+			<pref lang="sv">Maldiverna</pref>
+			<pref lang="de">Malediven</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="249"/>
+			<status>accepted</status>
+			<synonym>Divehi</synonym>
+			<synonym>Divehi Jumhuriya</synonym>
+			<synonym>Divehi Jumhuriyya</synonym>
+			<synonym>ISO462</synonym>
+			<synonym>Maladiven</synonym>
+			<synonym>Maldivas</synonym>
+			<synonym>Maldive Islands</synonym>
+			<synonym>Maldiverna</synonym>
+			<synonym>Maldivian</synonym>
+			<synonym>Malediven</synonym>
+			<synonym>MDV</synonym>
+			<synonym>MV</synonym>
+			<synonym>Republic of Maldives</synonym>
+			<synonym>République des Maldives</synonym>
+		</concept>
+		<concept id="134" lastmodified="2008-03-24">
+			<pref lang="en">Mali</pref>
+			<pref lang="de">Mali</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Mali</synonym>
+			<synonym>French Sudan</synonym>
+			<synonym>ISO466</synonym>
+			<synonym>Malí</synonym>
+			<synonym>Malian</synonym>
+			<synonym>ML</synonym>
+			<synonym>MLI</synonym>
+			<synonym>Republic of Mali</synonym>
+			<synonym>République du Mali</synonym>
+			<synonym>Soudan français</synonym>
+			<synonym>Sudanese Republic</synonym>
+		</concept>
+		<concept id="135" lastmodified="2008-03-24">
+			<pref lang="en">Malta</pref>
+			<pref lang="de">Malta</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>Malta</synonym>
+			<synonym>ISO470</synonym>
+			<synonym>Malta, Republic of</synonym>
+			<synonym>Malte</synonym>
+			<synonym>Maltese</synonym>
+			<synonym>Maltese Islands</synonym>
+			<synonym>MLT</synonym>
+			<synonym>MT</synonym>
+			<synonym>Repubblika ta'Malta</synonym>
+			<synonym>Republic of Malta</synonym>
+			<synonym>République de Malte</synonym>
+			<synonym>Sovereign State of Malta</synonym>
+		</concept>
+		<concept id="136" lastmodified="2008-03-24">
+			<pref lang="en">Marshall Islands</pref>
+			<pref lang="de">Marshallinseln</pref>
+			<pref lang="sv">Marshallöarna</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="260"/>
+			<status>accepted</status>
+			<synonym>Marshallinseln</synonym>
+			<synonym>ISO584</synonym>
+			<synonym>Majōl</synonym>
+			<synonym>Marshall, Îles</synonym>
+			<synonym>Marshallese</synonym>
+			<synonym>Marshallöarna</synonym>
+			<synonym>MH</synonym>
+			<synonym>MHL</synonym>
+			<synonym>Republic of the Marshall Islands</synonym>
+			<synonym>République des îles Marshall</synonym>
+		</concept>
+		<concept id="137" lastmodified="2008-03-24">
+			<pref lang="en">Martinique</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Département de la Martinique</synonym>
+			<synonym>Department of Martinique</synonym>
+			<synonym>ISO474</synonym>
+			<synonym>La Martinique</synonym>
+			<synonym>Martinica</synonym>
+			<synonym>Martiniquan</synonym>
+			<synonym>MQ</synonym>
+			<synonym>MTQ</synonym>
+		</concept>
+		<concept id="138" lastmodified="2008-03-24">
+			<pref lang="en">Mauritania</pref>
+			<pref lang="de">Mauretanien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Mauretanien</synonym>
+			<synonym>al-Jumhūrīyah al-Īslāmīyah al-Mūrītānīyah</synonym>
+			<synonym>Islamic Republic of Mauritania</synonym>
+			<synonym>ISO478</synonym>
+			<synonym>Mauretanien</synonym>
+			<synonym>Mauritânia</synonym>
+			<synonym>Mauritanian</synonym>
+			<synonym>Mauritanie</synonym>
+			<synonym>Mauritanië</synonym>
+			<synonym>MR</synonym>
+			<synonym>MRT</synonym>
+			<synonym>Mūrītānīyā</synonym>
+			<synonym>République islamique de Mauritanie</synonym>
+		</concept>
+		<concept id="139" lastmodified="2008-03-24">
+			<pref lang="en">Mauritius</pref>
+			<pref lang="de">Mauritius</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Mauritius</synonym>
+			<synonym>ISO480</synonym>
+			<synonym>Maurice</synonym>
+			<synonym>Mauricio</synonym>
+			<synonym>Maurício</synonym>
+			<synonym>Mauritian</synonym>
+			<synonym>MU</synonym>
+			<synonym>MUS</synonym>
+			<synonym>Republic of Mauritius</synonym>
+			<synonym>République de Maurice</synonym>
+		</concept>
+		<concept id="140" lastmodified="2008-03-24">
+			<pref lang="en">Mayotte</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Collectivité territoriale de Mayotte</synonym>
+			<synonym>ISO175</synonym>
+			<synonym>Mahore</synonym>
+			<synonym>MYT</synonym>
+			<synonym>Territorial entity of Mayotte</synonym>
+			<synonym>YT</synonym>
+		</concept>
+		<concept id="141" lastmodified="2008-03-24">
+			<pref lang="en">Mexico</pref>
+			<pref lang="de">Mexiko</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="256"/>
+			<status>accepted</status>
+			<synonym>Estados Unidos Mexicanos</synonym>
+			<synonym>États-Unis du Mexique</synonym>
+			<synonym>ISO484</synonym>
+			<synonym>Méjico</synonym>
+			<synonym>Messico</synonym>
+			<synonym>MEX</synonym>
+			<synonym>Mexican</synonym>
+			<synonym>México</synonym>
+			<synonym>Mexiko</synonym>
+			<synonym>Mexique</synonym>
+			<synonym>MX</synonym>
+			<synonym>United Mexican States</synonym>
+		</concept>
+		<concept id="142" lastmodified="2008-03-24">
+			<pref lang="en">Micronesia &lt;nation&gt;</pref>
+			<pref lang="de">Mikronesien</pref>
+			<pref lang="sv">Mikronesien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="260"/>
+			<status>accepted</status>
+			<synonym>Mikronesien</synonym>
+			<synonym>États fédérés de Micronésie</synonym>
+			<synonym>Federated States of Micronesia</synonym>
+			<synonym>FM</synonym>
+			<synonym>FSM</synonym>
+			<synonym>ISO583</synonym>
+			<synonym>Micronesia, Federated States of</synonym>
+			<synonym>Micronesian</synonym>
+			<synonym>Micronésie</synonym>
+			<synonym>Mikronesien</synonym>
+		</concept>
+		<concept id="143" lastmodified="2008-03-24">
+			<pref lang="en">Moldova</pref>
+			<pref lang="de">Moldau</pref>
+			<pref lang="sv">Moldavien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="251"/>
+			<status>accepted</status>
+			<synonym>Moldau</synonym>
+			<synonym>Moldawien</synonym>
+			<synonym>ISO498</synonym>
+			<synonym>MD</synonym>
+			<synonym>MDA</synonym>
+			<synonym>Moldavia</synonym>
+			<synonym>Moldávia</synonym>
+			<synonym>Moldavian SSR</synonym>
+			<synonym>Moldavie</synonym>
+			<synonym>Moldavië</synonym>
+			<synonym>Moldavien</synonym>
+			<synonym>Moldavija</synonym>
+			<synonym> Moldavskaja Sovetskaja Socialistčeskaja Respublika </synonym>
+			<synonym>Moldavskaya</synonym>
+			<synonym>Moldavskaya SSR</synonym>
+			<synonym>Moldovan</synonym>
+			<synonym>Muldova</synonym>
+			<synonym>Republic of Moldova</synonym>
+			<synonym>République de Moldova</synonym>
+			<synonym>Rupublica Moldova</synonym>
+		</concept>
+		<concept id="144" lastmodified="2008-03-24">
+			<pref lang="en">Monaco</pref>
+			<pref lang="de">Monaco</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="253"/>
+			<status>accepted</status>
+			<synonym>Monaco</synonym>
+			<synonym>ISO492</synonym>
+			<synonym>MC</synonym>
+			<synonym>MCO</synonym>
+			<synonym>Monacan</synonym>
+			<synonym>Mónaco</synonym>
+			<synonym>Mônaco</synonym>
+			<synonym>Monaguesque</synonym>
+			<synonym>Monegasque</synonym>
+			<synonym>Monégasque</synonym>
+			<synonym>Principality of Monaco</synonym>
+			<synonym>Principauté de Monaco</synonym>
+		</concept>
+		<concept id="145" lastmodified="2008-03-24">
+			<pref lang="en">Mongolia</pref>
+			<pref lang="de">Mongolei</pref>
+			<pref lang="sv">Mongoliet</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="247"/>
+			<status>accepted</status>
+			<synonym>Bügd Naramdah Mongol Ard Uls</synonym>
+			<synonym>Bügd Nayramdakh Mongol Ard Uls</synonym>
+			<synonym>ISO496</synonym>
+			<synonym>MN</synonym>
+			<synonym>MNG</synonym>
+			<synonym>Mongol Ard Uls</synonym>
+			<synonym>Mongol Uls</synonym>
+			<synonym>Mongolei</synonym>
+			<synonym>Mongólia</synonym>
+			<synonym>Mongolian</synonym>
+			<synonym>Mongolian People's Republic</synonym>
+			<synonym>Mongolie</synonym>
+			<synonym>Mongolië</synonym>
+			<synonym>Mongoliet</synonym>
+			<synonym>Outer Mongolia</synonym>
+			<synonym>République populaire mongole</synonym>
+		</concept>
+		<concept id="146" lastmodified="2008-03-24">
+			<pref lang="en">Montenegro</pref>
+			<pref lang="de">Montenegro</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<scope> Serbia and Montenegro (TGN # 1000102) are two independent nations </scope>
+			<status>accepted</status>
+			<synonym>Montenegro</synonym>
+			<synonym>Crna Gora</synonym>
+			<synonym>Montenegran</synonym>
+			<synonym>Montenegrian</synonym>
+			<synonym>Montenegrin</synonym>
+			<synonym>Tsernagora</synonym>
+			<synonym>Tsrna Gora</synonym>
+		</concept>
+		<concept id="147" lastmodified="2008-03-24">
+			<pref lang="en">Montserrat</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Colony of Montserrat</synonym>
+			<synonym>Emerald Isle</synonym>
+			<synonym>ISO500</synonym>
+			<synonym>Monserrat</synonym>
+			<synonym>MS</synonym>
+			<synonym>MSR</synonym>
+		</concept>
+		<concept id="148" lastmodified="2008-03-24">
+			<pref lang="en">Morocco</pref>
+			<pref lang="sv">Marocko</pref>
+			<pref lang="de">Marokko</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="245"/>
+			<status>accepted</status>
+			<synonym>Al-Magreb</synonym>
+			<synonym>al-Mamlakah al-Maghribīyah</synonym>
+			<synonym>ISO504</synonym>
+			<synonym>Kingdom of Morocco</synonym>
+			<synonym>MA</synonym>
+			<synonym>Magreb</synonym>
+			<synonym>MAR</synonym>
+			<synonym>Maroc</synonym>
+			<synonym>Marocko</synonym>
+			<synonym>Marokko</synonym>
+			<synonym>Marrocos</synonym>
+			<synonym>Marruecos</synonym>
+			<synonym>Moroccan</synonym>
+			<synonym>Morocco</synonym>
+			<synonym>Royaume du Maroc</synonym>
+		</concept>
+		<concept id="149" lastmodified="2008-03-24">
+			<pref lang="en">Mozambique</pref>
+			<pref lang="de">Mosambik</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>ISO508</synonym>
+			<synonym>Moçambique</synonym>
+			<synonym>Mosambik</synonym>
+			<synonym>MOZ</synonym>
+			<synonym>Mozambican</synonym>
+			<synonym>MZ</synonym>
+			<synonym>People's Republic of Mozambique</synonym>
+			<synonym>Portuguese East Africa</synonym>
+			<synonym>Republic of Mozambique</synonym>
+			<synonym>República de Moçambique</synonym>
+			<synonym>República Popular de Moçambique</synonym>
+			<synonym>République du Mozambique</synonym>
+			<synonym>République populaire du Mozambique</synonym>
+		</concept>
+		<concept id="150" lastmodified="2008-03-24">
+			<pref lang="en">Myanmar</pref>
+			<pref lang="de">Myanmar</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Myanmar</synonym>
+			<synonym>Burma</synonym>
+			<synonym>Birma</synonym>
+			<synonym>Birmania</synonym>
+			<synonym>Birmânia</synonym>
+			<synonym>Birmanie</synonym>
+			<synonym>BUR</synonym>
+			<synonym>Burma</synonym>
+			<synonym>Burmese</synonym>
+			<synonym>ISO104</synonym>
+			<synonym>MM</synonym>
+			<synonym>MMR</synonym>
+			<synonym>Myanma</synonym>
+			<synonym>Pyeitawinzu Myanma Naingngandaw</synonym>
+			<synonym> Pyidaungsu Socialist Thammada Myanma Naingngandaw </synonym>
+			<synonym>Pyidaungzu Myanma Naingngandaw</synonym>
+			<synonym>République socialiste de l'Union birmane</synonym>
+			<synonym>Socialist Republic of the Union of Burma</synonym>
+			<synonym>Union du Myanmar</synonym>
+			<synonym>Union of Burma</synonym>
+			<synonym>Union of Myanmar</synonym>
+		</concept>
+		<concept id="151" lastmodified="2008-03-24">
+			<pref lang="en">Namibia</pref>
+			<pref lang="de">Namibia</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="243"/>
+			<status>accepted</status>
+			<synonym>Namibia</synonym>
+			<synonym>Deutsch-Südwestafrika</synonym>
+			<synonym>German South West Africa</synonym>
+			<synonym>German Southwest Africa</synonym>
+			<synonym>ISO516</synonym>
+			<synonym>NA</synonym>
+			<synonym>NAM</synonym>
+			<synonym>Namibian</synonym>
+			<synonym>Namibie</synonym>
+			<synonym>Republic of Namibia</synonym>
+			<synonym>South West Africa</synonym>
+			<synonym>South-West Africa</synonym>
+			<synonym>Suidwes-Afrika</synonym>
+		</concept>
+		<concept id="152" lastmodified="2008-03-24">
+			<pref lang="en">Nauru</pref>
+			<pref lang="de">Nauru</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="260"/>
+			<status>accepted</status>
+			<synonym>Nauru</synonym>
+			<synonym>ISO520</synonym>
+			<synonym>Naoero</synonym>
+			<synonym>Nauruan</synonym>
+			<synonym>NR</synonym>
+			<synonym>NRU</synonym>
+			<synonym>Pleasant Island</synonym>
+			<synonym>Republic of Nauru</synonym>
+			<synonym>République de Nauru</synonym>
+		</concept>
+		<concept id="153" lastmodified="2008-03-24">
+			<pref lang="en">Nepal</pref>
+			<pref lang="de">Nepal</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="249"/>
+			<status>accepted</status>
+			<synonym>Nepal</synonym>
+			<synonym>ISO524</synonym>
+			<synonym>Kingdom of Nepal</synonym>
+			<synonym>Nepāl</synonym>
+			<synonym>Népal</synonym>
+			<synonym>Nepāl Adhirājya</synonym>
+			<synonym>Nepala</synonym>
+			<synonym>Nepalese</synonym>
+			<synonym>NP</synonym>
+			<synonym>NPL</synonym>
+			<synonym>Royaume du Népal</synonym>
+			<synonym>Sri Nepala Sarkar</synonym>
+		</concept>
+		<concept id="154" lastmodified="2008-03-24">
+			<pref lang="en">Netherlands</pref>
+			<pref lang="sv">Nederländerna</pref>
+			<pref lang="de">Niederlande</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="253"/>
+			<status>accepted</status>
+			<synonym>Batavian Republic</synonym>
+			<synonym>Dutch</synonym>
+			<synonym>Dutch Republic</synonym>
+			<synonym>Frisia</synonym>
+			<synonym>Holanda</synonym>
+			<synonym>Holland</synonym>
+			<synonym>Hollandish</synonym>
+			<synonym>ISO528</synonym>
+			<synonym>Kingdom of the Netherlands</synonym>
+			<synonym>Koninkrijk der Nederlanden</synonym>
+			<synonym>Nederland</synonym>
+			<synonym>Nederländerna</synonym>
+			<synonym>Netherlandian</synonym>
+			<synonym>Netherlandic</synonym>
+			<synonym>Netherlandish</synonym>
+			<synonym>Netherlands, The</synonym>
+			<synonym>Netherlands, United</synonym>
+			<synonym>Niederlande</synonym>
+			<synonym>NL</synonym>
+			<synonym>NLD</synonym>
+			<synonym>Olanda</synonym>
+			<synonym>Paesi Bassi</synonym>
+			<synonym>Países Baixos</synonym>
+			<synonym>Países Bajos</synonym>
+			<synonym>Pays-Bas</synonym>
+			<synonym>Royaume des Pays-Bas</synonym>
+			<synonym>The Netherlands</synonym>
+			<synonym>United Netherlands</synonym>
+			<synonym>United Provinces</synonym>
+			<synonym>United Provinces of the Netherlands</synonym>
+		</concept>
+		<concept id="155" lastmodified="2008-03-24">
+			<pref lang="en">Netherlands Antilles</pref>
+			<pref lang="de">Niederländische Antillen</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>AN</synonym>
+			<synonym>ANT</synonym>
+			<synonym>Antilhas Holandesas</synonym>
+			<synonym>Antillas Holandesas</synonym>
+			<synonym>Antillas Neerlandeses</synonym>
+			<synonym>Antilles holandaise</synonym>
+			<synonym>Antilles néerlandaises</synonym>
+			<synonym>Curaçao</synonym>
+			<synonym>Dutch West Indies</synonym>
+			<synonym>ISO530</synonym>
+			<synonym>Niederländische Antillen</synonym>
+		</concept>
+		<concept id="156" lastmodified="2008-03-24">
+			<pref lang="en">New Caledonia</pref>
+			<pref lang="de">Neukaledonien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="259"/>
+			<status>accepted</status>
+			<synonym>ISO540</synonym>
+			<synonym>NC</synonym>
+			<synonym>NCL</synonym>
+			<synonym>Neukaledonien</synonym>
+			<synonym>Nouvell-Calédonie</synonym>
+			<synonym>Nouvelle Calédonie</synonym>
+			<synonym>Nouvelle-Calédonie</synonym>
+			<synonym>Nova Caledônia</synonym>
+			<synonym>Nueva Caledonia</synonym>
+			<synonym> Territoire de la Novelle-Calédonie et Dépendances </synonym>
+			<synonym> Territory of New Caledonia and Dependencies </synonym>
+		</concept>
+		<concept id="157" lastmodified="2008-03-24">
+			<pref lang="en">New Zealand</pref>
+			<pref lang="de">Neuseeland</pref>
+			<pref lang="sv">Nya Zeeland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="258"/>
+			<status>accepted</status>
+			<synonym>Aotearoa</synonym>
+			<synonym>Dominion of New Zealand</synonym>
+			<synonym>ISO554</synonym>
+			<synonym>Neuseeland</synonym>
+			<synonym>Nieuw Zeeland</synonym>
+			<synonym>Nieuw-Zeeland</synonym>
+			<synonym>Nouvelle Zélande</synonym>
+			<synonym>Nouvelle-Zélande</synonym>
+			<synonym>Nova Zelândia</synonym>
+			<synonym>Nueva Zelandia</synonym>
+			<synonym>Nya Zeeland</synonym>
+			<synonym>NZ</synonym>
+			<synonym>NZL</synonym>
+			<synonym>Staten Landt</synonym>
+		</concept>
+		<concept id="158" lastmodified="2008-03-24">
+			<pref lang="en">Nicaragua</pref>
+			<pref lang="de">Nicaragua</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="256"/>
+			<status>accepted</status>
+			<synonym>Nicaragua</synonym>
+			<synonym>ISO558</synonym>
+			<synonym>NI</synonym>
+			<synonym>NIC</synonym>
+			<synonym>Nicarágua</synonym>
+			<synonym>Nicaraguan</synonym>
+			<synonym>Republic of Nicaragua</synonym>
+			<synonym>República de Nicaragua</synonym>
+			<synonym>République du Nicaragua</synonym>
+		</concept>
+		<concept id="159" lastmodified="2008-03-24">
+			<pref lang="en">Niger</pref>
+			<pref lang="de">Niger</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Niger</synonym>
+			<synonym>ISO562</synonym>
+			<synonym>NE</synonym>
+			<synonym>NER</synonym>
+			<synonym>Níger</synonym>
+			<synonym>Nigerien</synonym>
+			<synonym>Republic of Niger</synonym>
+			<synonym>République du Niger</synonym>
+		</concept>
+		<concept id="160" lastmodified="2008-03-24">
+			<pref lang="en">Nigeria</pref>
+			<pref lang="de">Nigeria</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Nigeria</synonym>
+			<synonym>Colony and Protectorate of Lagos</synonym>
+			<synonym>Colony and Protectorate of Nigeria</synonym>
+			<synonym>Federal Republic of Nigeria</synonym>
+			<synonym>Federation of Nigeria</synonym>
+			<synonym>ISO566</synonym>
+			<synonym>NG</synonym>
+			<synonym>NGA</synonym>
+			<synonym>Nigéria</synonym>
+			<synonym>Nigerian</synonym>
+			<synonym> Protectorates of Northern and Southern Nigeria </synonym>
+			<synonym>République fédérale du Nigéria</synonym>
+		</concept>
+		<concept id="161" lastmodified="2008-03-24">
+			<pref lang="en">Niue</pref>
+			<pref lang="de">Niue</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="261"/>
+			<status>accepted</status>
+			<synonym>Niue</synonym>
+			<synonym>ISO570</synonym>
+			<synonym>Nioué</synonym>
+			<synonym>NIU</synonym>
+			<synonym>NU</synonym>
+			<synonym>Savage Island</synonym>
+		</concept>
+		<concept id="162" lastmodified="2008-03-24">
+			<pref lang="en">Norfolk Island</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="258"/>
+			<status>accepted</status>
+			<synonym>Île Norfolk</synonym>
+			<synonym>Isla Norfolk</synonym>
+			<synonym>ISO574</synonym>
+			<synonym>NF</synonym>
+			<synonym>NFK</synonym>
+			<synonym>Norfolk-Insel</synonym>
+		</concept>
+		<concept id="163" lastmodified="2008-03-24">
+			<pref lang="en">North Korea</pref>
+			<pref lang="de">Nordkorea</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="247"/>
+			<status>accepted</status>
+			<synonym>Choson</synonym>
+			<synonym>Chosŏn M.I.K.</synonym>
+			<synonym>Chosŏn Minjujuŭi In'min Konghwaguk</synonym>
+			<synonym>Chosŏn-minjujuŭi-inmīn-konghwaguk</synonym>
+			<synonym>Corea del Norte</synonym>
+			<synonym>Corée du Nord</synonym>
+			<synonym>Coréia do Norte</synonym>
+			<synonym>Democratic People's Republic of Korea</synonym>
+			<synonym>ISO408</synonym>
+			<synonym>Korea, Democratic People's Republic of</synonym>
+			<synonym>Korea, North</synonym>
+			<synonym>KP</synonym>
+			<synonym>Noord Korea</synonym>
+			<synonym>Nordkorea</synonym>
+			<synonym>North Korean</synonym>
+			<synonym>PRK</synonym>
+			<synonym> République populaire démocratique de Corée </synonym>
+		</concept>
+		<concept id="164" lastmodified="2008-03-24">
+			<pref lang="en">Northern Mariana Islands</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="260"/>
+			<status>accepted</status>
+			<synonym>Commonwealth des îles Mariannes du Nord</synonym>
+			<synonym> Commonwealth of the Northern Mariana Islands </synonym>
+			<synonym>ISO580</synonym>
+			<synonym>Mariannes du Nord, Îles</synonym>
+			<synonym>MNP</synonym>
+			<synonym>MP</synonym>
+			<synonym>Northern Marianas</synonym>
+		</concept>
+		<concept id="165" lastmodified="2008-03-24">
+			<pref lang="en">Norway</pref>
+			<pref lang="de">Norwegen</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>ISO578</synonym>
+			<synonym>Kingdom of Norway</synonym>
+			<synonym>Kongeriket Norge</synonym>
+			<synonym>NO</synonym>
+			<synonym>Noorwegen</synonym>
+			<synonym>NOR</synonym>
+			<synonym>Nordweg</synonym>
+			<synonym>Norge</synonym>
+			<synonym>Noruega</synonym>
+			<synonym>Norvège</synonym>
+			<synonym>Norwegen</synonym>
+			<synonym>Norvegia</synonym>
+			<synonym>Norwegian</synonym>
+			<synonym>Rouaume de Norvège</synonym>
+		</concept>
+		<concept id="166" lastmodified="2008-03-24">
+			<pref lang="en">Oman</pref>
+			<pref lang="de">Oman</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Oman</synonym>
+			<synonym>ISO512</synonym>
+			<synonym>Magan</synonym>
+			<synonym>Masqat and Oman</synonym>
+			<synonym>Masqaţ and Oman</synonym>
+			<synonym>Muscat and Oman</synonym>
+			<synonym>OM</synonym>
+			<synonym>Omã</synonym>
+			<synonym>Omán</synonym>
+			<synonym>Omani</synonym>
+			<synonym>OMN</synonym>
+			<synonym>Saltanat Umān</synonym>
+			<synonym>Sultanat d'Oman</synonym>
+			<synonym>Sultanate of Oman</synonym>
+			<synonym>Umān</synonym>
+		</concept>
+		<concept id="167" lastmodified="2008-03-24">
+			<pref lang="en">Pakistan</pref>
+			<pref lang="de">Pakistan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="249"/>
+			<status>accepted</status>
+			<synonym>Pakistan</synonym>
+			<synonym>Islāmī Jamhūriya-e Pākistān</synonym>
+			<synonym>Islām-ī Jamhūrīya-e Pākistān</synonym>
+			<synonym>Islamic Republic of Pakistan</synonym>
+			<synonym>ISO586</synonym>
+			<synonym>PAK</synonym>
+			<synonym>Pākistān</synonym>
+			<synonym>Pakistani</synonym>
+			<synonym>Paquistán</synonym>
+			<synonym>Paquistão</synonym>
+			<synonym>PK</synonym>
+			<synonym>République islamique du Pakistan</synonym>
+		</concept>
+		<concept id="168" lastmodified="2008-03-24">
+			<pref lang="en">Palau</pref>
+			<pref lang="de">Palau</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="260"/>
+			<status>accepted</status>
+			<synonym>Palau</synonym>
+			<synonym>Belau</synonym>
+			<synonym>ISO585</synonym>
+			<synonym>Pelauan</synonym>
+			<synonym>Pelew</synonym>
+			<synonym>PLW</synonym>
+			<synonym>PW</synonym>
+			<synonym>Republic of Belau</synonym>
+			<synonym>Republic of Palau</synonym>
+		</concept>
+		<concept id="169" lastmodified="2008-03-24">
+			<pref lang="en">Panama</pref>
+			<pref lang="de">Panama</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="256"/>
+			<status>accepted</status>
+			<synonym>Panama</synonym>
+			<synonym>Darién</synonym>
+			<synonym>ISO591</synonym>
+			<synonym>PA</synonym>
+			<synonym>PAN</synonym>
+			<synonym>Panamá</synonym>
+			<synonym>Panamanian</synonym>
+			<synonym>Republic of Panama</synonym>
+			<synonym>República de Panamá</synonym>
+			<synonym>République du Panama</synonym>
+		</concept>
+		<concept id="170" lastmodified="2008-03-24">
+			<pref lang="en">Papua New Guinea</pref>
+			<pref lang="sv">Papua Nya Guinea</pref>
+			<pref lang="de">Papua-Neuguinea</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="259"/>
+			<status>accepted</status>
+			<synonym>Independent State of Papua New Guinea</synonym>
+			<synonym>ISO598</synonym>
+			<synonym>Papouasie-Nouvelle Guinée</synonym>
+			<synonym>Papua New Guinean</synonym>
+			<synonym>Papua Nueva Guinea</synonym>
+			<synonym>Papua Nya Guinea</synonym>
+			<synonym>Papua-Neuguinea</synonym>
+			<synonym>Papua-Nieuwguinea</synonym>
+			<synonym>Papua-Nova Guiné</synonym>
+			<synonym>PG</synonym>
+			<synonym>PNG</synonym>
+			<synonym>Territory of Papua and New Guinea</synonym>
+		</concept>
+		<concept id="171" lastmodified="2008-03-24">
+			<pref lang="en">Paraguay</pref>
+			<pref lang="de">Paraguay</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>Paraguay</synonym>
+			<synonym>ISO600</synonym>
+			<synonym>Paraguai</synonym>
+			<synonym>Paraguayan</synonym>
+			<synonym>PRY</synonym>
+			<synonym>PY</synonym>
+			<synonym>Republic of Paraguay</synonym>
+			<synonym>República del Paraguay</synonym>
+			<synonym>République du Paraguay</synonym>
+		</concept>
+		<concept id="172" lastmodified="2008-03-24">
+			<pref lang="en">Peru</pref>
+			<pref lang="de">Peru</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>Peru</synonym>
+			<synonym>ISO604</synonym>
+			<synonym>PE</synonym>
+			<synonym>PER</synonym>
+			<synonym>Pérou</synonym>
+			<synonym>Perú</synonym>
+			<synonym>Peruvian</synonym>
+			<synonym>Republic of Peru</synonym>
+			<synonym>República del Perú</synonym>
+			<synonym>République du Pérou</synonym>
+		</concept>
+		<concept id="173" lastmodified="2008-03-24">
+			<pref lang="en">Philippines</pref>
+			<pref lang="sv">Filippinerna</pref>
+			<pref lang="de">Philippinen</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Commonwealth of the Philippines</synonym>
+			<synonym>Filipinas</synonym>
+			<synonym>Filippijnen</synonym>
+			<synonym>Filippinerna</synonym>
+			<synonym>Islas Filipinas</synonym>
+			<synonym>ISO608</synonym>
+			<synonym>PH</synonym>
+			<synonym>Philippine</synonym>
+			<synonym>Philippine Islands</synonym>
+			<synonym>Philippinen</synonym>
+			<synonym>PHL</synonym>
+			<synonym>Pilipinas</synonym>
+			<synonym>Republic of the Philippines</synonym>
+			<synonym>República de Filipinas</synonym>
+			<synonym>Republika ng Pilipinas</synonym>
+			<synonym>Republika ñg Pilipinas</synonym>
+		</concept>
+		<concept id="174" lastmodified="2008-03-24">
+			<pref lang="en">Pitcairn</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="261"/>
+			<status>accepted</status>
+			<synonym>ISO612</synonym>
+			<synonym>PCN</synonym>
+			<synonym>Pitcairn Island</synonym>
+			<synonym>Pitcairn Islands</synonym>
+			<synonym> Pitcairn, Henderson, Ducie, and Oeno Islands </synonym>
+			<synonym>PN</synonym>
+		</concept>
+		<concept id="175" lastmodified="2008-03-24">
+			<pref lang="en">Poland</pref>
+			<pref lang="de">Polen</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="251"/>
+			<status>accepted</status>
+			<synonym>ISO616</synonym>
+			<synonym>PL</synonym>
+			<synonym>POL</synonym>
+			<synonym>Polen</synonym>
+			<synonym>Polish</synonym>
+			<synonym>Polish People's Republic</synonym>
+			<synonym>Pologne</synonym>
+			<synonym>Polonia</synonym>
+			<synonym>Polska</synonym>
+			<synonym>Polska Rzeczpospolita</synonym>
+			<synonym>Polska Rzeczpospolita Ludowa</synonym>
+			<synonym>Republic of Poland</synonym>
+			<synonym>Rzeczpospolita Polska</synonym>
+		</concept>
+		<concept id="176" lastmodified="2008-03-24">
+			<pref lang="en">Portugal</pref>
+			<pref lang="de">Portugal</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>Portugal</synonym>
+			<synonym>ISO620</synonym>
+			<synonym>Lusitania</synonym>
+			<synonym>Portuguese</synonym>
+			<synonym>Portuguese Republic</synonym>
+			<synonym>PRT</synonym>
+			<synonym>PT</synonym>
+			<synonym>Republic of Portugal</synonym>
+			<synonym>Republica Portuguesa</synonym>
+			<synonym>República Portuguesa</synonym>
+			<synonym>République portugaise</synonym>
+		</concept>
+		<concept id="177" lastmodified="2008-03-24">
+			<pref lang="en">Puerto Rico</pref>
+			<pref lang="de">Puerto Rico</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Puerto Rico</synonym>
+			<synonym>Commonwealth of Puerto Rico</synonym>
+			<synonym>Estado Libre Asociado de Puerto Rico</synonym>
+			<synonym>Estado Libre Asociado Puerto Rico</synonym>
+			<synonym>ISO630</synonym>
+			<synonym>Porto Rico</synonym>
+			<synonym>PR</synonym>
+			<synonym>PRI</synonym>
+			<synonym>St. Juan de Porto Rico</synonym>
+		</concept>
+		<concept id="178" lastmodified="2008-03-24">
+			<pref lang="en">Qatar</pref>
+			<pref lang="de">Katar</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Dawlat al-Qatar</synonym>
+			<synonym>Dawlat Qatar</synonym>
+			<synonym>État du Qatar</synonym>
+			<synonym>ISO634</synonym>
+			<synonym>Katar</synonym>
+			<synonym>QA</synonym>
+			<synonym>QAT</synonym>
+			<synonym>Qatari</synonym>
+			<synonym>State of Qatar</synonym>
+		</concept>
+		<concept id="179" lastmodified="2008-03-24">
+			<pref lang="en">Reunion</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Département de la Réunion</synonym>
+			<synonym>Department of Reunion</synonym>
+			<synonym>Department of Réunion</synonym>
+			<synonym>ISO638</synonym>
+			<synonym>RE</synonym>
+			<synonym>REU</synonym>
+			<synonym>Reunião</synonym>
+			<synonym>Reunión</synonym>
+		</concept>
+		<concept id="180" lastmodified="2008-03-24">
+			<pref lang="en">Romania</pref>
+			<pref lang="de">Rumänien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="251"/>
+			<status>accepted</status>
+			<synonym>Dacia</synonym>
+			<synonym>ISO642</synonym>
+			<synonym>Republica Socialistă România</synonym>
+			<synonym>RO</synonym>
+			<synonym>Roemenië</synonym>
+			<synonym>ROM</synonym>
+			<synonym>România</synonym>
+			<synonym>Romanian</synonym>
+			<synonym>Romênia</synonym>
+			<synonym>Roumania</synonym>
+			<synonym>Roumanian</synonym>
+			<synonym>Roumanie</synonym>
+			<synonym>Rumania</synonym>
+			<synonym>Rumanian</synonym>
+			<synonym>Rumänien</synonym>
+			<synonym>Socialist Republic of Romania</synonym>
+		</concept>
+		<concept id="181" lastmodified="2008-03-24">
+			<pref lang="en">Russia</pref>
+			<pref lang="de">Russische Föderation</pref>
+			<pref lang="sv">Ryssland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="251"/>
+			<status>accepted</status>
+			<synonym>Russische Föderation</synonym>
+			<synonym>Rußland</synonym>
+			<synonym>Fédération de Russie</synonym>
+			<synonym>ISO643</synonym>
+			<synonym>R.S.F.S.R.</synonym>
+			<synonym> Rossijskaja Sovetskaja Federativnaja Socialističeskaja Respublika </synonym>
+			<synonym>Rossiya</synonym>
+			<synonym>Rossiyskaya</synonym>
+			<synonym>Rossiyskaya Federatsiya</synonym>
+			<synonym>Rossiyskaya SFSR</synonym>
+			<synonym>RU</synonym>
+			<synonym>RUS</synonym>
+			<synonym>Rusia</synonym>
+			<synonym>Rusland</synonym>
+			<synonym>Rússia</synonym>
+			<synonym>Russian Federation</synonym>
+			<synonym>Russian SFSR</synonym>
+			<synonym> Russian Soviet Federated Socialist Republic </synonym>
+			<synonym>Russie</synonym>
+			<synonym>Russland</synonym>
+			<synonym>Ryssland</synonym>
+		</concept>
+		<concept id="182" lastmodified="2008-03-24">
+			<pref lang="en">Rwanda</pref>
+			<pref lang="de">Ruanda</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>ISO646</synonym>
+			<synonym>Republic of Rwanda</synonym>
+			<synonym>République rwandaise</synonym>
+			<synonym>Repubulika y'u Rwanda</synonym>
+			<synonym>Ruanda</synonym>
+			<synonym>RW</synonym>
+			<synonym>RWA</synonym>
+			<synonym>Rwandan</synonym>
+			<synonym>Rwandese Republic</synonym>
+		</concept>
+		<concept id="183" lastmodified="2008-03-24">
+			<pref lang="en">Saint Helena</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>ISO654</synonym>
+			<synonym>Saint Helena and Dependencies</synonym>
+			<synonym>Sainte-Hélène</synonym>
+			<synonym>Sankt Helena</synonym>
+			<synonym>Santa Helena</synonym>
+			<synonym>Sant'Elena</synonym>
+			<synonym>SH</synonym>
+			<synonym>SHN</synonym>
+			<synonym>Sint Helena</synonym>
+			<synonym>St. Helena</synonym>
+		</concept>
+		<concept id="184" lastmodified="2008-03-24">
+			<pref lang="en">Saint Kitts and Nevis</pref>
+			<pref lang="de">St. Kitts und Nevis</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>St. Kitts und Nevis</synonym>
+			<synonym>Federation of Saint Christopher and Nevis</synonym>
+			<synonym>Federation of Saint Kitts and Nevis</synonym>
+			<synonym>Federation of St. Christopher and Nevis</synonym>
+			<synonym>ISO659</synonym>
+			<synonym>Kittian Nevisian</synonym>
+			<synonym>KN</synonym>
+			<synonym>KNA</synonym>
+			<synonym>Saint Christopher and Nevis</synonym>
+			<synonym> Saint Christopher and Nevis, Federation of </synonym>
+			<synonym>Saint Christopher-Nevis</synonym>
+			<synonym>Saint Kitts y Nevis</synonym>
+			<synonym>Saint Kitts-Nevis</synonym>
+			<synonym>Saint-Christophe-Nièves</synonym>
+			<synonym>Saint-Kitts-et-Nevis</synonym>
+			<synonym>San Cristóbal-Nevis</synonym>
+			<synonym>Sankt Christopher-Nevis</synonym>
+			<synonym>São Cristóvão-Neves</synonym>
+			<synonym>St. Christopher and Nevis</synonym>
+			<synonym>St. Christopher-Nevis</synonym>
+			<synonym>St. Kitts-Nevis</synonym>
+		</concept>
+		<concept id="185" lastmodified="2008-03-24">
+			<pref lang="en">Saint Lucia</pref>
+			<pref lang="de">St. Lucia</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>ISO662</synonym>
+			<synonym>LC</synonym>
+			<synonym>LCA</synonym>
+			<synonym>Saint Lucian</synonym>
+			<synonym>Sainte-Lucie</synonym>
+			<synonym>Santa Lucía</synonym>
+			<synonym>Santa Lúcia</synonym>
+			<synonym>St. Lucia</synonym>
+		</concept>
+		<concept id="186" lastmodified="2008-03-24">
+			<pref lang="en">Saint Pierre and Miquelon</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="257"/>
+			<status>accepted</status>
+			<synonym> Collectivité territoriale de Saint-Pierre et Micquelon </synonym>
+			<synonym>ISO666</synonym>
+			<synonym>PM</synonym>
+			<synonym>Saint Pierre et Miquelon</synonym>
+			<synonym>Saint-Pierre and Miquelon</synonym>
+			<synonym>San Pedro y Miquelón</synonym>
+			<synonym>SPM</synonym>
+			<synonym>St. Pierre and Miquelon</synonym>
+			<synonym>St. Pierre et Miquelon</synonym>
+			<synonym> Territorial Collectivity of Saint Pierre and Miquelon </synonym>
+		</concept>
+		<concept id="187" lastmodified="2008-03-24">
+			<pref lang="en">Saint Vincent and the Grenadines</pref>
+			<pref lang="de">St. Vincent und die Grenadinen</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>St. Vincent und die Grenadinen</synonym>
+			<synonym>ISO670</synonym>
+			<synonym>Saint Vincent</synonym>
+			<synonym>Saint Vincentian</synonym>
+			<synonym>Saint-Vincent-et-les-Grenadines</synonym>
+			<synonym>San Vicente y las Granadinas</synonym>
+			<synonym>Sankt Vincent und die Grenadinen</synonym>
+			<synonym>São Vicente e Granadinas</synonym>
+			<synonym>St Vincent and the Grenadines</synonym>
+			<synonym>St. Vincent and the Grenadines</synonym>
+			<synonym>VC</synonym>
+			<synonym>VCT</synonym>
+			<synonym>Vincentian</synonym>
+		</concept>
+		<concept id="188" lastmodified="2008-03-24">
+			<pref lang="en">Samoa</pref>
+			<pref lang="de">Samoa</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="261"/>
+			<status>accepted</status>
+			<synonym>Samoa</synonym>
+			<synonym>État indépendant du Samoa-Occidental</synonym>
+			<synonym>Independent State of Western Samoa</synonym>
+			<synonym>ISO882</synonym>
+			<synonym>Malo Saoloto Tutoatasi o Samoa</synonym>
+			<synonym>Malo Saoloto Tutoatasi o Samoa i Sisifo</synonym>
+			<synonym>Samoa i Sisifo</synonym>
+			<synonym>Samoa Occidental</synonym>
+			<synonym>Samoa Ocidental</synonym>
+			<synonym>Samoa, Independent State of</synonym>
+			<synonym>Samoan</synonym>
+			<synonym>Western Samoa</synonym>
+			<synonym>Westsamoa</synonym>
+			<synonym>WS</synonym>
+			<synonym>WSM</synonym>
+		</concept>
+		<concept id="189" lastmodified="2008-03-24">
+			<pref lang="en">San Marino</pref>
+			<pref lang="de">San Marino</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>San Marino</synonym>
+			<synonym>ISO674</synonym>
+			<synonym>Most Serene Republic of San Marino</synonym>
+			<synonym>Repubblica di San Marino</synonym>
+			<synonym>Republic of San Marino</synonym>
+			<synonym>République de Saint-Marin</synonym>
+			<synonym>Saint-Marin</synonym>
+			<synonym>Sammarinese</synonym>
+			<synonym>Serenissima Repubblica di San Marino</synonym>
+			<synonym>SM</synonym>
+			<synonym>SMR</synonym>
+		</concept>
+		<concept id="190" lastmodified="2008-03-24">
+			<pref lang="en">Sao Tome and Principe</pref>
+			<pref lang="de">Sao Tomé und Príncipe</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="241"/>
+			<status>accepted</status>
+			<synonym>Sao Tomé und Príncipe</synonym>
+			<synonym> Democratic Republic of Sao Tome and Principe </synonym>
+			<synonym>ISO678</synonym>
+			<synonym> República democrática de São Tomé e Príncipe </synonym>
+			<synonym> République démocratique de Sao Tomé-et-Principe </synonym>
+			<synonym>Santo Tomé y Príncipe</synonym>
+			<synonym>São Tomé e Príncipe</synonym>
+			<synonym>Sao Tomean</synonym>
+			<synonym>Sao Tomé-et-Principe</synonym>
+			<synonym>ST</synonym>
+			<synonym>STP</synonym>
+		</concept>
+		<concept id="191" lastmodified="2008-03-24">
+			<pref lang="en">Saudi Arabia</pref>
+			<pref lang="de">Saudi-Arabien</pref>
+			<pref lang="sv">Saudiarabien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Saudi-Arabien</synonym>
+			<synonym>Al-Arabīyah as-Saūdīyah</synonym>
+			<synonym>Al-Arabīyah as-Suūdīyah</synonym>
+			<synonym>Al-Mamlaka al-'Arabiya as-Sa'udiya</synonym>
+			<synonym>Al-Mamlakah al-Arabīyah as-Saūdīyah</synonym>
+			<synonym>Arabia Saudita</synonym>
+			<synonym>Arábia Saudita</synonym>
+			<synonym>Arabie saoudite</synonym>
+			<synonym>ISO682</synonym>
+			<synonym>Kingdom of Saudi Arabia</synonym>
+			<synonym>Royaume d'Arabie saoudite</synonym>
+			<synonym>SA</synonym>
+			<synonym>Saoedi Arabië</synonym>
+			<synonym>SAU</synonym>
+			<synonym>Saudi Arabian</synonym>
+			<synonym>Saudiarabien</synonym>
+			<synonym>Saudi-Arabien</synonym>
+		</concept>
+		<concept id="192" lastmodified="2008-03-24">
+			<pref lang="en">Senegal</pref>
+			<pref lang="de">Senegal</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Senegal</synonym>
+			<synonym>ISO686</synonym>
+			<synonym>Republic of Senegal</synonym>
+			<synonym>République du Sénégal</synonym>
+			<synonym>SEN</synonym>
+			<synonym>Sénégal</synonym>
+			<synonym>Senegalese</synonym>
+			<synonym>SN</synonym>
+		</concept>
+		<concept id="193" lastmodified="2008-03-24">
+			<pref lang="en">Serbia</pref>
+			<pref lang="de">Serbien</pref>
+			<pref lang="sv">Serbien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<scope> Serbia and Montenegro (TGN # 1000102) are two independent nations </scope>
+			<status>accepted</status>
+			<synonym>Serbien</synonym>
+			<synonym>Serbian</synonym>
+			<synonym>Serbien</synonym>
+			<synonym>Servia</synonym>
+			<synonym>Sirmien</synonym>
+			<synonym>Srbija</synonym>
+			<synonym>Srem</synonym>
+			<synonym>Syrmia</synonym>
+			<synonym>Szerém</synonym>
+		</concept>
+		<concept id="194" lastmodified="2008-03-24">
+			<pref lang="en">Seychelles</pref>
+			<pref lang="de">Seychellen</pref>
+			<pref lang="sv">Seychellerna</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Seychellen</synonym>
+			<synonym>ISO690</synonym>
+			<synonym>Repiblik Sesel</synonym>
+			<synonym>Republic of Seychelles</synonym>
+			<synonym>République des Seychelles</synonym>
+			<synonym>SC</synonym>
+			<synonym>Seschellen</synonym>
+			<synonym>Seychellerna</synonym>
+			<synonym>SYC</synonym>
+		</concept>
+		<concept id="195" lastmodified="2008-03-24">
+			<pref lang="en">Sierra Leone</pref>
+			<pref lang="de">Sierra Leone</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Sierra Leone</synonym>
+			<synonym>ISO694</synonym>
+			<synonym>Republic of Sierra Leone</synonym>
+			<synonym>République de Sierra Leone</synonym>
+			<synonym>Serra Leoa</synonym>
+			<synonym>Sierra Leona</synonym>
+			<synonym>Sierra Leonean</synonym>
+			<synonym>SL</synonym>
+			<synonym>SLE</synonym>
+		</concept>
+		<concept id="196" lastmodified="2008-03-24">
+			<pref lang="en">Singapore</pref>
+			<pref lang="de">Singapur</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Cingapura</synonym>
+			<synonym>Hsin-chia-p'o Kung-ho-kuo</synonym>
+			<synonym>ISO702</synonym>
+			<synonym>Republic of Singapore</synonym>
+			<synonym>République de Singapour</synonym>
+			<synonym>Repubublik Singapura</synonym>
+			<synonym>SG</synonym>
+			<synonym>SGP</synonym>
+			<synonym>Singa pura</synonym>
+			<synonym>Singapore Kudiyarasu</synonym>
+			<synonym>Singaporean</synonym>
+			<synonym>Singaporian</synonym>
+			<synonym>Singapour</synonym>
+			<synonym>Singapur</synonym>
+			<synonym>Temasek</synonym>
+			<synonym>Tumasik</synonym>
+		</concept>
+		<concept id="197" lastmodified="2008-03-24">
+			<pref lang="en">Slovakia</pref>
+			<pref lang="de">Slowakei</pref>
+			<pref lang="sv">Slovakien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="251"/>
+			<status>accepted</status>
+			<synonym>Eslovaquia</synonym>
+			<synonym>ISO703</synonym>
+			<synonym>République Slovaque</synonym>
+			<synonym>SK</synonym>
+			<synonym>Slovak</synonym>
+			<synonym>Slovak Republic</synonym>
+			<synonym>Slovak Socialist Republic</synonym>
+			<synonym>Slowakei</synonym>
+			<synonym>Slovakien</synonym>
+			<synonym>Slowakije</synonym>
+			<synonym>Slovaquie</synonym>
+			<synonym>Slovenská Republika</synonym>
+			<synonym>Slovenská Socialistická Republika</synonym>
+			<synonym>Slovensko</synonym>
+			<synonym>SVK</synonym>
+		</concept>
+		<concept id="198" lastmodified="2008-03-24">
+			<pref lang="en">Slovenia</pref>
+			<pref lang="de">Slowenien</pref>
+			<pref lang="sv">Slovenien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>Slowenien</synonym>
+			<synonym>Eslovenia</synonym>
+			<synonym>ISO705</synonym>
+			<synonym>Republic of Slovenia</synonym>
+			<synonym>Republika Slovenija</synonym>
+			<synonym>République de Slovénie</synonym>
+			<synonym>Samo</synonym>
+			<synonym>SI</synonym>
+			<synonym>Slovene</synonym>
+			<synonym>Slovenian</synonym>
+			<synonym>Slovénie</synonym>
+			<synonym>Slovenien</synonym>
+			<synonym>Slovenija</synonym>
+			<synonym>Slovenish</synonym>
+			<synonym>SVN</synonym>
+		</concept>
+		<concept id="199" lastmodified="2008-03-24">
+			<pref lang="en">Solomon Islands</pref>
+			<pref lang="de">Salomonen</pref>
+			<pref lang="sv">Salomonöarna</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="259"/>
+			<status>accepted</status>
+			<synonym>British Solomon Islands</synonym>
+			<synonym>British Solomon Islands Protectorate</synonym>
+			<synonym>Îles Salomon</synonym>
+			<synonym>Islas de Solomon</synonym>
+			<synonym>Islas Salomón</synonym>
+			<synonym>ISO090</synonym>
+			<synonym>Salomão, Ilhas</synonym>
+			<synonym>Salomonen</synonym>
+			<synonym>Salomonöarna</synonym>
+			<synonym>SB</synonym>
+			<synonym>SLB</synonym>
+			<synonym>Solomon Islander</synonym>
+			<synonym>Solomons</synonym>
+		</concept>
+		<concept id="200" lastmodified="2008-03-24">
+			<pref lang="en">Somalia</pref>
+			<pref lang="de">Somalia</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Somalia</synonym>
+			<synonym>British and Italian Somaliland</synonym>
+			<synonym>ISO706</synonym>
+			<synonym>Jamhuriyadda Dimugradiga Somaliya</synonym>
+			<synonym>Jamhuuriyadda Dimuqraadiga Soomaaliya</synonym>
+			<synonym>Jumhūrīyah as-Sūmāl ad-Dīmuqrātīyah</synonym>
+			<synonym>République démocratique somalie</synonym>
+			<synonym>SO</synonym>
+			<synonym>SOM</synonym>
+			<synonym>Somali</synonym>
+			<synonym>Somali Democratic Republic</synonym>
+			<synonym>Somália</synonym>
+			<synonym>Somalian</synonym>
+			<synonym>Somalie</synonym>
+			<synonym>Somaliya</synonym>
+			<synonym>Soomaaliya</synonym>
+		</concept>
+		<concept id="201" lastmodified="2008-03-24">
+			<pref lang="en">South Africa</pref>
+			<pref lang="sv">Sydafrika</pref>
+			<pref lang="de">Südafrika</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="243"/>
+			<status>accepted</status>
+			<synonym>Africa del Sud</synonym>
+			<synonym>África do Sul</synonym>
+			<synonym>Afrique du Sud</synonym>
+			<synonym>ISO710</synonym>
+			<synonym>Republic of South Africa</synonym>
+			<synonym>Republiek van Suid-Afrika</synonym>
+			<synonym>République sud-africaine</synonym>
+			<synonym>South African</synonym>
+			<synonym>Sudáfrica</synonym>
+			<synonym>Suid-Afrika</synonym>
+			<synonym>Sydafrika</synonym>
+			<synonym>Südafrika</synonym>
+			<synonym>Unie van Suid-Afrika</synonym>
+			<synonym>Union of South Africa</synonym>
+			<synonym>ZA</synonym>
+			<synonym>ZAF</synonym>
+			<synonym>Zuid-Afrika</synonym>
+		</concept>
+		<concept id="202" lastmodified="2008-03-24">
+			<pref lang="en">South Korea</pref>
+			<pref lang="sv">Sydkorea</pref>
+			<pref lang="de">Südkorea</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="247"/>
+			<status>accepted</status>
+			<synonym>Chosen</synonym>
+			<synonym>Chosŏn</synonym>
+			<synonym>Corea del Sur</synonym>
+			<synonym>Corée du Sud</synonym>
+			<synonym>Coréia do Sul</synonym>
+			<synonym>Han-guk</synonym>
+			<synonym>ISO410</synonym>
+			<synonym>KOR</synonym>
+			<synonym>Korea</synonym>
+			<synonym>Korea, South</synonym>
+			<synonym>Koryo</synonym>
+			<synonym>KR</synonym>
+			<synonym>Republic of Korea</synonym>
+			<synonym>République de Corée</synonym>
+			<synonym>Silla</synonym>
+			<synonym>South Korean</synonym>
+			<synonym>Sydkorea</synonym>
+			<synonym>Südkorea</synonym>
+			<synonym>Tae Han</synonym>
+			<synonym>Tae Han Min'guk</synonym>
+			<synonym>Taehan</synonym>
+			<synonym>Taehan Min'guk</synonym>
+			<synonym>Taehan-min'guk</synonym>
+			<synonym>Zuidkorea</synonym>
+		</concept>
+		<concept id="203" lastmodified="2008-03-24">
+			<pref lang="en">Spain</pref>
+			<pref lang="de">Spanien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="252"/>
+			<status>accepted</status>
+			<synonym>ES</synonym>
+			<synonym>ESP</synonym>
+			<synonym>Espagne</synonym>
+			<synonym>España</synonym>
+			<synonym>Espanha</synonym>
+			<synonym>Estado Español</synonym>
+			<synonym>Hispana</synonym>
+			<synonym>Hispania</synonym>
+			<synonym>Iberia</synonym>
+			<synonym>ISO724</synonym>
+			<synonym>Kingdom of Spain</synonym>
+			<synonym>Reino de España</synonym>
+			<synonym>Royaume d'Espagne</synonym>
+			<synonym>Spagna</synonym>
+			<synonym>Spanien</synonym>
+			<synonym>Spanish</synonym>
+			<synonym>Spanish State</synonym>
+			<synonym>Spanje</synonym>
+		</concept>
+		<concept id="204" lastmodified="2008-03-24">
+			<pref lang="en">Sri Lanka</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="249"/>
+			<status>accepted</status>
+			<synonym>Ceilan</synonym>
+			<synonym>Ceilán</synonym>
+			<synonym>Ceylan</synonym>
+			<synonym>Ceylon</synonym>
+			<synonym> Democratic Socialist Republic of Sri Lanka </synonym>
+			<synonym>Ilam</synonym>
+			<synonym>Īlam</synonym>
+			<synonym>Ilangai Jananayaka Socialisa Kudiarasu</synonym>
+			<synonym>Ilankai</synonym>
+			<synonym>ISO144</synonym>
+			<synonym>Lanka</synonym>
+			<synonym>Lankā</synonym>
+			<synonym>LK</synonym>
+			<synonym>LKA</synonym>
+			<synonym> République socialiste démocratique de Sri Lanka </synonym>
+			<synonym>Sarandib</synonym>
+			<synonym>Saylan</synonym>
+			<synonym>Serendib</synonym>
+			<synonym>Serendip</synonym>
+			<synonym>Sihala</synonym>
+			<synonym>Simhaladvīpa</synonym>
+			<synonym>Śri Lankā</synonym>
+			<synonym> Sri Lankā Prajathanthrika Samajavadi Janarajaya </synonym>
+			<synonym>Sri Lankan</synonym>
+		</concept>
+		<concept id="205" lastmodified="2008-03-24">
+			<pref lang="en">Sudan</pref>
+			<pref lang="de">Sudan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="245"/>
+			<status>accepted</status>
+			<synonym>Sudan</synonym>
+			<synonym>Anglo-Egyptian Sudan</synonym>
+			<synonym>As-Sūdān</synonym>
+			<synonym>Democratic Republic of the Sudan</synonym>
+			<synonym>ISO736</synonym>
+			<synonym>Jum hūrīyat as-Sūdān ad-Dīmuqratīyah</synonym>
+			<synonym>Jumhūrīyat as-Sūdān</synonym>
+			<synonym>Jumhūrīyat as-Sūdān ad-Dīmugratīyah</synonym>
+			<synonym>Republic of the Sudan</synonym>
+			<synonym>République du Soudan</synonym>
+			<synonym>SD</synonym>
+			<synonym>SDN</synonym>
+			<synonym>Soedan</synonym>
+			<synonym>Soudan</synonym>
+			<synonym>Sudán</synonym>
+			<synonym>Sudan, The</synonym>
+			<synonym>Sudanese</synonym>
+			<synonym>Sudão</synonym>
+		</concept>
+		<concept id="206" lastmodified="2008-03-24">
+			<pref lang="en">Surinam</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>Dutch Guiana</synonym>
+			<synonym>ISO740</synonym>
+			<synonym>Netherlands Guiana</synonym>
+			<synonym>Republic of Surinam</synonym>
+			<synonym>Republic of Suriname</synonym>
+			<synonym>Republiek Suriname</synonym>
+			<synonym>République du Suriname</synonym>
+			<synonym>SR</synonym>
+			<synonym>SUR</synonym>
+			<synonym>Suriname</synonym>
+			<synonym>Surinamese</synonym>
+		</concept>
+		<concept id="207" lastmodified="2008-03-24">
+			<pref lang="en">Svalbard</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+		</concept>
+		<concept id="208" lastmodified="2008-03-24">
+			<pref lang="en">Swaziland</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="243"/>
+			<status>accepted</status>
+			<synonym>ISO748</synonym>
+			<synonym>Kingdom of Swaziland</synonym>
+			<synonym>Royaume du Swaziland</synonym>
+			<synonym>Suazilândia</synonym>
+			<synonym>Swasiland</synonym>
+			<synonym>Swazi</synonym>
+			<synonym>Swazilandia</synonym>
+			<synonym>SWZ</synonym>
+			<synonym>SZ</synonym>
+			<synonym>Umbuso weSwatini</synonym>
+		</concept>
+		<concept id="209" lastmodified="2008-03-24">
+			<pref lang="en">Sweden</pref>
+			<pref lang="de">Sri Lanka</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>Sri Lanka</synonym>
+			<synonym>ISO752</synonym>
+			<synonym>Kingdom of Sweden</synonym>
+			<synonym>Konungariket Sverige</synonym>
+			<synonym>Royaume de Suède</synonym>
+			<synonym>Schweden</synonym>
+			<synonym>SE</synonym>
+			<synonym>Suecia</synonym>
+			<synonym>Suécia</synonym>
+			<synonym>Suède</synonym>
+			<synonym>SWE</synonym>
+			<synonym>Swedish</synonym>
+			<synonym>Sverige</synonym>
+			<synonym>Svezia</synonym>
+		</concept>
+		<concept id="210" lastmodified="2008-03-24">
+			<pref lang="en">Switzerland</pref>
+			<pref lang="de">Schweiz</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="253"/>
+			<status>accepted</status>
+			<synonym>CH</synonym>
+			<synonym>CHE</synonym>
+			<synonym>Confédération Helvétique</synonym>
+			<synonym>Confédération suisse</synonym>
+			<synonym>Confédération Suisse</synonym>
+			<synonym>Confederazione Elvetica</synonym>
+			<synonym>Confederazione Svizzera</synonym>
+			<synonym>Confederaziun Helvetica</synonym>
+			<synonym>Helvetia</synonym>
+			<synonym>Helvetic Confederation</synonym>
+			<synonym>Helvetic Republic</synonym>
+			<synonym>ISO756</synonym>
+			<synonym>La Suisse</synonym>
+			<synonym>Rhaetia</synonym>
+			<synonym>Schweiz</synonym>
+			<synonym>Schweizerishe Eidgenossenschaft</synonym>
+			<synonym>Suíça</synonym>
+			<synonym>Suisse</synonym>
+			<synonym>Suiza</synonym>
+			<synonym>Swiss</synonym>
+			<synonym>Swiss Confederation</synonym>
+			<synonym>Svizzera</synonym>
+			<synonym>Svizzra</synonym>
+			<synonym>Zwitserland</synonym>
+		</concept>
+		<concept id="211" lastmodified="2008-03-24">
+			<pref lang="en">Syria</pref>
+			<pref lang="de">Syrien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>Al-Jumhūrīyah al-Arabīyah as-Sūrīyah</synonym>
+			<synonym>As-Sūrīyah</synonym>
+			<synonym>ISO760</synonym>
+			<synonym>La Syrie</synonym>
+			<synonym>Siria</synonym>
+			<synonym>Síria</synonym>
+			<synonym>Sūrīyah</synonym>
+			<synonym>SY</synonym>
+			<synonym>SYR</synonym>
+			<synonym>Syrian</synonym>
+			<synonym>Syrian Arab Republic</synonym>
+			<synonym>Syrie</synonym>
+			<synonym>Syrië</synonym>
+			<synonym>Syrien</synonym>
+			<synonym>Syrienne, République arabe</synonym>
+		</concept>
+		<concept id="212" lastmodified="2008-03-24">
+			<pref lang="en">Taiwan</pref>
+			<pref lang="de">Taiwan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="247"/>
+			<status>accepted</status>
+			<synonym>Taiwan</synonym>
+			<synonym>China, Republik</synonym>
+			<synonym>Chung-hua Min-kuo</synonym>
+			<synonym>Formosa</synonym>
+			<synonym>ISO158</synonym>
+			<synonym>Nationalist China</synonym>
+			<synonym>Province de Chine Taïwan</synonym>
+			<synonym>Province of China Taiwan</synonym>
+			<synonym>Republic of China</synonym>
+			<synonym>T'aiwan</synonym>
+			<synonym>Taiwán</synonym>
+			<synonym>Taïwan</synonym>
+			<synonym>Taiwan, Province of China</synonym>
+			<synonym>TW</synonym>
+			<synonym>TWN</synonym>
+		</concept>
+		<concept id="213" lastmodified="2008-03-24">
+			<pref lang="en">Tajikistan</pref>
+			<pref lang="de">Tadschikistan</pref>
+			<pref lang="sv">Tadzjikistan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="246"/>
+			<status>accepted</status>
+			<synonym>Tadschikistan</synonym>
+			<synonym>ISO762</synonym>
+			<synonym>Jumhurii Tojikistan</synonym>
+			<synonym>Republic of Tajikistan</synonym>
+			<synonym>République du Tadjikistan</synonym>
+			<synonym>Tadjik</synonym>
+			<synonym>Tadjikistan</synonym>
+			<synonym>Tadzhik</synonym>
+			<synonym>Tadzhik S.S.R.</synonym>
+			<synonym>Tadzhikistan</synonym>
+			<synonym> Tadžhikskaja Sovetskaja Socialistčeskaja Respublika </synonym>
+			<synonym>Tadzhikskaya</synonym>
+			<synonym>Tadzhikskaya S.S.R.</synonym>
+			<synonym>Tadžikistan</synonym>
+			<synonym>Tadzjikistan</synonym>
+			<synonym>Tajik</synonym>
+			<synonym>Tajik Soviet Socialist Republic</synonym>
+			<synonym>Tajik SSR</synonym>
+			<synonym>Tajikistani</synonym>
+			<synonym>TJ</synonym>
+			<synonym>TJK</synonym>
+			<synonym>Tojikistan</synonym>
+		</concept>
+		<concept id="214" lastmodified="2008-03-24">
+			<pref lang="en">Tanzania</pref>
+			<pref lang="de">Tansania</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>German East Africa</synonym>
+			<synonym>ISO834</synonym>
+			<synonym>Jamhuri ya Muungano wa Tanzania</synonym>
+			<synonym>Tanganyika</synonym>
+			<synonym>Tansania</synonym>
+			<synonym>Tanzanía</synonym>
+			<synonym>Tanzânia</synonym>
+			<synonym>Tanzania, United Republic of</synonym>
+			<synonym>Tanzanian</synonym>
+			<synonym>Tanzanie</synonym>
+			<synonym>Tanzanie, République-Unie de</synonym>
+			<synonym>TZ</synonym>
+			<synonym>TZA</synonym>
+			<synonym>United Republic of Tanzania</synonym>
+		</concept>
+		<concept id="215" lastmodified="2008-03-24">
+			<pref lang="en">Thailand</pref>
+			<pref lang="de">Thailand</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Thailand</synonym>
+			<synonym>ISO764</synonym>
+			<synonym>Kingdom of Thailand</synonym>
+			<synonym>Muang Thai</synonym>
+			<synonym>Prathet Thai</synonym>
+			<synonym>Royaume de Thaïlande</synonym>
+			<synonym>Siam</synonym>
+			<synonym>Tailandia</synonym>
+			<synonym>Tailândia</synonym>
+			<synonym>TH</synonym>
+			<synonym>THA</synonym>
+			<synonym>Thai</synonym>
+			<synonym>Thaïlande</synonym>
+		</concept>
+		<concept id="216" lastmodified="2008-03-24">
+			<pref lang="en">Togo</pref>
+			<pref lang="de">Togo</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="244"/>
+			<status>accepted</status>
+			<synonym>Togo</synonym>
+			<synonym>French Togo</synonym>
+			<synonym>ISO768</synonym>
+			<synonym>Republic of Togo</synonym>
+			<synonym>République Togolaise</synonym>
+			<synonym>République togolaise</synonym>
+			<synonym>TG</synonym>
+			<synonym>TGO</synonym>
+			<synonym>Togoland</synonym>
+			<synonym>Togolese</synonym>
+			<synonym>Togolese Republic</synonym>
+		</concept>
+		<concept id="217" lastmodified="2008-03-24">
+			<pref lang="en">Tokelau Islands</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="261"/>
+			<status>accepted</status>
+			<synonym>ISO772</synonym>
+			<synonym>TK</synonym>
+			<synonym>TKL</synonym>
+			<synonym>Tokélaou</synonym>
+			<synonym>Tokelau</synonym>
+			<synonym>Union Islands</synonym>
+		</concept>
+		<concept id="218" lastmodified="2008-03-24">
+			<pref lang="en">Tonga</pref>
+			<pref lang="de">Tonga</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="261"/>
+			<status>accepted</status>
+			<synonym>Tonga</synonym>
+			<synonym>Friendly Islands</synonym>
+			<synonym>ISO776</synonym>
+			<synonym>Kingdom of Tonga</synonym>
+			<synonym>Pule 'Anga Tonga</synonym>
+			<synonym>Pule'anga Fakatu'i 'o Tonga</synonym>
+			<synonym>Royaume des Tonga</synonym>
+			<synonym>TO</synonym>
+			<synonym>TON</synonym>
+			<synonym>Tonga Islands</synonym>
+			<synonym>Tongan</synonym>
+		</concept>
+		<concept id="219" lastmodified="2008-03-24">
+			<pref lang="en">Trinidad and Tobago</pref>
+			<pref lang="de">Trinidad und Tobago</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Trinidad und Tobago</synonym>
+			<synonym>ISO780</synonym>
+			<synonym>Republic of Trinidad and Tobago</synonym>
+			<synonym>République de Trinité-et-Tobago</synonym>
+			<synonym>Trinidad y Tabago</synonym>
+			<synonym>Trinidadian Tobagonian</synonym>
+			<synonym>Trinité-et-Tobago</synonym>
+			<synonym>TT</synonym>
+			<synonym>TTO</synonym>
+		</concept>
+		<concept id="220" lastmodified="2008-03-24">
+			<pref lang="en">Tunisia</pref>
+			<pref lang="de">Tunesien</pref>
+			<pref lang="sv">Tunisien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="245"/>
+			<status>accepted</status>
+			<synonym>Africa Nova</synonym>
+			<synonym>Al-Djoumhouria Attunusia</synonym>
+			<synonym>al-Jumhūrīyah at-Tūnisīyah</synonym>
+			<synonym>Ifriqiya</synonym>
+			<synonym>ISO788</synonym>
+			<synonym>Republic of Tunisia</synonym>
+			<synonym>République tunisienne</synonym>
+			<synonym>TN</synonym>
+			<synonym>TUN</synonym>
+			<synonym>Tunesien</synonym>
+			<synonym>Túnez</synonym>
+			<synonym>Tunis</synonym>
+			<synonym>Tunísia</synonym>
+			<synonym>Tunisian</synonym>
+			<synonym>Tunisie</synonym>
+			<synonym>Tunisien</synonym>
+		</concept>
+		<concept id="221" lastmodified="2008-03-24">
+			<pref lang="en">Turkey</pref>
+			<pref lang="sv">Turkiet</pref>
+			<pref lang="de">Türkei</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>ISO792</synonym>
+			<synonym>Republic of Turkey</synonym>
+			<synonym>République turque</synonym>
+			<synonym>TR</synonym>
+			<synonym>TUR</synonym>
+			<synonym>Turchia</synonym>
+			<synonym>Turkiet</synonym>
+			<synonym>Turkije</synonym>
+			<synonym>Turkish</synonym>
+			<synonym>Turquia</synonym>
+			<synonym>Turquía</synonym>
+			<synonym>Turquie</synonym>
+			<synonym>Türkei</synonym>
+			<synonym>Türkiye</synonym>
+			<synonym>Türkiye Cumhuriyeti</synonym>
+		</concept>
+		<concept id="222" lastmodified="2008-03-24">
+			<pref lang="en">Turkmenistan</pref>
+			<pref lang="de">Turkmenistan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="246"/>
+			<status>accepted</status>
+			<synonym>Turkmenistan</synonym>
+			<synonym>ISO795</synonym>
+			<synonym>Republic of Turkmenistan</synonym>
+			<synonym>TKM</synonym>
+			<synonym>TM</synonym>
+			<synonym>Turkmen</synonym>
+			<synonym>Turkmen Soviet Socialist Republic</synonym>
+			<synonym>Turkmen SSR</synonym>
+			<synonym>Turkmenistán</synonym>
+			<synonym>Turkménistan</synonym>
+			<synonym> Turkmenskaja Sovetskaja Socialistčeskaja Respublika </synonym>
+			<synonym>Turkmenskaya</synonym>
+			<synonym>Turkmenskaya SSR</synonym>
+			<synonym>Türkmen</synonym>
+			<synonym>Türkmenistan Jumhuriyäti</synonym>
+		</concept>
+		<concept id="223" lastmodified="2008-03-24">
+			<pref lang="en">Turks and Caicos Islands</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Colony of the Turks and Caicos Islands</synonym>
+			<synonym>ISO796</synonym>
+			<synonym>TC</synonym>
+			<synonym>TCA</synonym>
+		</concept>
+		<concept id="224" lastmodified="2008-03-24">
+			<pref lang="en">Tuvalu</pref>
+			<pref lang="de">Tuvalu</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="261"/>
+			<status>accepted</status>
+			<synonym>Tuvalu</synonym>
+			<synonym>Ellice Islands</synonym>
+			<synonym>ISO798</synonym>
+			<synonym>Lagoon Islands</synonym>
+			<synonym>TUV</synonym>
+			<synonym>Tuvaluan</synonym>
+			<synonym>TV</synonym>
+		</concept>
+		<concept id="225" lastmodified="2008-03-24">
+			<pref lang="en">Uganda</pref>
+			<pref lang="de">Uganda</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Uganda</synonym>
+			<synonym>ISO800</synonym>
+			<synonym>Jamhuri ya Uganda</synonym>
+			<synonym>Ouganda</synonym>
+			<synonym>Republic of Uganda</synonym>
+			<synonym>République de l'Ouganda</synonym>
+			<synonym>UG</synonym>
+			<synonym>UGA</synonym>
+			<synonym>Ugandan</synonym>
+		</concept>
+		<concept id="226" lastmodified="2008-03-24">
+			<pref lang="en">Ukraine</pref>
+			<pref lang="de">Ukraine</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="251"/>
+			<status>accepted</status>
+			<synonym>Ukraine</synonym>
+			<synonym>ISO804</synonym>
+			<synonym>Oekraine</synonym>
+			<synonym>UA</synonym>
+			<synonym>Ucrania</synonym>
+			<synonym>UKR</synonym>
+			<synonym>Ukraina</synonym>
+			<synonym>Ukrainian</synonym>
+			<synonym>Ukrainian SSR</synonym>
+			<synonym> Ukrainskaja Sovetskaja Socialistčeskaja Respublika </synonym>
+			<synonym>Ukrainskaya</synonym>
+			<synonym>Ukrainskaya SSR</synonym>
+			<synonym>Ukrayina</synonym>
+		</concept>
+		<concept id="227" lastmodified="2008-03-24">
+			<pref lang="en">United Arab Emirates</pref>
+			<pref lang="sv">Förenade Arabemiraten</pref>
+			<pref lang="de">Vereinigte Arabische Emirate</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>AE</synonym>
+			<synonym>Al-Imārāt al-Arabīyah</synonym>
+			<synonym>al-Muttahidah</synonym>
+			<synonym>ARE</synonym>
+			<synonym>Emirados Árabes Unidos</synonym>
+			<synonym>Emiratos Arabes Unidos</synonym>
+			<synonym>Émirats arabes unis</synonym>
+			<synonym>Emirian</synonym>
+			<synonym>Förenade Arabemiraten</synonym>
+			<synonym>ISO784</synonym>
+			<synonym>Trucial Coast</synonym>
+			<synonym>Trucial Oman</synonym>
+			<synonym>Trucial States</synonym>
+			<synonym>Vereinigte Arabische Emirate</synonym>
+			<synonym>Verenigde Arabische Emiraten</synonym>
+		</concept>
+		<concept id="228" lastmodified="2008-03-24">
+			<pref lang="en">United Kingdom</pref>
+			<pref lang="de">Großbritannien</pref>
+			<pref lang="sv">Storbritannien</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="254"/>
+			<status>accepted</status>
+			<synonym>Großbritannien und Nordirland</synonym>
+			<synonym>Großbritannien</synonym>
+			<synonym>Britannia</synonym>
+			<synonym>British</synonym>
+			<synonym>GBR</synonym>
+			<synonym>Grossbritannien und Nordirland</synonym>
+			<synonym>ISO826</synonym>
+			<synonym>Regno Unito</synonym>
+			<synonym>Reino Unido</synonym>
+			<synonym>Royaume-Uni</synonym>
+			<synonym>Storbritannien</synonym>
+			<synonym>UK</synonym>
+			<synonym> United Kingdom of Great Britain and Northern Ireland </synonym>
+			<synonym>Vereinigte Königreich</synonym>
+			<synonym>Verenigd Koninkrijk</synonym>
+		</concept>
+		<concept id="229" lastmodified="2008-03-24">
+			<pref lang="en">United States</pref>
+			<pref lang="de">USA</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="257"/>
+			<status>accepted</status>
+			<synonym>USA</synonym>
+			<synonym>America</synonym>
+			<synonym>American</synonym>
+			<synonym>Estados Unidos de América</synonym>
+			<synonym>États-Unis d'Amérique</synonym>
+			<synonym>ISO840</synonym>
+			<synonym>United States of America</synonym>
+			<synonym>US</synonym>
+			<synonym>USA</synonym>
+			<synonym>Vereinigten Staaten von Amerika</synonym>
+			<synonym>Verenigde Staten</synonym>
+		</concept>
+		<concept id="230" lastmodified="2008-03-24">
+			<pref lang="en">Uruguay</pref>
+			<pref lang="de">Uruguay</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>Uruguay</synonym>
+			<synonym>Eastern Republic of Uruguay</synonym>
+			<synonym>ISO858</synonym>
+			<synonym>La Banda Oriental</synonym>
+			<synonym>Oriental Republic of Uruguay</synonym>
+			<synonym>República Oriental del Uruguay</synonym>
+			<synonym>République orientale de l'Uruguay</synonym>
+			<synonym>Uruguai</synonym>
+			<synonym>Uruguayan</synonym>
+			<synonym>URY</synonym>
+			<synonym>UY</synonym>
+		</concept>
+		<concept id="231" lastmodified="2008-03-24">
+			<pref lang="en">Uzbekistan</pref>
+			<pref lang="de">Usbekistan</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="246"/>
+			<status>accepted</status>
+			<synonym>Usbekistan</synonym>
+			<synonym>ISO860</synonym>
+			<synonym>Ouzbékistan</synonym>
+			<synonym>Ozbekistan</synonym>
+			<synonym>Ozbekistan Jumhuriyäti</synonym>
+			<synonym>Republic of Uzbekistan</synonym>
+			<synonym>République d'Ouzbékistan</synonym>
+			<synonym>Usbeck</synonym>
+			<synonym>Usbeg</synonym>
+			<synonym>Usbekskaya SSR</synonym>
+			<synonym>UZ</synonym>
+			<synonym>UZB</synonym>
+			<synonym>Uzbeg</synonym>
+			<synonym>Uzbek</synonym>
+			<synonym>Uzbek SSR</synonym>
+			<synonym>Uzbekistán</synonym>
+			<synonym> Uzbekskaja Sovetskaja Socialističeskaja Respublika </synonym>
+			<synonym>Uzbekskaya</synonym>
+		</concept>
+		<concept id="232" lastmodified="2008-03-24">
+			<pref lang="en">Wallis and Futuna Islands</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="261"/>
+			<status>accepted</status>
+			<synonym>ISO876</synonym>
+			<synonym> Territory of the Wallis and Futuna Islands </synonym>
+			<synonym>Wallis and Futuna</synonym>
+			<synonym>Wallis e Futuna</synonym>
+			<synonym>Wallis et Futuna</synonym>
+			<synonym>Wallis et Futuna, Îles</synonym>
+			<synonym>Wallis und Futuna</synonym>
+			<synonym>Wallis y Futuna</synonym>
+			<synonym>WF</synonym>
+			<synonym>WLF</synonym>
+		</concept>
+		<concept id="233" lastmodified="2008-03-24">
+			<pref lang="en">Vanuatu</pref>
+			<pref lang="de">Vanuatu</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="259"/>
+			<status>accepted</status>
+			<synonym>Vanuatu</synonym>
+			<synonym>ISO548</synonym>
+			<synonym>New Hebrides</synonym>
+			<synonym>Ni-Vanuatu</synonym>
+			<synonym>Nouvelles-Hébrides</synonym>
+			<synonym>Republic of Vanuatu</synonym>
+			<synonym>République de Vanuatu</synonym>
+			<synonym>Ripablik blong Vanuatu</synonym>
+			<synonym>Vanuatuan</synonym>
+			<synonym>VU</synonym>
+			<synonym>VUT</synonym>
+		</concept>
+		<concept id="234" lastmodified="2008-03-24">
+			<pref lang="en">Venezuela</pref>
+			<pref lang="de">Venezuela</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="6"/>
+			<status>accepted</status>
+			<synonym>Venezuela</synonym>
+			<synonym>Estados Unidos de Venezuela</synonym>
+			<synonym>ISO862</synonym>
+			<synonym>Republic of Venezuela</synonym>
+			<synonym>República Bolivariana de Venezuela</synonym>
+			<synonym>República de Venezuela</synonym>
+			<synonym>République de Venezuela</synonym>
+			<synonym>United States of Venezuela</synonym>
+			<synonym>VE</synonym>
+			<synonym>VEN</synonym>
+			<synonym>Venezuela, Bolivarian Republic of</synonym>
+		</concept>
+		<concept id="235" lastmodified="2008-03-24">
+			<pref lang="en">Vietnam</pref>
+			<pref lang="de">Vietnam</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="248"/>
+			<status>accepted</status>
+			<synonym>Vietnam</synonym>
+			<synonym>Cong Hoa Xa Hoi Chu Nghia Viet Nam</synonym>
+			<synonym>Công Hòa Xã Hôi Chu Nghĩa Viêt Nam</synonym>
+			<synonym>ISO704</synonym>
+			<synonym>République socialiste du Viet Nam</synonym>
+			<synonym>Socialist Republic of Viet Nam</synonym>
+			<synonym>Socialist Republic of Vietnam</synonym>
+			<synonym>Viet Nam</synonym>
+			<synonym>Viet-Nam</synonym>
+			<synonym>Vietnamese</synonym>
+			<synonym>VN</synonym>
+			<synonym>VNM</synonym>
+		</concept>
+		<concept id="236" lastmodified="2008-03-24">
+			<pref lang="en">Virgin Islands of the United States</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="255"/>
+			<status>accepted</status>
+			<synonym>Amerikanishche Jungferninseln</synonym>
+			<synonym>Danish West Indies</synonym>
+			<synonym>Îles Vierges américaines</synonym>
+			<synonym>Islas Vírgenes americanas</synonym>
+			<synonym>ISO850</synonym>
+			<synonym>United States Virgin Islands</synonym>
+			<synonym>VI</synonym>
+			<synonym>VIR</synonym>
+			<synonym>Virgens Americanas, Ilhas</synonym>
+		</concept>
+		<concept id="237" lastmodified="2008-03-24">
+			<pref lang="en">Yemen</pref>
+			<pref lang="de">Jemen</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="250"/>
+			<status>accepted</status>
+			<synonym>al-Jumhūrīyah al-Yamanīyah</synonym>
+			<synonym>Al-Yaman</synonym>
+			<synonym>Iêmen</synonym>
+			<synonym>ISO887</synonym>
+			<synonym>Jemen</synonym>
+			<synonym>Republic of Yemen</synonym>
+			<synonym>République du Yémen</synonym>
+			<synonym>YE</synonym>
+			<synonym>YEM</synonym>
+			<synonym>Yémen</synonym>
+			<synonym>Yemen, Republic of</synonym>
+			<synonym>Yemeni</synonym>
+		</concept>
+		<concept id="238" lastmodified="2008-03-24">
+			<pref lang="en">Zambia</pref>
+			<pref lang="de">Sambia</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>ISO894</synonym>
+			<synonym>Northern Rhodesia</synonym>
+			<synonym>Republic of Zambia</synonym>
+			<synonym>République de Zambie</synonym>
+			<synonym>Sambia</synonym>
+			<synonym>Zâmbia</synonym>
+			<synonym>Zambian</synonym>
+			<synonym>Zambie</synonym>
+			<synonym>ZM</synonym>
+			<synonym>ZMB</synonym>
+		</concept>
+		<concept id="239" lastmodified="2008-03-24">
+			<pref lang="en">Zimbabwe</pref>
+			<pref lang="de">Simbabwe</pref>
+			<relation type="isA" relId="270"/>
+			<relation type="isPartOf" relId="242"/>
+			<status>accepted</status>
+			<synonym>Simbabwe</synonym>
+			<synonym>ISO716</synonym>
+			<synonym>Republic of Zimbabwe</synonym>
+			<synonym>République du Zimbabwe</synonym>
+			<synonym>Rhodesia</synonym>
+			<synonym>Rhodesian</synonym>
+			<synonym>Rhodesië</synonym>
+			<synonym>Rodesia</synonym>
+			<synonym>Simbawe</synonym>
+			<synonym>Southern Rhodesia</synonym>
+			<synonym>Zimbabwe Rhodesia</synonym>
+			<synonym>Zimbabwean</synonym>
+			<synonym>ZW</synonym>
+			<synonym>ZWE</synonym>
+		</concept>
+		<concept id="240" lastmodified="2008-03-24">
+			<pref lang="en">Åland</pref>
+			<relation type="isA" relId="274"/>
+			<relation type="isPartOf" relId="254"/>
+			<scope>autonomous province</scope>
+			<status>accepted</status>
+			<synonym>Aboenses insulae</synonym>
+			<synonym>Ahvenamaa</synonym>
+			<synonym>Ahvenanmaa</synonym>
+			<synonym>Ahvenanmaa province</synonym>
+			<synonym>Ahvenanmaan Lääni</synonym>
+			<synonym>Aland Islands</synonym>
+			<synonym>Alandia</synonym>
+			<synonym>Åland Islands</synonym>
+			<synonym>Åland-Inseln</synonym>
+			<synonym>Ålands Lan</synonym>
+			<synonym>Ålandsöerna</synonym>
+		</concept>
+		<concept id="241" lastmodified="2008-03-24">
+			<pref lang="en">Middle Africa</pref>
+			<pref lang="de">Zentralafrika</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="1"/>
+			<status>accepted</status>
+			<synonym>Mittelafrika</synonym>
+			<synonym>Zentralafrika</synonym>
+		</concept>
+		<concept id="242" lastmodified="2008-03-24">
+			<pref lang="en">Eastern Africa</pref>
+			<pref lang="de">Ostafrika</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="1"/>
+			<status>accepted</status>
+			<synonym>Ostafrika</synonym>
+		</concept>
+		<concept id="243" lastmodified="2008-03-24">
+			<pref lang="en">Southern Africa</pref>
+			<pref lang="de">Südliches Afrika</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="1"/>
+			<status>accepted</status>
+			<synonym>Südliches Afrika</synonym>
+		</concept>
+		<concept id="244" lastmodified="2008-03-24">
+			<pref lang="en">Western Africa</pref>
+			<pref lang="de">Westafrika</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="1"/>
+			<status>accepted</status>
+			<synonym>Westafrika</synonym>
+		</concept>
+		<concept id="245" lastmodified="2008-03-24">
+			<pref lang="en">Northern Africa</pref>
+			<pref lang="de">Nordafrika</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="1"/>
+			<status>accepted</status>
+			<synonym>Nordafrika</synonym>
+		</concept>
+		<concept id="246" lastmodified="2008-03-24">
+			<pref lang="en">Central Asia</pref>
+			<pref lang="de">Zentralasien</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="4"/>
+			<status>accepted</status>
+			<synonym>Zentralasien</synonym>
+		</concept>
+		<concept id="247" lastmodified="2008-03-24">
+			<pref lang="en">Eastern Asia</pref>
+			<pref lang="de">Ostasien</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="4"/>
+			<status>accepted</status>
+			<synonym>Ostasien</synonym>
+		</concept>
+		<concept id="248" lastmodified="2008-03-24">
+			<pref lang="en">South-Eastern Asia</pref>
+			<pref lang="de">Südostasien</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="4"/>
+			<status>accepted</status>
+			<synonym>Südostasien</synonym>
+		</concept>
+		<concept id="249" lastmodified="2008-03-24">
+			<pref lang="en">Southern Asia</pref>
+			<pref lang="de">Südasien</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="4"/>
+			<status>accepted</status>
+			<synonym>Südasien</synonym>
+		</concept>
+		<concept id="250" lastmodified="2008-03-24">
+			<pref lang="en">Western Asia</pref>
+			<pref lang="de">Westasien</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="4"/>
+			<status>accepted</status>
+			<synonym>Westasien</synonym>
+		</concept>
+		<concept id="251" lastmodified="2008-03-24">
+			<pref lang="en">Eastern Europe</pref>
+			<pref lang="de">Osteuropa</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="3"/>
+			<status>accepted</status>
+			<synonym>Osteuropa</synonym>
+		</concept>
+		<concept id="252" lastmodified="2008-03-24">
+			<pref lang="en">Southern Europe</pref>
+			<pref lang="de">Südeuropa</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="3"/>
+			<status>accepted</status>
+			<synonym>Südeuropa</synonym>
+		</concept>
+		<concept id="253" lastmodified="2008-03-24">
+			<pref lang="en">Western Europe</pref>
+			<pref lang="de">Westeuropa</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="3"/>
+			<status>accepted</status>
+			<synonym>Westeuropa</synonym>
+		</concept>
+		<concept id="254" lastmodified="2008-03-24">
+			<pref lang="en">Northern Europe</pref>
+			<pref lang="de">Nordeuropa</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="3"/>
+			<status>accepted</status>
+			<synonym>Nordeuropa</synonym>
+		</concept>
+		<concept id="255" lastmodified="2008-03-24">
+			<pref lang="en">Caribbean</pref>
+			<pref lang="de">Karibik</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="2"/>
+			<status>accepted</status>
+			<synonym>Karibik</synonym>
+		</concept>
+		<concept id="256" lastmodified="2008-03-24">
+			<pref lang="en">Central America</pref>
+			<pref lang="de">Zentralamerika</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="2"/>
+			<status>accepted</status>
+			<synonym>Zentralamerika</synonym>
+		</concept>
+		<concept id="257" lastmodified="2008-03-24">
+			<pref lang="en">Northern America</pref>
+			<pref lang="de">Nordamerika</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="2"/>
+			<status>accepted</status>
+			<synonym>Nordamerika</synonym>
+		</concept>
+		<concept id="258" lastmodified="2008-03-24">
+			<pref lang="en">Australia and New Zealand</pref>
+			<pref lang="de">Australien und Neuseeland</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="5"/>
+			<status>accepted</status>
+			<synonym>Australien und Neuseeland</synonym>
+		</concept>
+		<concept id="259" lastmodified="2008-03-24">
+			<pref lang="en">Melanesia</pref>
+			<pref lang="de">Melanesien</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="5"/>
+			<status>accepted</status>
+			<synonym>Melanesien</synonym>
+		</concept>
+		<concept id="260" lastmodified="2008-03-24">
+			<pref lang="en">Micronesia &lt;macro region&gt;</pref>
+			<pref lang="de">Mikronesien</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="5"/>
+			<status>accepted</status>
+			<synonym>Mikronesien</synonym>
+		</concept>
+		<concept id="261" lastmodified="2008-03-24">
+			<pref lang="en">Polynesia</pref>
+			<pref lang="de">Polynesien</pref>
+			<relation type="isA" relId="273"/>
+			<relation type="isPartOf" relId="5"/>
+			<status>accepted</status>
+			<synonym>Polynesien</synonym>
+		</concept>
+	</context>
+
+	<!-- ich benutze diesen Kontext auch fuer PersonenKoerperscahften, aber bin zu faul den namen zu korrigieren.-->
+	<context name="mpx:sammlungsobjekt/mpx:datierung/@art">
+		<concept id="277">
+			<pref lang="de">letzte Erwähnung</pref>
+			<synonym>Datum letzte Erwähnung</synonym>
+		</concept>
+		<concept id="276">
+			<pref lang="de">erste Erwähnung</pref>
+			<synonym>Datum erste Erwähnung</synonym>
+			<synonym>Erste Erwähnung</synonym>
+		</concept>
+		<concept id="264">
+			<pref lang="de">Aufnahme</pref>
+			<synonym>Aufnahmejahr</synonym>
+			<synonym>Aufn. Jahr</synonym>
+		</concept>
+		<concept id="263">
+			<pref lang="de">Produktion</pref>
+			<synonym>Produktionsjahr</synonym>
+			<synonym>Herstellung</synonym>
+		</concept>
+		<concept id="358">
+			<pref lang="de">Publikation</pref>
+			<synonym>Publik. Jahr</synonym>
+			<synonym>Publik.Jahr</synonym>
+		</concept>
+		<concept id="327">
+			<pref lang="de">Lebensdaten</pref>
+		</concept>
+		<concept id="326">
+			<pref lang="de">Beschäftigungszeit</pref>
+		</concept>
+		<concept id="325">
+			<pref lang="de">Tätigkeitszeit</pref>
+		</concept>
+		<concept id="323">
+			<pref lang="de">Gründungsdatum</pref>
+		</concept>
+		<concept id="322">
+			<pref lang="de">Todesdatum</pref>
+		</concept>
+		<concept id="321">
+			<pref lang="de">Geburtsdatum</pref>
+		</concept>
+		<concept id="335">
+			<pref lang="de">Wirkungszeit</pref>
+		</concept>
+		<concept id="351">
+			<pref lang="de">Existenzdaten</pref>
+		</concept>
+		<concept id="363">
+			<pref lang="de">Übertragungsdatum</pref>
+		</concept>
+		<concept id="373">
+			<pref lang="de">Regierungszeit</pref>
+		</concept>
+</context>
+
+	<!--
+		sowohl fuer Personen als auch fuer Sammlungen
+		ehemals @art
+	-->
+	<context name="mpx:geogrBezug/@funktion">
+		<annotation> art soll funktion sein und bezeichnung soll art sein. Das ist in im EM so
+			üblich, auch wenn es so nicht von Zetcom geplant war und in anderen Häusern anders
+			gehandhabt werden mag. </annotation>
+		<concept id="262">
+			<pref lang="de">Aufnahmeort</pref>
+			<synonym>Aufnahmeland</synonym>
+			<synonym>Drehort</synonym>
+		</concept>
+		<concept id="311">
+			<pref lang="de">Herkunft (Allgemein)</pref>
+		</concept>
+		<concept id="312">
+			<pref lang="de">Herstellungsort</pref>
+		</concept>
+	</context>
+
+	<context name="mpx:geogrBezug/@bezeichnung">
+		<annotation> art soll funktion sein und bezeichnung soll art sein. Das ist in im EM so
+			üblich, auch wenn es so nicht von Zetcom geplant war und in anderen Häusern anders
+			gehandhabt werden mag. </annotation>
+		<concept id="279">
+			<pref lang="de">Archipel</pref>
+		</concept>
+		<concept id="298">
+			<pref lang="de">Bezirk</pref>
+		</concept>
+		<concept id="280">
+			<pref lang="de">Bundesstaat</pref>
+		</concept>
+		<concept id="330">
+			<pref lang="de">Departement</pref>
+		</concept>
+		<concept id="281">
+			<pref lang="de">Distrikt</pref>
+		</concept>
+		<concept id="282">
+			<pref lang="de">Dorf</pref>
+		</concept>
+		<concept id="283">
+			<pref lang="de">Emirat</pref>
+		</concept>
+		<concept id="284">
+			<pref lang="de">Ethnie</pref>
+		</concept>
+		<concept id="285">
+			<pref lang="de">Ethnie (Untergruppe)</pref>
+		</concept>
+		<concept id="313">
+			<pref lang="de">Expeditionslager</pref>
+		</concept>
+		<concept id="286">
+			<pref lang="de">Gebiet</pref>
+		</concept>
+		<concept id="360">
+			<pref lang="de">Fluss</pref>
+		</concept>
+		<concept id="287">
+			<pref lang="de">Gebirge</pref>
+		</concept>
+		<concept id="288">
+			<pref lang="de">Gemeinde</pref>
+		</concept>
+		<concept id="229">
+			<pref lang="de">Hafen/Hafenplatz</pref>
+		</concept>
+		<concept id="289">
+			<pref lang="de">Insel</pref>
+		</concept>
+		<concept id="290">
+			<pref lang="de">Inselgruppe</pref>
+		</concept>
+		<concept id="291">
+			<pref lang="de">Kolonie/Schutzgebiet</pref>
+		</concept>
+		<concept id="292">
+			<pref lang="de">Kontinent</pref>
+		</concept>
+		<concept id="293">
+			<pref lang="de">Kontinentteil</pref>
+		</concept>
+		<concept id="294">
+			<pref lang="de">Kultur</pref>
+		</concept>
+		<concept id="295">
+			<pref lang="de">Königreich</pref>
+		</concept>
+		<concept id="296">
+			<pref lang="de">Küste</pref>
+		</concept>
+		<concept id="265">
+			<pref lang="de">Lager</pref>
+		</concept>
+		<concept id="278">
+			<pref lang="de">Land</pref>
+			<synonym>Volksrepublik</synonym>
+		</concept>
+		<concept id="299">
+			<pref lang="de">Oase</pref>
+		</concept>
+		<concept id="300">
+			<pref lang="de">Ort</pref>
+		</concept>
+		<concept id="328">
+			<pref lang="de">Pflanzung/Plantage</pref>
+		</concept>
+		<concept id="301">
+			<pref lang="de">Provinz</pref>
+		</concept>
+		<concept id="302">
+			<pref lang="de">Region</pref>
+			<synonym>Landschaft</synonym>
+		</concept>
+		<concept id="303">
+			<pref lang="de">Republik</pref>
+		</concept>
+		<concept id="304">
+			<pref lang="de">See</pref>
+		</concept>
+		<concept id="305">
+			<pref lang="de">Sprachgruppe</pref>
+		</concept>
+		<concept id="306">
+			<pref lang="de">Stadt</pref>
+			<synonym>Distrikthauptstadt</synonym>
+		</concept>
+		<concept id="314">
+			<pref lang="de">Stadtteil</pref>
+			<synonym>Viertel</synonym>
+		</concept>
+		<concept id="315">
+			<pref lang="de">Station (Polizei/Militär)</pref>
+		</concept>
+		<concept id="307">
+			<pref lang="de">Subkontinent</pref>
+		</concept>
+		<concept id="308">
+			<pref lang="de">Tal</pref>
+		</concept>
+		<concept id="309">
+			<pref lang="de">Wald</pref>
+		</concept>
+		<concept id="310">
+			<pref lang="de">Wüste</pref>
+		</concept>
+	</context>
+
+	<context name="mpx:kategorieGenre">
+		<annotation> DISMARC Vokabular, Definitionen siehe Dismarc Manual. </annotation>
+		<concept id="316">
+			<pref lang="de">Kunstmusik</pref>
+			<pref lang="en">art music</pref>
+		</concept>
+		<concept id="317">
+			<pref lang="de">Popularmusik</pref>
+			<pref lang="en">popular music</pref>
+		</concept>
+		<concept id="318">
+			<pref lang="de">Sound Effekts</pref>
+			<pref lang="en">sound effects</pref>
+		</concept>
+		<concept id="319">
+			<pref lang="de">Sprache</pref>
+			<pref lang="en">speech</pref>
+		</concept>
+		<concept id="320">
+			<pref lang="de">Traditionelle Musik (Volksmusik)</pref>
+			<pref lang="en">Folk music</pref>
+		</concept>
+	</context>
+
+
+	<context name="OrganisatorischeEinheiten">
+		<annotation> Dieses Vokabular definiert auf Basis der M+Verantwortlichkeiten,
+			organisatorische Einheiten, die nach Außen hin sichtbar werden sollen, z.B. wird der
+			internen Bezeichnung "EM-Am Archäologie" die externe Bezeichnung "Fachreferat
+			Amerikanische Archäologie" zugeordnet. Noch nicht in mpx2mdat.xsl eingebaut. </annotation>
+		<concept id="264">
+			<pref lang="de">Fachreferat Amerikanische Archäologie</pref>
+			<synonym>EM-Am Archäologie</synonym>
+		</concept>
+		<concept id="265">
+			<pref lang="de">Fachreferat Amerikanische Archäologie</pref>
+			<synonym>EM-Medienarchiv</synonym>
+		</concept>
+	</context>
+	<context name="sammlungsobjekt/sachbegriff">
+		<concept id="342">
+			<pref lang="de">Schallplatte</pref>
+			<synonym>schallplatte</synonym>
+			<synonym>Schallplatte*</synonym>
+		</concept>
+		<concept id="344">
+			<pref lang="de">Schellackplatte</pref>
+		</concept>
+		<concept id="345">
+			<pref lang="de">Kassette</pref>
+		</concept>
+		<concept id="346">
+			<pref lang="de">Video</pref>
+		</concept>
+		<concept id="347">
+			<pref lang="de">CD</pref>
+		</concept>
+		<concept id="348">
+			<pref lang="de">CD-ROM</pref>
+		</concept>
+		<concept id="367">
+			<pref lang="de">DAT</pref>
+		</concept>
+		<concept id="359">
+			<pref lang="de">DVD</pref>
+		</concept>
+		<concept id="350">
+			<pref lang="de">Film/ Video</pref>
+		</concept>
+		<concept id="368">
+			<pref lang="de">MC</pref>
+			<synonym>MC &amp; DAT</synonym>
+		</concept>
+		<concept id="361">
+			<pref lang="de">Phonograph</pref>
+		</concept>
+		<concept id="365">
+			<pref lang="de">Sammlung Originalarchiv</pref>
+		</concept>
+		<concept id="366">
+			<pref lang="de">Tonband</pref>
+			<synonym>19 cm/s</synonym>
+			<synonym>19cm/s</synonym>
+			<synonym>Tonband 19er + DAT</synonym>
+			<synonym>19er Tonband + DAT</synonym>
+			<synonym>19er Tonband, DAT</synonym>
+			<synonym>19er Tonband  +  DAT</synonym>
+			<synonym>19er Tonband</synonym>
+			<synonym>38 cm/s</synonym>
+			<synonym>38cm/s</synonym>
+			<synonym>TB,MC,DAT</synonym>
+			<synonym>Tonband,MC,DAT</synonym>
+			<synonym>Tonband 19 cm/sek</synonym>
+			<synonym>Tonband 19 cm/sec</synonym>
+			<synonym>Tonband 9,5 cm</synonym>
+			<synonym>Tonband 9,5 cm/s</synonym>
+			<synonym>Tonband 9 cm/s</synonym>
+			<synonym>Tonband 9 cm/s / DAT</synonym>
+		</concept>
+		<concept id="369">
+			<pref lang="de">Track</pref>
+		</concept>		
+		<concept id="349">
+			<pref lang="de">VCD</pref>
+		</concept>
+		<concept id="362">
+			<pref lang="de">Walze</pref>
+		</concept>
+		<concept id="364">
+			<pref lang="de">Walzensammlung</pref>
+		</concept>
+	</context>
+</mpxvok>
