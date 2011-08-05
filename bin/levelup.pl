@@ -48,8 +48,7 @@ sub message;
 #all config stuff. Change as necessary
 
 {
-
-	#this has of course serious security concerns!
+        #this has of course serious security concerns!
 	package Settings;
 	my $settings = "/home/Mengel/usr/levelup/conf/lenny.config";
 	die "Error: Don't find settings file " unless -e $settings;
@@ -184,19 +183,21 @@ sub count_rtf {
 
 				#print "found $file\n";
 				++$count;
-				$this++;
+				$this++
 			}
 		}
-		if ( $this == 0 ) {
+		if ($this == 0) {
 			print "$test not identified as rtf\n";
 		}
 	}
 	if ( $count < 7 ) {
 		message
 		  "Warning: RTF Level incomplete. Only $count of 7 files available!\n";
-	} elsif ( $count == 7 ) {
+	}
+	elsif ( $count == 7 ) {
 		print "\tok\n";
-	} elsif ( $count > 7 ) {
+	}
+	elsif ( $count > 7 ) {
 
 		#could happen with different cases in a non-cygwin environment
 		die "Error: Something is strange. More files than there should be!";
@@ -241,7 +242,6 @@ sub fix {
 		$cmd .= "-s:'$wdir\\$output1_fn' ";
 		$cmd .= "-o:'$wdir\\$output2_fn' ";
 		$cmd .= "2>>'$wdir\\$log_fn'";
-
 		#print "DEBUG $cmd\n";
 		system($cmd);
 		my $ret = $? >> 8;
@@ -249,7 +249,8 @@ sub fix {
 		if ( $ret != 0 ) {
 			die "system $cmd failed: $?";
 		}
-	} else {
+	}
+	else {
 		print "\texists already\n";
 	}
 }
@@ -487,9 +488,7 @@ The function of this is to digest rtf input and output good xml; it's also to or
 =head1 USAGE
 
 levelup.pl
-
 levelup.pl bak
-
 
 Execute the script inside the directory with the rtf files, usually without any options. Script will look for a specific set of files. Configuration through configuration file usually in conf dir.
 
@@ -524,4 +523,3 @@ This program is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
 
 =cut
-
