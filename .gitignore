@@ -5,3 +5,5 @@ Makefile
 bin/#*
 blib
 *.log
+*/ALT/*
+temp
