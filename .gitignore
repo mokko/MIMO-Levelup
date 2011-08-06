@@ -7,3 +7,6 @@ blib
 *.log
 */ALT/*
 temp
+.project
+tmp
+devel/*
