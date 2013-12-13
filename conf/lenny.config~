@@ -9,7 +9,7 @@ my $saxon = 'C:\cygwin\home\Mengel\usr\levelup\lib\saxon9he.jar';
 	2 => {
 		dir => '2-lvl1-single',
 		log_fn => 'rtf2xml.log',
-		rtf2xml   => "/home/Mengel/usr/levelup/lib/rtftable2xml.pl",
+		rtf2xml   => "/home/Mengel/usr/levelup/bin/rtftable2xml.pl",
 		#use basename for input and output
 	},
 	3 => {
@@ -47,6 +47,6 @@ my $saxon = 'C:\cygwin\home\Mengel\usr\levelup\lib\saxon9he.jar';
 	],
 	log_fn => "levelup.log",
 	saxon_cmd  => "java -Xmx256m -jar '$saxon'",
-	validator => "/home/Mengel/usr/levelup/lib/dotnetValidator.exe",
+	validator => "dotnetValidator", #TODO:should be done in perl!
 );
 
