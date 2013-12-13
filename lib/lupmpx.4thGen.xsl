@@ -7,6 +7,12 @@
 
 
 	<!--
+		25.08.2011
+		multimedia/standardbild jetzt nur noch in mume records,  die auch Standardbild beschreiben.
+		
+		22.08.2011
+		multimediaStandardbild hinzugefügt.
+		
 		24.04.2010 
 		XSD Pfad geändert
 
@@ -116,6 +122,28 @@
 								<xsl:with-param name="tag" select="$tag"/>
 							</xsl:call-template>
 						</xsl:for-each>
+
+						<!-- standardbild-->
+						<xsl:for-each-group select="/museumPlusExport/item[@mulId=$currentId]"
+							group-by="Standardbild">
+							<xsl:if test="multimediaPfadangabe">
+								
+								<xsl:variable name="bild">
+									<xsl:value-of select="multimediaPfadangabe"/>
+									<xsl:text>\</xsl:text>
+									<xsl:value-of select="multimediaDateiname"/>
+									<xsl:text>.</xsl:text>
+									<xsl:value-of select="multimediaErweiterung"/>
+								</xsl:variable>
+								<xsl:if test="Standardbild eq $bild ">
+									<xsl:message>--- STANDARDBILD: <xsl:value-of select="$bild"/></xsl:message>
+									<xsl:element name="standardbild">
+										<xsl:value-of select="Standardbild"/>
+									</xsl:element>
+								</xsl:if>
+							</xsl:if>
+
+						</xsl:for-each-group>
 
 						<xsl:for-each-group select="/museumPlusExport/item[@mulId=$currentId]"
 							group-by="objId">
