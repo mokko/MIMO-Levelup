@@ -48,10 +48,14 @@ sub message;
 #all config stuff. Change as necessary
 
 {
-        #this has of course serious security concerns!
+
+	#this has of course serious security concerns!
 	package Settings;
-	my $settings = "/home/maurice/usr/levelup/conf/lenny.config";
-	die "Error: Don't find settings file " unless -e $settings;
+	my $settings =
+	  '/cygdrive/c/cygwin/home/maurice/projects/Own/MIMO-Levelup'
+	  . '/conf/lenny.config';
+	die "Error: Don't find settings file ($settings)"
+	  unless -e $settings;
 	do $settings
 	  or die "Error: Can't load config file!\n";
 
@@ -183,10 +187,10 @@ sub count_rtf {
 
 				#print "found $file\n";
 				++$count;
-				$this++
+				$this++;
 			}
 		}
-		if ($this == 0) {
+		if ( $this == 0 ) {
 			print "$test not identified as rtf\n";
 		}
 	}
@@ -242,6 +246,7 @@ sub fix {
 		$cmd .= "-s:'$wdir\\$output1_fn' ";
 		$cmd .= "-o:'$wdir\\$output2_fn' ";
 		$cmd .= "2>>'$wdir\\$log_fn'";
+
 		#print "DEBUG $cmd\n";
 		system($cmd);
 		my $ret = $? >> 8;
@@ -306,7 +311,7 @@ sub join_lvl1 {
 	$temp_win =~ s/\s+$//;
 
 	#Debug
-#	print "DDD: temp_win:$temp_win\n";
+	#	print "DDD: temp_win:$temp_win\n";
 
 	foreach my $file ( @{ $config{basenames} } ) {
 		my $source = "$previous_dir/$file.xml";
@@ -315,6 +320,7 @@ sub join_lvl1 {
 			message "\tJoining $source";
 			my $cmd = "$saxon -xsl:'$config{3}{join_xsl}' ";
 			$cmd .= "-s:$source ";
+
 			#path to B is relative from xsl
 			$cmd .= "-o:'$temp_win\\C.xml'";
 
@@ -329,10 +335,11 @@ sub join_lvl1 {
 
 			move( "$config{3}{temp_cyg}/C.xml", "$config{3}{temp_cyg}/B.xml" );
 
-			#debug: keep a cp of every step
-			#copy( "$config{3}{temp_cyg}/B.xml", "$config{3}{temp_cyg}/t_$file.xml" );
+	  #debug: keep a cp of every step
+	  #copy( "$config{3}{temp_cyg}/B.xml", "$config{3}{temp_cyg}/t_$file.xml" );
 		}
 	}
+
 	#after your done with joining everything in temp, mv it to final destination
 	copy( "$config{3}{temp_cyg}/B.xml", $output );
 }
@@ -386,7 +393,7 @@ sub move_rtf {
 
 	print "Check if there is a RTF to move...\n";
 
-	#first thing: look for right RTF files and move them to directory
+	#first thing: look for right RTF files and move them to a sub directory
 	my @files = read_dir('.');
 	foreach my $test ( @{ $config{basenames} } ) {
 		foreach my $file (@files) {
@@ -419,9 +426,10 @@ sub mk_dir {
 sub read_dir {
 	my $dir = shift;
 	opendir( my $dh, $dir ) or die "Error: Can't opendir $dir: $!";
+	#ignore dots and files beginning with dots
 	my @files =
 	  grep { !/^\./ && -f "$dir/$_" }
-	  readdir($dh);    #ignore dots and files beginning with dots
+	  readdir($dh);    
 	closedir $dh;
 
 	#	print "read_dir($dir):";
@@ -456,7 +464,8 @@ sub rtftable2xml {
 		my $index = 'objId';
 		if ( $_ =~ /perkor/i ) {
 			$index = 'kueId';
-		} elsif ( $_ =~ /mume/i ) {
+		}
+		elsif ( $_ =~ /mume/i ) {
 			$index = 'mulId';
 		}
 
@@ -523,3 +532,4 @@ This program is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
 
 =cut
+

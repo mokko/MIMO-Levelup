@@ -212,6 +212,7 @@ my $ta         = new Term::Activity(
 # Prepare Time for @EXPORTDATE
 #
 
+$main::TZ = "CET"; #avoid annoying perl warning in a stupid way
 $main::TZ = "CET";
 my $mtime = ( stat $opts{f} )[9];
 $mtime = ParseDateString("epoch $mtime");
