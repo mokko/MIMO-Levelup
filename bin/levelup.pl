@@ -16,6 +16,9 @@ sub message;
 # I assume that this runs under cygwin
 
 # CHANGES
+# 2010-12-01
+# make it run without all rtf
+# use cygpath -wa to determine win path of temp folder
 # 2010-06-24
 # -changed some paths etc.
 # -help section missing
@@ -47,7 +50,7 @@ sub message;
 {
         #this has of course serious security concerns!
 	package Settings;
-	my $settings = "/home/Mengel/usr/levelup/conf/lenny.config";
+	my $settings = "/home/maurice/usr/levelup/conf/lenny.config";
 	die "Error: Don't find settings file " unless -e $settings;
 	do $settings
 	  or die "Error: Can't load config file!\n";
@@ -86,7 +89,7 @@ move_rtf( \%config );
 #count the RTF-files we got, report result and continue anyways
 count_rtf( \%config );
 
-#
+#from rtf to stupid xml
 rtftable2xml( \%config );
 
 #join all files on lvl-1
@@ -163,7 +166,7 @@ sub count_rtf {
 	my $wdir = $config{1}{dir};
 
 	if ( !-d $wdir ) {
-		message "Count: $config{dirs}[0] dir not found";
+		message "Count: $wdir dir not found";
 		return;
 	}
 	my @files = read_dir($wdir);
@@ -171,7 +174,7 @@ sub count_rtf {
 
 	#print "test @files\n";
 	foreach my $test ( @{ $config{basenames} } ) {
-		my $this=0;
+		my $this = 0;
 		foreach my $file (@files) {
 
 			#print "testfile $file $test\n";
@@ -284,44 +287,54 @@ sub join_lvl1 {
 	mk_dir($wdir);
 	print "Check if lvl1-join exists already ...\n";
 
-	if ( !-e $output ) {
+	if ( -e $output ) {
+		print "\t$output exists already\n";
+		return;
+	}
 
-		#take empty file and copy it to temp
-		#join empty and first file write result to temp
-		#repeat for all files
-		#result is in temp
-		#java wants the path in dos format...
-		#overwrite everything that has been there before
-		copy( $leer_xml, "$config{3}{temp_cyg}/B.xml" )
-		  or die "Cannot copy $leer_xml to temp!";
+	#cp empty B
+	#foreach part (list)
+	#  join (part,B) > C
+	#  mv C B
+	#mv B to $output
 
-		foreach my $file ( @{ $config{basenames} } ) {
-			my $source = "$previous_dir/$file.xml";
+	copy( $leer_xml, "$config{3}{temp_cyg}/B.xml" )
+	  or die "Cannot copy $leer_xml to temp!";
+
+	#determine win path for saxon
+	my $temp_win = `cygpath -wa $config{3}{temp_cyg}`;
+	$temp_win =~ s/\s+$//;
+
+	#Debug
+#	print "DDD: temp_win:$temp_win\n";
+
+	foreach my $file ( @{ $config{basenames} } ) {
+		my $source = "$previous_dir/$file.xml";
+		if ( -e $source ) {
+			print "DEBG: $source found\n";
 			message "\tJoining $source";
 			my $cmd = "$saxon -xsl:'$config{3}{join_xsl}' ";
 			$cmd .= "-s:$source ";
-			$cmd .= "-o:'$config{3}{temp_win}\\BA.xml'";
+			#path to B is relative from xsl
+			$cmd .= "-o:'$temp_win\\C.xml'";
 
-			#			$cmd .= "2>>'$config{dirs}[4]\\join.log'";
+			#$cmd .= "2>>'$config{dirs}[4]\\join.log'";
 
-			#			print "debug $cmd\n";
+			print "debug $cmd\n";
 			system($cmd);
 			my $ret = $? >> 8;
 			if ( $ret != 0 ) {
 				die "system $cmd failed: $?";
 			}
 
-			move( "$config{3}{temp_cyg}/BA.xml", "$config{3}{temp_cyg}/B.xml" );
-#debug
-#			copy( "$config{3}{temp_cyg}/B.xml", "$wdir/t_$file.xml" );
+			move( "$config{3}{temp_cyg}/C.xml", "$config{3}{temp_cyg}/B.xml" );
 
+			#debug: keep a cp of every step
+			#copy( "$config{3}{temp_cyg}/B.xml", "$config{3}{temp_cyg}/t_$file.xml" );
 		}
-		move( "$config{3}{temp_cyg}/B.xml", $output );
 	}
-	else {
-		print "\t$output exists already\n";
-	}
-
+	#after your done with joining everything in temp, mv it to final destination
+	copy( "$config{3}{temp_cyg}/B.xml", $output );
 }
 
 sub lvl1to2 {
@@ -348,6 +361,7 @@ sub lvl1to2 {
 	print "Check if lvl2 exists already ...\n";
 	mk_dir($wdir);
 	if ( !-e "$wdir/$output_fn" ) {
+		print "About to $cmd";
 		system($cmd);
 
 		my $ret = $? >> 8;
@@ -442,8 +456,7 @@ sub rtftable2xml {
 		my $index = 'objId';
 		if ( $_ =~ /perkor/i ) {
 			$index = 'kueId';
-		}
-		elsif ( $_ =~ /mume/i ) {
+		} elsif ( $_ =~ /mume/i ) {
 			$index = 'mulId';
 		}
 
@@ -474,12 +487,10 @@ The function of this is to digest rtf input and output good xml; it's also to or
 
 =head1 USAGE
 
-levelup.pl 
-
+levelup.pl
 levelup.pl bak
 
-
-Execute the script inside the directory with the rtf files, usually without any options. Script will look for a specific set of files. Configuration through configuration file usually in conf dir. 
+Execute the script inside the directory with the rtf files, usually without any options. Script will look for a specific set of files. Configuration through configuration file usually in conf dir.
 
 =head1 CONFIGURATION
 
@@ -496,7 +507,7 @@ bak - pack relevant files into a zip file
 
 =head1 DIRECTORY STRUCTURE
 
-This script assumes a specific directory structure which can be modified to some extent by the configuration. It looks for rtf files in the directory that it is executed in and will create various directories depending on the progress it makes when it is executing. 
+This script assumes a specific directory structure which can be modified to some extent by the configuration. It looks for rtf files in the directory that it is executed in and will create various directories depending on the progress it makes when it is executing.
 
 Eseentially this script evokes a series of transformations. For every step of this transformation, a directory created, usually the directory names should contain numbers which make the order exceedingly obvious to everybody.
 
@@ -512,5 +523,3 @@ This program is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
 
 =cut
-
- 
