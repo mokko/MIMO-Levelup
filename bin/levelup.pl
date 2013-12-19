@@ -16,6 +16,9 @@ sub message;
 # I assume that this runs under cygwin
 
 # CHANGES
+# 2013-12-13
+# change paths to use versions inside develop version. Not sure if there is a 
+# way now to install it somewhere, but it should be a perl way
 # 2010-12-01
 # make it run without all rtf
 # use cygpath -wa to determine win path of temp folder
