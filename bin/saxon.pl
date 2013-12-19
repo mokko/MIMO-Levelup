@@ -5,7 +5,7 @@ use warnings;
 use Getopt::Std;
 sub debug;
 
-my $saxon_location = 'C:\Program Files\saxon\saxonhe9-2-0-6j\saxon9he.jar';
+my $saxon_location = 'C:\cygwin\home\maurice\usr\levelup\lib\saxon9he.jar';
 
 getopts( 'dhto:', \%main::opts );
 sub debug;
@@ -32,7 +32,7 @@ debug "XSL:$ARGV[1]";
 #
 #configure this script here
 #
-my $cmd = 'java -Xmx256m ';
+my $cmd = 'java -Xmx512m ';
 $cmd .= "-jar '$saxon_location' ";
 $cmd .= "-t  " if $main::opts{t};
 $cmd .= "$main::opts{o} " if ( $main::opts{o} );
