@@ -18,7 +18,7 @@
 #
 #DESCRIPTION
 # the purpose is that you don't have to enter the resources manually
-# in the databse. This should be esp useful for the audio-samples.
+# in the database. This should be esp useful for the audio-samples.
 # In general it would be better to enter everything manually in M+
 # to remind of that I use the word "fake".
 #

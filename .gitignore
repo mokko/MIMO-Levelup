@@ -1,3 +1,15 @@
 lib/saxon9he.jar
 locate.exe.stackdump
 lib/temp/B.xml
+*.stackdump
+Makefile
+*~
+#*
+bin/#*
+blib
+*.log
+*/ALT/*
+temp
+.project
+tmp
+devel/*
