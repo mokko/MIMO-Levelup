@@ -31,8 +31,9 @@ debug "XSL:$ARGV[1]";
 
 #
 #configure this script here
-#
-my $cmd = 'java -Xmx512m ';
+# 
+my $java='/cygdrive/C/Program\ Files/Java/jre7/bin/java.exe';
+my $cmd = "$java -Xmx512m ";
 $cmd .= "-jar '$saxon_location' ";
 $cmd .= "-t  " if $main::opts{t};
 $cmd .= "$main::opts{o} " if ( $main::opts{o} );

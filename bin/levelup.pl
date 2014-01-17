@@ -110,8 +110,8 @@ fix( \%config );
 
 #VALIDATE
 print "About to validate fix\n";
-validate("$config{5}{dir}/$config{5}{output_2}");
-
+#validate("$config{5}{dir}/$config{5}{output_2}");
+exit 0;
 #bak: at the moment backup (bak) is carried out optionally when
 
 #

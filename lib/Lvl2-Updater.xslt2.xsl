@@ -21,7 +21,7 @@
 	
 	<xsl:template match="/*">
 		<xsl:copy>
-			<xsl:for-each-group select="/mpx:museumPlusExport/mpx:multimediaobjekt|document ('temp/legacyPerKor.mpx')/mpx:museumPlusExport/mpx:multimediaobjekt"
+			<xsl:for-each-group select="/mpx:museumPlusExport/mpx:multimediaobjekt|document ('temp/mpxjoiner.tmp')/mpx:museumPlusExport/mpx:multimediaobjekt"
 				group-by="@mulId">
 				<xsl:sort data-type="number" select="@mulId"/>
 				<xsl:for-each select="current-group()">
@@ -34,7 +34,7 @@
 			
 			<!-- We need all the PK we can get to generate perKorRef@ids -->
 			<xsl:for-each-group select="/mpx:museumPlusExport/mpx:personKörperschaft|document
-				('temp/legacyPerKor.mpx')/mpx:museumPlusExport/mpx:personKörperschaft" group-by="@kueId">
+				('temp/mpxjoiner.tmp')/mpx:museumPlusExport/mpx:personKörperschaft" group-by="@kueId">
 				<xsl:sort data-type="number" select="@kueId"/>
 				<xsl:for-each select="current-group()">
 					<xsl:sort order="descending" select="@exportdatum"/>
@@ -48,7 +48,7 @@
 			</xsl:for-each-group>
 			
 			
-			<xsl:for-each-group select="/mpx:museumPlusExport/mpx:sammlungsobjekt| document ('temp/legacyPerKor.mpx')/mpx:museumPlusExport/mpx:sammlungsobjekt"
+			<xsl:for-each-group select="/mpx:museumPlusExport/mpx:sammlungsobjekt| document ('temp/mpxjoiner.tmp')/mpx:museumPlusExport/mpx:sammlungsobjekt"
 				group-by="@objId">
 				<xsl:sort data-type="number" select="@objId"/>
 				<xsl:for-each select="current-group()">
